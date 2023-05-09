@@ -1,0 +1,87 @@
+********************************************************************************
+*                 Ginga Ojousama Densetsu Yuna: Final Edition                  *
+*                     English Translation Patch Materials                      *
+********************************************************************************
+
+This package contains the source materials (code/art/script) for the English 
+translation project for the PlayStation game Ginga Ojousama Densetsu Yuna: Final 
+Edition.
+
+                    ****************************************
+                    *          Build Instructions          *
+                    ****************************************
+                    
+The build system is only set up for Unix-like systems, though none of the code 
+is fundamentally dependent on this except a few filesystem functions used in the 
+"discaster" disc builder tool, which currently only have POSIX implementations 
+because I haven't built anything for Windows in years. In any case, if you 
+really wanted to run this on Windows, you could do it with minor changes to the 
+code and probably many changes to the build script.
+
+You'll need GCC, libpng, ImageMagick (i.e. the "convert" utility), and any 
+dependencies of armips.
+
+You'll first need a disc image of Ginga Ojousama Densetsu Yuna: Final Edition 
+for the PlayStation. The Redump-verified image is highly suggested, though other 
+images may work if they're a close enough match.
+
+  http://redump.org/disc/61515/
+    Redump name: Ginga Ojousama Densetsu Yuna: Final Edition
+    CRC32:       3ae39fd8
+    MD5:         b5779da816fa7dfe524117f00b7648e0
+    SHA-1:       aa739893d453c9cdbf740058db4e582eadea0d0c
+
+In order to build, you'll need to extract the various resources from the disc 
+and put them in the "yuna3f/disc" folder in a particular configuration. Most of 
+the work can be done automatically with the "discanalyze" utility included with 
+discaster. Assuming you have a single-file disc image in BIN format called 
+"yuna3f.bin", do this:
+
+$ cd yuna3f
+$ make -C../discaster
+$ ../discaster/discanalyze yuna3f.bin disc
+
+This will do the following:
+  - Extract the disc's system area as "disc/gen/sysarea.bin"
+  - Extract the Mode 1 files (all regular files) to the folder "disc/files"
+  - Extract the Mode 2 files (movies and XA sound interleaves) in raw 
+0x930-bytes-per-sector format to the folder "disc/rawfiles"
+
+You can delete the automatically generated "disc/script_template.dsc" file if 
+you want, as it's not needed.
+
+With that done, all you should have to do is:
+
+$ cd yuna3f
+$ ./build.sh
+
+build.sh should then build all the necessary tools and output the built disc 
+image in BIN+CUE format as "yuna3f_build.bin" and "yuna3f_build.cue".
+
+If you want to modify the project, check build.sh to see where the resources 
+that get inserted into the game are coming from.
+
+Note that translated game text is taken from the CSV files in the 
+"yuna3f/script" directory. While these can be edited directly, it will probably 
+be easier to instead work with the ODS files in the same folder, which are 
+formatted ODS spreadsheet versions of the same content. Just run 
+"convertscript.sh" before "build.sh" to convert the ODS files into the CSVs 
+automatically (requires OpenOffice).
+
+                    ****************************************
+                    *              Licensing               *
+                    ****************************************
+
+See COPYING. Basically, everything by me (Supper) is GPLv3, and everything else
+is under the terms of whoever wrote it.
+
+                    ****************************************
+                    *               Credits                *
+                    ****************************************
+
+                                Supper -- Hacking and Translation
+                              Mafoo343 -- Translation Support, Testing
+                                cccmar -- Testing
+                              Xanathis -- Testing
+                              Cargodin -- Testing
+
