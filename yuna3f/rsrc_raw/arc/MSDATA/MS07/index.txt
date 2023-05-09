@@ -1,0 +1,7 @@
+6 112
+"ms07.BGD""ms07.BGD"
+"ms07.CEL""ms07.CEL"
+"ms07.TIM""ms07.TIM"
+"ms07.TXT""ms07.TXT"
+"ms07.GS8""ms07.GS8"
+"ms07.TAN""ms07.TAN"

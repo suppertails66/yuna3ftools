@@ -1,0 +1,7 @@
+6 112
+"ms88.BGD""ms88.BGD"
+"ms88.CEL""ms88.CEL"
+"ms88.TIM""ms88.TIM"
+"ms88.TXT""ms88.TXT"
+"ms88.GS8""ms88.GS8"
+"ms88.TAN""ms88.TAN"

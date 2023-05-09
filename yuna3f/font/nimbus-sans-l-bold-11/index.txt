@@ -1,0 +1,228 @@
+[Properties]
+numChars=112
+charsPerRow=16
+gridW=12
+gridH=12
+#noKerning=1
+#autoKerningOffset=-1
+autoKerningMode=cross
+
+#==========
+# space
+#==========
+
+[char0010]
+noKerningIfFirst=1
+noKerningIfSecond=1
+# this is special-cased in-game to ignore normal kerning rules,
+# so this needs to be the actual absolute spacing between words
+advanceWidth=3
+
+# digit space
+[char000C]
+noKerningIfFirst=1
+noKerningIfSecond=1
+advanceWidth=8
+
+# non-breaking space
+[char000D]
+noKerningIfFirst=1
+noKerningIfSecond=1
+advanceWidth=4
+
+# 1px space
+[char0007]
+noKerningIfFirst=1
+noKerningIfSecond=1
+advanceWidth=2
+
+#==========
+# digits
+#==========
+
+[char0020]
+noKerningIfFirst=1
+noKerningIfSecond=1
+advanceWidth=8
+
+[char0021]
+noKerningIfFirst=1
+noKerningIfSecond=1
+advanceWidth=8
+
+[char0022]
+noKerningIfFirst=1
+noKerningIfSecond=1
+advanceWidth=8
+
+[char0023]
+noKerningIfFirst=1
+noKerningIfSecond=1
+advanceWidth=8
+
+[char0024]
+noKerningIfFirst=1
+noKerningIfSecond=1
+advanceWidth=8
+
+[char0025]
+noKerningIfFirst=1
+noKerningIfSecond=1
+advanceWidth=8
+
+[char0026]
+noKerningIfFirst=1
+noKerningIfSecond=1
+advanceWidth=8
+
+[char0027]
+noKerningIfFirst=1
+noKerningIfSecond=1
+advanceWidth=8
+
+[char0028]
+noKerningIfFirst=1
+noKerningIfSecond=1
+advanceWidth=8
+
+[char0029]
+noKerningIfFirst=1
+noKerningIfSecond=1
+advanceWidth=8
+
+#==========
+# emotes
+#==========
+
+# heart
+[char000A]
+noKerningIfFirst=1
+noKerningIfSecond=1
+
+# sweat
+[char000E]
+noKerningIfFirst=1
+noKerningIfSecond=1
+
+# tears
+[char000F]
+noKerningIfFirst=1
+noKerningIfSecond=1
+
+#==========
+# other
+#==========
+
+# em dash
+[char0004]
+noKerningIfFirst=1
+noKerningIfSecond=1
+
+# en dash
+[char0005]
+noKerningIfFirst=1
+noKerningIfSecond=1
+
+# ellipsis
+[char0006]
+noKerningIfFirst=1
+noKerningIfSecond=1
+
+# exclamation mark
+[char0011]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#vShift=-1
+
+# percent sign
+[char0015]
+noKerningIfFirst=1
+noKerningIfSecond=1
+
+# ampersand
+[char0016]
+noKerningIfFirst=1
+noKerningIfSecond=1
+
+# apostrophe
+[char0017]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#vShift=-1
+#extraKerningIfRight=-1
+#extraKerningIfLeft=-1
+
+# left parenthesis
+[char0018]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#vShift=-1
+
+# right parenthesis
+[char0019]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#vShift=-1
+
+# plus sign
+[char001B]
+noKerningIfFirst=1
+noKerningIfSecond=1
+
+# comma
+[char001C]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#extraKerningIfRight=-1
+#extraKerningIfLeft=-1
+
+# hyphen
+[char001D]
+noKerningIfFirst=1
+noKerningIfSecond=1
+
+# period
+[char001E]
+noKerningIfFirst=1
+noKerningIfSecond=1
+
+# colon
+[char002A]
+noKerningIfFirst=1
+noKerningIfSecond=1
+
+# semicolon
+[char002B]
+noKerningIfFirst=1
+noKerningIfSecond=1
+
+# question mark
+[char002F]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#vShift=-1
+
+# left single quote
+[char004E]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#vShift=-1
+
+# left quote
+[char006B]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#vShift=-1
+
+# right quote
+[char006D]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#vShift=-1
+
+# right single quote
+[char006E]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#vShift=-1
+

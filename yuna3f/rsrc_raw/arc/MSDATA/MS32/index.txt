@@ -1,0 +1,10 @@
+9 160
+"ms32.BGD""ms32.BGD"
+"ms32.CEL""ms32.CEL"
+"ms32.TIM""ms32.TIM"
+"ms32.TXT""ms32.TXT"
+"ms32.GS8""ms32.GS8"
+"ms32.TAN""ms32.TAN"
+"ms32_1.T""ms32_1.T"
+"ms32_2.T""ms32_2.T"
+"ms32_3.T""ms32_3.T"

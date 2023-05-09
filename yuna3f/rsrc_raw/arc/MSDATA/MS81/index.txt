@@ -1,0 +1,8 @@
+7 128
+"ms81.BGD""ms81.BGD"
+"ms81.CEL""ms81.CEL"
+"ms81.TIM""ms81.TIM"
+"ms81.TXT""ms81.TXT"
+"ms81.GS8""ms81.GS8"
+"ms81.TAN""ms81.TAN"
+"ms81.TTO""ms81.TTO"

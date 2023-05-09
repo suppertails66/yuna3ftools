@@ -1,0 +1,8 @@
+7 128
+"ms18.BGD""ms18.BGD"
+"ms18.CEL""ms18.CEL"
+"ms18.TIM""ms18.TIM"
+"ms18.TXT""ms18.TXT"
+"ms18.GS8""ms18.GS8"
+"ms18.TAN""ms18.TAN"
+"ms18.TTO""ms18.TTO"

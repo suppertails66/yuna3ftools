@@ -1,0 +1,8 @@
+7 128
+"ms19.BGD""ms19.BGD"
+"ms19.CEL""ms19.CEL"
+"ms19.TIM""ms19.TIM"
+"ms19.TXT""ms19.TXT"
+"ms19.GS8""ms19.GS8"
+"ms19.TAN""ms19.TAN"
+"ms19.TTO""ms19.TTO"

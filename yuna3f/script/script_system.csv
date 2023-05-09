@@ -1,0 +1,1555 @@
+,,,,"//==================================
+// World map overlay strings
+//==================================",,,
+string,worldmap-0x20,Ryudia: {,},元気そうね　ユナ,"Are you well, Yuna?",,
+string,worldmap-0x40,Yuna: {,},"リ　リューディアさん!?
+わぁ　久しぶり　元気だったぁ!?","R-Ryudia!?\n
+Wow, it's been so long!\n
+Are you doing okay!?",,
+string,worldmap-0x7C,Ryudia: {,},"ええ……
+私は今回　戦闘に参加できないけれど
+できるだけの協力はするわ！","Yes...\n
+While I'm unable to participate in the fighting this time, I'll support you as much as I can!",,
+string,worldmap-0xD4,{,},"アイテムの調達は私にまかせて
+ちょうだい！　それと私の方でも
+他の仲間を捜してみるわ!!","Leave procuring items to me!\n
+Additionally, I will search for your other allies!",,
+string,worldmap-0x12C,{,},"アイテムと見つけた仲間は
+すぐに転送するから安心して!!","I'll warp any items or allies I find to you immediately, so fear not!",,
+string,worldmap-0x164,Yuna: {,},ありがと！　リューディアさん!!,"Thank you, Ryudia!",,
+string,worldmap-0x194,Elner: {,},"そういえば　ユナ
+ママとは連絡をとってるんですか？","By the way, Yuna, have you talked to your mother?",NOTE: this dialogue appears after you go to a training area (or at least the first training planet) if you haven't gone to yuna's house since leaving earth,
+string,worldmap-0x1D8,Yuna: {,},"ううん……パパとママ今頃
+どうしてるのかな…",No...I wonder what Papa and Mama are up to right now...,,
+string,worldmap-0x218,,,へ,To: ,,
+string,worldmap-0x230,,,ＰＮ：ＳＨＩＮＹＡ,SHINYA (pen name),"NOTE: this guy's art is the best by far, which may explain why they put it first in the list",
+string,worldmap-0x244,,,ＰＮ：風村　沙葵,"Saki Kazamura (pen name)\n
+(I want to be Lady Erika's manservant!)","NOTE: all these name readings are complete guesses; AFAIK these are basically complete nobodies who sent in fan art, so good luck finding the actual readings anywhere
+CHECK, not 100% sure about the second kanji in 下僕(?)",
+string,worldmap-0x258,,,福田　和仁,"Kazuhito Fukuda\n
+(Cat ears are nice, but nurses are good too!\n
+To Shiorin[nbsp]❤)",,
+string,worldmap-0x264,,,井口　幹教,Mikinori Iguchi,,
+string,worldmap-0x270,,,伊東　涼太,"Ryouta Itou\n
+(To Yunarin: Please be my friend.\n
+Well, goodbye.)",,
+string,worldmap-0x27C,,,ＰＮ：Ｓｈｅｌｌ,Shell (pen name),,
+string,worldmap-0x290,,,ＰＮ：神楽坂　隆,"Takashi Kagurazaka (pen name)\n
+(You're my heart's desire, Lady Erika!!)","NOTE: there's some additional text at the bottom of this, but it's too small to read",
+string,worldmap-0x2A4,,,ＰＮ：ファミー２,"Fami2 (pen name)\n
+(Simply because you rarely show a smile, I adore your smiling face more than anything.)","NOTE: god, this is so small and blurry and messy that it's barely legible. here's what it looks like to me...
+
+left:
+滅多に
+笑顔を見せない
+君だけで、
+
+right:
+笑顔の[君?]は
+[何?]よりも
+[好?]いているよ。",
+string,worldmap-0x2B8,,,ＰＮ：ＭＡＹＡ,"MAYA (pen name)\n
+(I LOVE YURI!)",,
+string,worldmap-0x2C8,,,畠山　弘和,"Hirokazu Hatakeyama\n
+(I loooove Yuna!!)",,
+string,worldmap-0x2D4,,,杉　智洋,"Tomohiro Sugisaki\n
+(Misaki is [#]1!)",,
+string,worldmap-0x2E0,,,ＰＮ：ふるパワ〜,"Full Power (pen name)\n
+(To Yuna and Yuri. A part-time job is fine, but watch out for Tokarev Goto, okay?)","NOTE: ??? トカレフ後藤 is what appears to be written here, but it means nothing to me and doesn't seem to be a reference to anything that a search on the modern internet can turn up. possibly some in-joke among the friends of whatever 12-year-old japanese kid sent this in 25 years ago.",
+string,worldmap-0x2F4,,,さんの作品,Art by: ,,
+string,worldmap-0x300,Mama: {,},"ユナ　あなたにファンレターが
+来てるわよ！","Yuna, there's a fan letter for you!",,
+string,worldmap-0x330,Yuna: {,},わーい　ホントに❤,Wooow! There really is![nbsp]❤,,
+string,worldmap-0x34C,Mama: {,},"それと噂で聞いたんだけど
+どこかの星で強い兵隊さんを
+やっつけるといいことがあるそうよ！","Oh, and I heard a rumor...\n
+Apparently, if you defeat strong troops on a planet somewhere, something good will happen!",NOTE: hint on how to unlock yoko (win on the highest difficulty in one of the late-game training areas),
+string,worldmap-0x3B4,Yuna: {,},"えっ　いいこと？
+それってなんだろ………？","Huh? Something good?\n
+What could that be...?",,
+string,worldmap-0x3E4,Mama: {,},じゃあ　ユナ　気をつけてね！,"Well, take care, Yuna!",,
+string,worldmap-0x408,Yuna: {,},行って来ま〜す　ママ❤,"See you later, Mama![nbsp]❤",,
+string,worldmap-0x428,Ryudia: {,},"ハイ
+こちらリューディア…
+お買い物なら私にまかせてね！","Yes, Ryudia here...\n
+If you're going shopping, leave it to me!",,
+string,worldmap-0x470,Ryudia: {,},"また　後で
+会いましょう！",Let's meet again later!,,
+string,worldmap-0x789C,,,　,,,UNTRANSLATED
+string,worldmap-0x7E38,,,ＣＨＡＰＴ．０,"#SETNOTCOMPRESSIBLE(1)
+Chapter 0",NOTE: hardcoded number replacement,
+,,,,"//==================================
+// Title -- technique names?
+//==================================",,,
+string,title-0xB58,,,ダミー,Dummy,,
+string,title-0xB4C,,,乱れ撃ち,Scattershot,,
+string,title-0xB38,,,ミラージュキャノン,Mirage Cannon,,
+string,title-0xB24,,,ライトスラッシュ,Light Slash,,
+string,title-0xB10,,,ハンドヒ一リング,Hand Healing,,
+string,title-0xB00,,,クルクルパンチ,Spinnamajig Punch,,
+string,title-0xAE8,,,ユーリィ１０１匹大行進,The Great 101-Yuri Parade,,
+string,title-0xADC,,,テレポ一ト,Teleport,,
+string,title-0xAC8,,,ＥＳＰヒ一リング,ESP Healing,,
+string,title-0xAB4,,,ミルキーアタック,Milky Attack,,
+string,title-0xAAC,,,爆光球,Lightblast Orb,"NOTE: coined term, literally ""explosion light sphere"". per the manual, the reading for this is ばっこうきゅう.",
+string,title-0xA9C,,,キ一プ君召喚,Summon Temp BF,"NOTE: キ一プ = ""person one is dating while hoping for someone better""",
+string,title-0xA8C,,,ホールインワン,Hole in One,,
+string,title-0xA7C,,,スロ一ムーヴ,Slow Move,,
+string,title-0xA68,,,スロ一ヒ一リング,Slow Healing,,
+string,title-0xA54,,,おっとりレ一ザ一,Gentle Laser,,
+string,title-0xA40,,,サイキックピ一ス,Psychic Debris,"NOTE: literally ""psychic piece"", as in a piece of rubble, i think?",
+string,title-0xA2C,,,ミラ一ジュビ一ム,Mirage Beam,,
+string,title-0xA18,,,エレガントダンス,Elegant Dance,,
+string,title-0xA10,,,浄気拳,Purify-Qi Fist,,
+string,title-0xA08,,,集気拳,Gather-Qi Fist,,
+string,title-0x9EC,,,ファイブアニマルカンフー,Five Animal Kung Fu,,
+string,title-0x9D8,,,ポイズンニードル,Poison Needle,,
+string,title-0x9C8,,,フラワーミスト,Flower Mist,,
+string,title-0x9B0,,,デンジャラスパウダー,Dangerous Powder,,
+string,title-0x9A0,,,茶筅ミサイル,Tea Whisk Missile,,
+string,title-0x990,,,茶釜アタック,Teakettle Attack,,
+string,title-0x984,,,お茶立て,Tea Ceremony,,
+string,title-0x974,,,パンクロック,Punk Rock,,
+string,title-0x964,,,ハードロック,Hard Rock,,
+string,title-0x954,,,ヘヴィーメタル,Heavy Metal,,
+string,title-0x94C,,,子守歌,Lullaby,,
+string,title-0x940,,,レクイエム,Requiem,,
+string,title-0x938,,,復活祭,Easter,,
+string,title-0x930,,,鉄扇,Iron Fan,,
+string,title-0x924,,,狂気乱舞,Maddening Dance,"NOTE: there's possibly a mistake in this attack's name -- this term would normally be written as 狂喜乱舞, which is pronounced the same",
+string,title-0x910,,,コールミークイーン,Call Me Queen,"NOTE: and here we get in some trouble. way the hell back when in Yuna 1, there was a line 『女王様とお呼び！』, which is literally ""call me queen"" and is stereotypically associated with BDSM in Japan. i felt that this association wasn't intuitive in english and translated it as ""grovel before your queen"", etc. which was fine, except now for this game they've directly translated the line into english as a name for one of her abilities.
+
+basically: lol, whatever",
+string,title-0x904,,,縦横無尽,Every Which Way,NOTE: the kanji compound yuna was tormented by in the first game,
+string,title-0x8F8,,,満場一致,Unanimity,"NOTE: emily's other abilities are similarly four-kanji compounds that are probably considered stereotypically complex, though i don't have the cultural knowledge for that",
+string,title-0x8EC,,,一網打尽,In a Single Stroke,,
+string,title-0x8D8,,,ビームコーティング,Beam Coating,,
+string,title-0x8C4,,,ライトヒーリング,Light Healing,,
+string,title-0x8B0,,,ハイパー拡散ビーム,Hyper Diffusion Beam,,
+string,title-0x89C,,,大リーグシューター,Big-League Shooter,,
+string,title-0x894,,,魔球,Miracle Ball,,
+string,title-0x884,,,ダブルヘッダー,Doubleheader,,
+string,title-0x874,,,イエローカード,Yellow Card,,
+string,title-0x85C,,,ダイナマイトスローイン,Dynamite Throw-In,,
+string,title-0x848,,,ハリケーンシュート,Hurricane Shot,,
+string,title-0x840,,,あおる,Rev Up,,
+string,title-0x82C,,,パッシングビーム,Flashing Beam,"NOTE: literally ""passing beam"" -- the japanese refer to flashing one's headlights as ""passing""",
+string,title-0x818,,,バックファイヤー,Backfire,,
+string,title-0x7FC,,,イルミネーションレーザー,Illumination Laser,,
+string,title-0x7EC,,,クランクイン,Action!,"NOTE: literally ""crank in"", a japanese-coined term to refer to the start of filming",
+string,title-0x7D4,,,スポットライトビーム,Spotlight Beam,,
+string,title-0x7C8,,,素振り地獄,Practice Swing Hell,,
+string,title-0x7B4,,,ロボットピンポン,Robot Ping-Pong,,
+string,title-0x7A0,,,サイクロンカット,Cyclone Cut,,
+string,title-0x790,,,アイスシールド,Ice Shield,,
+string,title-0x77C,,,オーロラファンネル,Aurora Funnel,,
+string,title-0x768,,,トリプルアクセル,Triple Axel,,
+string,title-0x75C,,,テレポート,Teleport,,
+string,title-0x750,,,高速連射,High-Speed Rapid Fire,,
+string,title-0x740,,,オーバーレイ,Over Ray,"FIXME: ""over"" doesn't really sound right for this in english, should probably pick something better",
+string,title-0x72C,,,エネルギーシールド,Energy Shield,,
+string,title-0x718,,,プラズマリッガー,Plasma Rigger,"FIXME: the only information i can find about リッガー has to do with an ultraman monster. though given that her other attack is a street fighter parody, that may be intentional.",
+string,title-0x704,,,ライジングドラゴン,Rising Dragon,"NOTE: parodying the famous shouryuuken (""rising dragon fist"") from street fighter",
+string,title-0x6F4,,,スタンオール,Stun All,,
+string,title-0x6E4,,,クリアオール,Clear All,,
+string,title-0x6CC,,,エレクトロンブレイク,Electron Break,,
+string,title-0x6BC,,,中性子ビーム,Neutron Beam,,
+string,title-0x6A8,,,リフレクトレーザー,Reflect Laser,,
+string,title-0x690,,,プラズマジェットビーム,Plasma Jet Beam,,
+string,title-0x688,,,神威,Shin'i,"Might of Heaven
+NOTE: unless this is actually ""kamui""?",
+string,title-0x680,,,一閃,Issen,Flash,
+string,title-0x678,,,風雷,Fuurai,Wind and Thunder,
+string,title-0x668,,,チャージライフ,Charge Life,,
+string,title-0x658,,,リフレッシュ,Refresh,,
+string,title-0x648,,,リザレクション,Resurrection,,
+string,title-0x638,,,コードスピア,Cord Spear,,
+string,title-0x630,,,呪縛,Binding Curse,,
+string,title-0x628,,,放電,Discharge,,
+string,title-0x610,,,ライトニングシュート,Lightning Shot,,
+string,title-0x5FC,,,フォースミサイル,Force Missile,,
+string,title-0x5F0,,,みんなの力,The Power of All,,
+string,title-0x5E0,,,フュージョン,Fusion,NOTE: enemy special attacks start here,
+string,title-0x5D0,,,メタルボール,Metal Ball,,
+string,title-0x5C8,,,黄泉,Hell,,
+string,title-0x5C0,,,春眠,Sound Sleep,,
+string,title-0x5AC,,,イービルバタフライ,Evil Butterfly,,
+string,title-0x59C,,,オイルレイン,Oil Rain,,
+string,title-0x594,,,桃源郷,Heaven on Earth,,
+string,title-0x58C,,,酸性雨,Acid Rain,,
+string,title-0x578,,,ブレイクショット,Break Shot,,
+string,title-0x564,,,ウインドストーム,Windstorm,,
+string,title-0x554,,,スーパーノヴァ,Supernova,,
+string,title-0x540,,,ブラックストライク,Black Strike,,
+string,title-0x534,,,リバース,Rebirth,"NOTE: this is an hp recovery move, so i'm assuming it's ""rebirth"" and not ""reverse""",
+string,title-0x520,,,テレポートアタック,Teleport Attack,,
+string,title-0x510,,,メルトダウン,Meltdown,,
+string,title-0x504,,,リトルボム,Little Bomb,"NOTE: these are presumably referencing the ""little boy"" and ""fat man"" atomic bombs",
+string,title-0x4F4,,,ファットボム,Fat Bomb,,
+string,title-0x4E4,,,アトミックボム,Atomic Bomb,,
+string,title-0x4D0,,,ホーミングミサイル,Homing Missile,,
+string,title-0x4C8,,,修復,Repair,,
+string,title-0x4BC,,,機能回復,Function Recovery,,
+string,title-0x4B0,,,完全修復,Full Repair,,
+string,title-0x4A8,,,充電,Charge Up,,
+string,title-0x49C,,,催眠音波,Hypnotic Wave,,
+string,title-0x490,,,肥大音波,Fattening Wave,,
+string,title-0x488,,,毒ガス,Poison Gas,,
+string,title-0x480,,,怪音波,Mystery Wave,,
+string,title-0x474,,,神経ガス,Nerve Gas,,
+string,title-0x468,,,高速斬り,Rapid Slice,,
+string,title-0x454,,,レーザーライフル,Laser Rifle,,
+string,title-0x444,,,ダークブレス,Dark Blessing,,
+string,title-0x434,,,ホーリーブレス,Holy Blessing,,
+string,title-0x420,,,オーラフラッシュ,Aura Flash,,
+string,title-0x418,,,波動砲,Wave Motion Cannon,,
+string,title-0x410,,,眠り粉,Sleeping Powder,,
+string,title-0x3FC,,,エネルギーボルト,Energy Bolt,,
+string,title-0x3EC,,,ホールアウト,Hole Ejection,"NOTE: this is the ""attack"" used by the airlock when it opens. the japanese name is ""hole out"" in english, which is a little...off.",
+string,title-0x3E4,,,粒子砲,Particle Cannon,,
+string,title-0x3D8,,,波動砲充填,Load Wave Motion Cannon,,
+string,title-0x3C8,,,フュージョン改,Enhanced Fusion,,
+string,title-0x3BC,,,闇の衝撃,Dark Impact,,
+string,title-0x3B4,,,黒波動,Black Surge,"NOTE: this is actually another ""wave motion"" attack, but imo ""surge"" sounds better here",
+string,title-0x3AC,,,赤波動,Red Surge,,
+string,title-0x3A4,,,闇動拳,Dark Strike,NOTE: coined term?,
+string,title-0x398,,,闇の生誕,Dark Birth,,
+string,title-0x380,,,ライトニングバスター,Lightning Buster,,
+string,title-0x374,,,ガンモード,Gun Mode,NOTE: ally regular attacks start here,
+string,title-0x364,,,ソードモード,Sword Mode,,
+string,title-0x354,,,バッキンボー,Penalty Staff,"NOTE: over a year later and i still have no idea what this is actually supposed to mean
+...oh, after going through the whole damn yuna artbook, there's a handwritten throwaway note on a piece of early concept art for polylina (p. 137):
+「イイ子にしないとバッキンよ！」のかけ声で悪人を次々と倒していくぞ！！
+""With a cry of 'If you don't behave yourself, there will be a bakkin [fine/penalty]!' she defeats bad guys one after another!!""
+(this is probably specifically parodying sailor moon's ""oshioki yo"" catchphrase)
+anyway, MORE FUTURE CORRECTIONS FOR YUNA 2, OH BOY",
+string,title-0x344,,,バッキンビュー,Penalty Lash,"NOTE: still not 100% sure on ""byuu"" here, but i guess it's just meant to be an onomatopoeia for the whip's crack",
+string,title-0x338,,,アイアン,Iron,,
+string,title-0x328,,,おっとりビ一ム,Gentle Beam,,
+string,title-0x314,,,エレガントソード,Elegant Sword,,
+string,title-0x30C,,,閃空槍,Skyflash Spear,"NOTE: coined term, literally ""flash-sky spear"". i was going to call it the ""heavensflash spear"", but that would conflict with the ""heaven"" naming convention used for various enemies in this game.",
+string,title-0x2FC,,,ローズチップ,Rose Tip,,
+string,title-0x2F0,,,ひしゃく,Ladle,,
+string,title-0x2E4,,,チェーン,Chain,,
+string,title-0x2D0,,,ヴァイオリンボウ,Violin Bow,,
+string,title-0x2C0,,,女王様のムチ,Queen's Whip,,
+string,title-0x2A4,,,インテリジェンスレーザー,Intelligence Laser,,
+string,title-0x294,,,ハイパービーム,Hyper Beam,,
+string,title-0x284,,,ビームバット,Beam Bat,NOTE: not to be confused with a lightsaber,
+string,title-0x26C,,,サッカーボールキック,Soccer Ball Kick,,
+string,title-0x254,,,ビックホイールスピン,Big Wheel Spin,,
+string,title-0x248,,,発声攻撃,Vocal Attack,,
+string,title-0x238,,,パワーラケット,Power Racquet,,
+string,title-0x224,,,超絶対零度のつらら,Below-Absolute-Zero Icicle,,
+string,title-0x210,,,リニアレールガン,Linear Railgun,,
+string,title-0x200,,,ライトセイバー,Lightsaber,"NOTE: not to be confused with a... wait, what? how did they get away with this?
+this is written as ライト・セイバー in concept art, which would be fractionally less legally dubious, but nope, it's one word here",
+string,title-0x1F0,,,スタンソード,Stun Sword,,
+string,title-0x1DC,,,クリスタルレーザー,Crystal Laser,,
+string,title-0x1D4,,,神鳴剣,Kaminari Sword,,
+string,title-0x1C8,,,電磁ビーム,Electromagnetic Beam,,
+string,title-0x1BC,,,電磁ロッド,Electromagnetic Rod,,
+string,title-0x1AC,,,電磁ブレード,Electromagnetic Blade,,
+string,title-0x19C,,,メタルブレード,Metal Blade,,
+string,title-0x18C,,,キクカッター,Chrysanthemum Cutter,,
+string,title-0x17C,,,サクラソード,Sakura Sword,,
+string,title-0x16C,,,貴婦人の扇子,Noblewoman's Fan,,
+string,title-0x158,,,パワージャベリン,Power Javelin,,
+string,title-0x14C,,,ピーチボム,Peach Bomb,,
+string,title-0x138,,,レインボーソード,Rainbow Sword,,
+string,title-0x128,,,ドレインソード,Drain Sword,,
+string,title-0x118,,,コンフュアロー,Confuarrow,,
+string,title-0x108,,,オーラナックル,Aura Knuckle,,
+string,title-0xF4,,,ソウルクラッシャー,Soul Crusher,,
+string,title-0xE4,,,カイザーソード,Kaiser Sword,,
+string,title-0xDC,,,小火器,Small Arms,NOTE: enemy regular attacks start here,
+string,title-0xD0,,,無反動砲,Recoilless Rifle,,
+string,title-0xC4,,,グレネード,Grenade,,
+string,title-0xBC,,,自走砲,Self-Propelled Artillery,,
+string,title-0xB4,,,高射砲,Antiaircraft Gun,,
+string,title-0xAC,,,迫撃砲,Mortar,,
+string,title-0xA0,,,タックル,Tackle,,
+string,title-0x90,,,シールドプレス,Shield Press,,
+string,title-0x84,,,フォールド,Fold,CHECK,
+string,title-0x78,,,連発前装銃,Rapid-Reload Gun,,
+string,title-0x6C,,,半自動拳銃,Semiautomatic Pistol,,
+string,title-0x60,,,短機関銃,Submachine Gun,,
+string,title-0x58,,,鉄拳,Iron Fist,,
+string,title-0x50,,,殴打,Strike,,
+string,title-0x48,,,衝破,Ripthrust,"CHECK, coined term",
+string,title-0x38,,,オウガブレード,Ogre Blade,,
+string,title-0x24,,,サイキックブレード,Psychic Blade,,
+string,title-0xC,,,ポイゾニックブレード,Psionic Blade,,
+string,title-0x4,,,闇の手,Hand of Darkness,,
+,,,,"//==================================
+// Title -- system messages
+//==================================",,,
+string,title-0xBA8,,,メモリーカードの,The Memory Card does not have,,
+string,title-0xBBC,,,空きブロックが足りません,enough empty Blocks.,,
+string,title-0xBD8,,,このメモリーカードには,This Memory Card,,
+string,title-0xBF0,,,セーブできません,cannot be saved to.,,
+string,title-0xC3C,,,読み込みに失敗しました,Reading failed.,,
+string,title-0xC54,,,何かキーを押してください,Please press a button.,,
+string,title-0xC70,,,データが記録されていません,Data has not been saved.,,
+string,title-0xC8C,,,セーブデータが見つかりません。,Cannot find save data.,,
+string,title-0xCAC,,,アクセスエラー発生！,An access error has occurred!,,
+string,title-0xCC4,,,ロードを取りやめます。,Cancelling load.,,
+string,title-0xD2C,,,壊れているファイルが,There is a corrupted file.,,
+string,title-0xD44,,,あります。,,,UNTRANSLATED
+string,title-0xD50,,,ロードするファイルを選択してください,Please select the file to load.,,
+string,title-0xD78,,,ロード中です。メモリー,Loading. Do not remove the,,
+string,title-0xD90,,,カードを抜かないで下さい。,Memory Card.,,
+string,title-0xDAC,,,ロードエラーが,A load error,,
+string,title-0xDBC,,,発生しました。,has occurred.,,
+string,title-0xDCC,,,アクセスエラーが,An access error,,
+string,title-0xDE0,,,メモリーカードが,The Memory Card is,,
+string,title-0xDF4,,,フォーマットされていません,not formatted.,,
+string,title-0xE10,,,壊れています。,corrupted.,,
+string,title-0xE20,,,セーブデータが見つかりません,Cannot find save data.,,
+,,,,"//==================================
+// Bonus menu strings
+//==================================",,,
+string,bonus-0xD0,,,タイトルへ　,To title,,
+string,bonus-0xE0,,,音声　　　　,Voices,,
+string,bonus-0xF0,,,投稿イラスト,Fan art,,
+string,bonus-0x100,,,ムービー　　,Movies,,
+string,bonus-0x110,,,静止画　　　,Images,,
+string,bonus-0x120,,,ＰＮ：ＳＨＩＮＹＡ,Alias: SHINYA,"NOTE: these were all originally duplicates of the corresponding strings from longmap in the original game. since we've expanded those with translations of the text in the images, we don't want to use duplicates of them for the bonus menu, so they're deduplicated for the translation.",
+string,bonus-0x134,,,ＰＮ：風村　沙葵,Alias: Saki Kazamura,,
+string,bonus-0x148,,,福田　和仁,Kazuhito Fukuda,,
+string,bonus-0x154,,,井口　幹教,Mikinori Iguchi,,
+string,bonus-0x160,,,伊東　涼太,Ryouta Itou,,
+string,bonus-0x16C,,,ＰＮ：Ｓｈｅｌｌ,Alias: Shell,,
+string,bonus-0x180,,,ＰＮ：神楽坂　隆,Alias: Takashi Kagurazaka,,
+string,bonus-0x194,,,ＰＮ：ファミー２,Alias: Fami2,,
+string,bonus-0x1A8,,,ＰＮ：ＭＡＹＡ,Alias: MAYA,,
+string,bonus-0x1B8,,,畠山　弘和,Hirokazu Hatakeyama,,
+string,bonus-0x1C4,,,杉　智洋,Tomohiro Sugisaki,,
+string,bonus-0x1D0,,,ＰＮ：ふるパワ〜,Alias: Full Power,,
+string,bonus-0x300,,,探しています…,Searching...,,
+string,bonus-0x3A0,,,音声再生中,Playing voice.,,
+,,,,"//==================================
+// Card album: card descriptions
+//==================================",,,
+string,album-0x1564,,,ＮＯ．１　神楽坂ユナ,"[#]1 -- Yuna Kagurazaka\n
+The protagonist of this series, needless to say. Her personality is eternally happy-go-lucky. Though she's a bit dim at times, she protects the galaxy as the {Savior of Light.}",,
+string,album-0x1554,,,言わずとしれた,,,UNTRANSLATED
+string,album-0x1540,,,本シリーズの主人公,,,UNTRANSLATED
+string,album-0x1524,,,性格はおきらく　ごくらく,,,UNTRANSLATED
+string,album-0x1514,,,時にはボケるが,,,UNTRANSLATED
+string,album-0x14FC,,,『光の救世主』として,,,UNTRANSLATED
+string,album-0x14F0,,,銀河を守る,,,UNTRANSLATED
+string,album-0x14D8,,,ＮＯ．２　ユーリィ,"[#]2 -- Yuri\n
+Appears in Yuna 2, and has fought alongside Yuna as her close friend since. She's honest and gentle, but she'll eat anything and everything.",,
+string,album-0x14BC,,,「ユナ２」で登場し　以後,,,UNTRANSLATED
+string,album-0x14A0,,,ユナの親友として共に戦う,,,UNTRANSLATED
+string,album-0x1488,,,すなおで優しいのだが,,,UNTRANSLATED
+string,album-0x1478,,,とにかく何でも,,,UNTRANSLATED
+string,album-0x146C,,,よく食べる,,,UNTRANSLATED
+string,album-0x145C,,,ＮＯ．３　リア,"[#]3 -- Lia\n
+Appears in Yuna 1, and, drawn in by Yuna's heart, becomes her close friend.\n
+She has a serious personality, but under Yuna's influence, she's become somewhat more relaxed.",,
+string,album-0x1448,,,「ユナ１」で登場し,,,UNTRANSLATED
+string,album-0x142C,,,ユナの心にひかれてユナの,,,UNTRANSLATED
+string,album-0x1420,,,親友となる,,,UNTRANSLATED
+string,album-0x140C,,,性格はまじめだが,,,UNTRANSLATED
+string,album-0x13F8,,,ユナの影響を受けて,,,UNTRANSLATED
+string,album-0x13E4,,,多少　くだけてきた,,,UNTRANSLATED
+string,album-0x13CC,,,ＮＯ．４　香坂エリカ,"[#]4 -- Erika Kousaka\n
+Appears in Yuna 2.\n
+A daughter of the Kousaka Conglomerate, she's extremely strong-minded and selfish, but is the object of great loyalty from her bodyguards, the Erika 7.",,
+string,album-0x13B8,,,「ユナ２」で登場,,,UNTRANSLATED
+string,album-0x13A0,,,香坂財閥の令嬢で非常に,,,UNTRANSLATED
+string,album-0x1388,,,気が強く　わがままだが,,,UNTRANSLATED
+string,album-0x1370,,,親衛隊のエリカ７からの,,,UNTRANSLATED
+string,album-0x1364,,,信望は厚い,,,UNTRANSLATED
+string,album-0x134C,,,ＮＯ．５　一条院ミサキ,"[#]5 -- Misaki Ichijouin\n
+Appears in The Sorrowful Siren.\n
+Remains active as an investigator for the Galactic Union at present. She's cautious, but also has a tendency to stubbornly stick to an idea once it's in her head...","NOTE: the licensed english release inexplicably calls this ova ""siren's sorrow"", which is an awkward translation at best. even the japanese trading cards, with all their dodgy translations and romanizations, at least call it ""siren of sorrow""! this, together with factors like their absurd mess of a translation for ""funny funny little girl"", is one of the reasons i've chosen to ignore them and do things my own way.",
+string,album-0x1330,,,「哀しみのセイレーン」で,,,UNTRANSLATED
+string,album-0x1328,,,登場,,,UNTRANSLATED
+string,album-0x1314,,,現在も銀河連合の,,,UNTRANSLATED
+string,album-0x12F8,,,査察官として活躍中である,,,UNTRANSLATED
+string,album-0x12E4,,,慎重だが思いこみが,,,UNTRANSLATED
+string,album-0x12D4,,,激しい面も…,,,UNTRANSLATED
+string,album-0x12BC,,,ＮＯ．６　ミラージュ,"[#]6 -- Mirage\n
+Appears in Yuna 2.\n
+She was a cruel being which schemed to destroy the Earth, but after feeling Yuna's warmth, her personality completely changed, and she became a steadfast ally.",,
+string,album-0x12A8,,,「ユナ２」で登場　,,,UNTRANSLATED
+string,album-0x1290,,,地球破壊を企む冷酷な,,,UNTRANSLATED
+string,album-0x1278,,,存在だったが　ユナの,,,UNTRANSLATED
+string,album-0x1260,,,優しさにふれてから　,,,UNTRANSLATED
+string,album-0x1248,,,性格も一変し　頼もしい,,,UNTRANSLATED
+string,album-0x123C,,,仲間となる,,,UNTRANSLATED
+string,album-0x1228,,,ＮＯ．７　亜耶乎,"[#]7 -- Ayako\n
+Appears in Fairy of the Dark Abyss.\n
+One of the Three Fey Machinae Sisters. Meeting Yuna, she realizes her own mistakes. She falls into her sister Genmu's hands and meets a sorrowful end.","NOTE: the title of the second ova is ""shinen no fairy"", where ""shinen"" (abyss) is written with nonstandard kanji: 深闇 (deep darkness) instead of 深淵 (deep abyss)",
+string,album-0x1210,,,「深闇のフェアリー」で,,,UNTRANSLATED
+string,album-0x11FC,,,妖機三姉妹の一人,,,UNTRANSLATED
+string,album-0x11E4,,,ユナに出会い　自分の,,,UNTRANSLATED
+string,album-0x11D4,,,間違いに気づく,,,UNTRANSLATED
+string,album-0x11BC,,,姉・幻夢の手に掛かり,,,UNTRANSLATED
+string,album-0x11A8,,,悲しい最期をとげる,,,UNTRANSLATED
+string,album-0x1198,,,ＮＯ．８　狂花,"[#]8 -- Kyouka\n
+Appears in Fairy of the Dark Abyss.\n
+The second oldest of the Three Fey Machinae Sisters, she attacked the Earth in order to wipe out Yuna. She is high-handed and confident.",,
+string,album-0x117C,,,妖機三姉妹の次女で　ユナ,,,UNTRANSLATED
+string,album-0x1160,,,抹殺のため地球に来襲する,,,UNTRANSLATED
+string,album-0x1148,,,性格は高飛車で自信家,,,UNTRANSLATED
+string,album-0x1138,,,ＮＯ．９　幻夢,"[#]9 -- Genmu\n
+Appears in Fairy of the Dark Abyss.\n
+Eldest of the Three Fey Machinae Sisters. She holds power that towers above even the other Sisters, and is inhumanly cruel.",,
+string,album-0x1124,,,妖機三姉妹の長女,,,UNTRANSLATED
+string,album-0x1108,,,三姉妹の中でも抜きんでた,,,UNTRANSLATED
+string,album-0x10F4,,,力を持ち　冷酷非道,,,UNTRANSLATED
+string,album-0x10DC,,,ＮＯ．１０　機械化皇帝,"[#]10 -- Machinate Emperor\n
+Appears in this game.\n
+A mysterious entity that rules over the Machinate Empire.\n
+Using absolute power, she plots galactic destruction.",,
+string,album-0x10CC,,,本作品で登場,,,UNTRANSLATED
+string,album-0x10B4,,,悪の機械化帝国を治める,,,UNTRANSLATED
+string,album-0x10A8,,,謎の存在,,,UNTRANSLATED
+string,album-0x1090,,,絶対的な力を駆使して,,,UNTRANSLATED
+string,album-0x107C,,,銀河破壊をもくろむ,,,UNTRANSLATED
+string,album-0x1068,,,ＮＯ．１１　白香,"[#]11 -- Pai Siang\n
+Appears in this game.\n
+A mysterious and beautiful girl who holds a hidden power.\n
+Together with the Three Wise Machinae, she challenged the Machinate Emperor, but failed.","NOTE: oh, is that what happened? her actual role in the story is basically nonexistent and never explained",
+string,album-0x1050,,,秘めたる力を持つ謎の,,,UNTRANSLATED
+string,album-0x1048,,,美少女,,,UNTRANSLATED
+string,album-0x1038,,,三賢機とともに,,,UNTRANSLATED
+string,album-0x1024,,,機械化皇帝に挑むが,,,UNTRANSLATED
+string,album-0x1018,,,敗北する,,,UNTRANSLATED
+string,album-0x1004,,,ＮＯ．１２　玉華,"[#]12 -- Yui Hua\n
+Appears in this game.\n
+One of the Three Wise Machinae, she ruled over the former Machinate Empire as the White Emperor.",,
+string,album-0xFF4,,,三賢機の一人で,,,UNTRANSLATED
+string,album-0xFDC,,,白皇帝として　かつての,,,UNTRANSLATED
+string,album-0xFC4,,,機械化帝国を治めていた,,,UNTRANSLATED
+string,album-0xFB0,,,ＮＯ．１３　鏡明,"[#]13 -- Jing Ming\n
+Appears in this game.\n
+One of the Three Wise Machinae, and the right-hand man of the White Emperor.\n
+He was caught in a trap by the Machinate Emperor and imprisoned.",,
+string,album-0xF98,,,三賢機の一人で白皇帝の,,,UNTRANSLATED
+string,album-0xF90,,,片腕,,,UNTRANSLATED
+string,album-0xF74,,,機械化皇帝のワナにはまり,,,UNTRANSLATED
+string,album-0xF64,,,幽閉されていた,,,UNTRANSLATED
+string,album-0xF50,,,ＮＯ．１４　剣鳳,"[#]14 -- Chun Fong\n
+Appears in this game.\n
+One of the Three Wise Machinae, and a master of the sword.\n
+Just like Jing Ming, he was imprisoned at the hand of the Machinate Emperor.",,
+string,album-0xF38,,,三賢機の一人で剣の達人,,,UNTRANSLATED
+string,album-0xF28,,,鏡明と同じく,,,UNTRANSLATED
+string,album-0xF10,,,機械化皇帝の手によって,,,UNTRANSLATED
+string,album-0xF04,,,幽閉される,,,UNTRANSLATED
+string,album-0xEF0,,,ＮＯ．１５　劉麗,"[#]15 -- Liou Li\n
+Appears in this game.\n
+One of the Four Heavenly Machinae, the upper echelon of the Machinate Empire.\n
+Greatly proud, she has absolute confidence in her beautiful looks.",,
+string,album-0xEDC,,,機械化帝国　大幹部,,,UNTRANSLATED
+string,album-0xECC,,,四天機の一人,,,UNTRANSLATED
+string,album-0xEB4,,,プライドが高く　自分の,,,UNTRANSLATED
+string,album-0xEA0,,,美貌に絶対の自信を,,,UNTRANSLATED
+string,album-0xE94,,,持っている,,,UNTRANSLATED
+string,album-0xE80,,,ＮＯ．１６　項翔,"[#]16 -- Siang Siang\n
+Appears in this game.\n
+One of the Four Heavenly Machinae, the upper echelon of the Machinate Empire.\n
+She commands the mobile fortress {Heavenstar,} and boasts stupefying might.",,
+string,album-0xE68,,,移動要塞『天星』を治め,,,UNTRANSLATED
+string,album-0xE58,,,絶大な力を誇る,,,UNTRANSLATED
+string,album-0xE44,,,ＮＯ．１７　美鬼,"[#]17 -- Mei Kue\n
+Appears in this game.\n
+One of the Four Heavenly Machinae, feared as the {Black Angel.}\n
+Her power, aimed at obliteration, is shrouded in mystery.",CHECK,
+string,album-0xE2C,,,『黒天使』と恐れられた,,,UNTRANSLATED
+string,album-0xE10,,,抹殺を目的としたその力は,,,UNTRANSLATED
+string,album-0xDFC,,,謎に秘められている,,,UNTRANSLATED
+string,album-0xDE8,,,ＮＯ．１８　鈴魔,"[#]18 -- Ling Muo\n
+Appears in this game.\n
+One of the Four Heavenly Machinae, her power is at the top.\n
+She swears absolute loyalty to the Machinate Emperor.",,
+string,album-0xDD0,,,四天機の一人で実力も,,,UNTRANSLATED
+string,album-0xDC8,,,トップ,,,UNTRANSLATED
+string,album-0xDB4,,,機械化皇帝に対して,,,UNTRANSLATED
+string,album-0xDA0,,,絶対的な忠誠を誓う,,,UNTRANSLATED
+string,album-0xD8C,,,ＮＯ．１９　菊花,"[#]19 -- Jui Hua\n
+Appears in this game.\n
+One of the Six Flower Warriors, the elite guard of the Machinate Emperor.\n
+The foremost assassin of the Machinate Empire, excelling in ingenious tricks.",,
+string,album-0xD78,,,機械化皇帝　親衛隊,,,UNTRANSLATED
+string,album-0xD68,,,六花戦の一人,,,UNTRANSLATED
+string,album-0xD54,,,策謀　知略にたける,,,UNTRANSLATED
+string,album-0xD3C,,,機械化帝国の第一の刺客,,,UNTRANSLATED
+string,album-0xD28,,,ＮＯ．２０　桜花,"[#]20 -- Ing Hua\n
+Appears in this game.\n
+One of the Six Flower Warriors, the elite guard of the Machinate Emperor.\n
+Her weapon is the {Sakura Sword,} which cleaves in two with a single stroke.",,
+string,album-0xD14,,,武器は一刀両断の,,,UNTRANSLATED
+string,album-0xD00,,,『サクラソード』,,,UNTRANSLATED
+string,album-0xCEC,,,ＮＯ．２１　蘭花,"[#]21 -- Lan Hua\n
+Appears in this game.\n
+One of the Six Flower Warriors, her personality is extremely haughty.\n
+She constantly takes an attitude of looking down on people.",,
+string,album-0xCD4,,,六花戦の一人で性格は,,,UNTRANSLATED
+string,album-0xCC8,,,超高飛車,,,UNTRANSLATED
+string,album-0xCB0,,,常に人を見下した態度を,,,UNTRANSLATED
+string,album-0xCA8,,,とる,,,UNTRANSLATED
+string,album-0xC94,,,ＮＯ．２２　椿花,"[#]22 -- Chun Hua\n
+Appears in this game.\n
+One of the Six Flower Warriors, the elite guard of the Machinate Emperor.\n
+Specializing in mid-range attacks, her attack power is top-class, even among the Six Flower Warriors.",,
+string,album-0xC7C,,,中距離攻撃を得意とし,,,UNTRANSLATED
+string,album-0xC64,,,攻撃力は六花戦の中でも,,,UNTRANSLATED
+string,album-0xC54,,,トップクラス,,,UNTRANSLATED
+string,album-0xC40,,,ＮＯ．２３　桃花,"[#]23 -- Tau Hua\n
+Appears in this game.\n
+One of the Six Flower Warriors, the elite guard of the Machinate Emperor.\n
+Specializes in long-range attacks.",NOTE: i think the card description writer started getting fed up with things right around here,
+string,album-0xC28,,,遠距離攻撃を得意とする,,,UNTRANSLATED
+string,album-0xC14,,,ＮＯ．２４　紫陽花,"[#]24 -- Tsu Yang Hua\n
+Appears in this game.\n
+One of the Six Flower Warriors, the elite guard of the Machinate Emperor.\n
+Inhumanly cruel, she will bar no holds in the pursuit of her objectives.",,
+string,album-0xBF8,,,冷酷非道で目的のためには,,,UNTRANSLATED
+string,album-0xBE8,,,手段を選ばない,,,UNTRANSLATED
+string,album-0xBD0,,,ＮＯ．２５　水野葉子,"[#]25 -- Yoko Mizuno\n
+Appears in Yuna 1.\n
+Formerly one of the Thirteen Frauleins of Darkness.\n
+Short-tempered and exceptionally stubborn.",,
+string,album-0xBBC,,,「ユナ１」で登場,,,UNTRANSLATED
+string,album-0xBA4,,,元暗黒お嬢様十三人衆の,,,UNTRANSLATED
+string,album-0xB9C,,,一人,,,UNTRANSLATED
+string,album-0xB84,,,短気でとても気が強い,,,UNTRANSLATED
+string,album-0xB6C,,,ＮＯ．２６　弓岡かえで,"[#]26 -- Kaede Yumioka\n
+Appears in Yuna 1.\n
+Formerly one of the Thirteen Frauleins of Darkness.\n
+A fellow idol of Yuna's.",,
+string,album-0xB58,,,ユナのアイドル仲間,,,UNTRANSLATED
+string,album-0xB40,,,ＮＯ．２７　お花のマリ,"[#]27 -- Mari of Flowers\n
+Appears in Yuna 1.\n
+A girl who loves flowers beyond all else. She will never forgive those who treat flowers roughly.",,
+string,album-0xB24,,,お花をこよなく愛する少女,,,UNTRANSLATED
+string,album-0xB10,,,花を粗末に扱う者は,,,UNTRANSLATED
+string,album-0xB04,,,許さない,,,UNTRANSLATED
+string,album-0xAEC,,,ＮＯ．２８　お茶の佳華,"[#]28 -- Yoshika of Tea\n
+Appears in Yuna 1.\n
+A ladylike girl with a taste for tea. She has something of a bullying side to her, too...",,
+string,album-0xADC,,,茶道をたしなむ,,,UNTRANSLATED
+string,album-0xAC8,,,おしとやかな少女,,,UNTRANSLATED
+string,album-0xAB0,,,少々　意地悪な一面も…,,,UNTRANSLATED
+string,album-0xAA4,,,ＮＯ．２９,"[#]29 -- Remi of China\n
+Appears in Yuna 1.\n
+Short-tempered and belligerent, but has a bit of scatterbrainedness to her too...",,
+string,album-0xA88,,,　　　　　チャイナの麗美,,,UNTRANSLATED
+string,album-0xA70,,,短気でかなり好戦的だが,,,UNTRANSLATED
+string,album-0xA5C,,,おっちょこちょいな,,,UNTRANSLATED
+string,album-0xA50,,,側面も…,,,UNTRANSLATED
+string,album-0xA44,,,ＮＯ．３０,"[#]30 -- Gentle Shiori\n
+Appears in Yuna 1.\n
+Just as her name says, she has an extremely gentle personality, and boasts slowness to surpass even Yuna.",,
+string,album-0xA28,,,　　　　　おっとりの詩織,,,UNTRANSLATED
+string,album-0xA10,,,通り名どおり　非常に,,,UNTRANSLATED
+string,album-0x9F8,,,おっとりとした性格で,,,UNTRANSLATED
+string,album-0x9DC,,,ユナをも　しのぐトロさを,,,UNTRANSLATED
+string,album-0x9D4,,,誇る,,,UNTRANSLATED
+string,album-0x9BC,,,ＮＯ．３１　六本木の舞,"[#]31 -- Mai of Roppongi\n
+Appears in Yuna 1.\n
+Currently the homeroom teacher for Yuna's class.\n
+She's extremely easygoing and upbeat, but takes a haughty attitude toward Yuna.",,
+string,album-0x9A4,,,現在はユナのクラスの,,,UNTRANSLATED
+string,album-0x998,,,担任となる,,,UNTRANSLATED
+string,album-0x984,,,性格は非常に軽く,,,UNTRANSLATED
+string,album-0x968,,,ノリもよいのだが　ユナに,,,UNTRANSLATED
+string,album-0x94C,,,対して高飛車な態度をとる,,,UNTRANSLATED
+string,album-0x930,,,ＮＯ．３２　リューディア,"[#]32 -- Ryudia\n
+Appears in Yuna 1.\n
+The descendant of the Marnias royal family, she has a stubborn personality.\n
+Since meeting Yuna, she's become somewhat more cheerful.",,
+string,album-0x918,,,マーニアス王家の末裔で,,,UNTRANSLATED
+string,album-0x90C,,,頑固な性格,,,UNTRANSLATED
+string,album-0x8F4,,,ユナと出会ってからは,,,UNTRANSLATED
+string,album-0x8E0,,,多少　明るくなった,,,UNTRANSLATED
+string,album-0x8D4,,,ＮＯ．３３,"[#]33 -- Emily of Culture\n
+Appears in Yuna 1.\n
+Just as her name says, she has a reputation for erudition.\n
+Holds an insatiable appetite for knowledge.",,
+string,album-0x8B8,,,　　　　　教養のエミリー,,,UNTRANSLATED
+string,album-0x8A0,,,通り名どおり　博学で,,,UNTRANSLATED
+string,album-0x890,,,とおっている,,,UNTRANSLATED
+string,album-0x880,,,知識に対して,,,UNTRANSLATED
+string,album-0x868,,,飽くなき探求心を持つ,,,UNTRANSLATED
+string,album-0x84C,,,ＮＯ．３４　高貴な沙雪華,"[#]34 -- Sayuka the Noble\n
+Appears in Yuna 1.\n
+Formerly one of the Thirteen Frauleins of Darkness, and a fraulein among frauleins. Very haughty and strong-minded.",,
+string,album-0x838,,,一人で　お嬢様中の,,,UNTRANSLATED
+string,album-0x828,,,お嬢様である,,,UNTRANSLATED
+string,album-0x814,,,とても気位が高く,,,UNTRANSLATED
+string,album-0x808,,,気も強い,,,UNTRANSLATED
+string,album-0x7F0,,,ＮＯ．３５　ロックの姫,"[#]35 -- Rock Princess\n
+Appears in Yuna 1.\n
+A girl who loves rock more than anything.\n
+Despite her appearance, she has a strong sense of justice.",,
+string,album-0x7DC,,,ロックをこよなく,,,UNTRANSLATED
+string,album-0x7D0,,,愛する少女,,,UNTRANSLATED
+string,album-0x7B4,,,見かけによらず　正義感が,,,UNTRANSLATED
+string,album-0x7AC,,,強い,,,UNTRANSLATED
+string,album-0x790,,,ＮＯ．３６　アレフチーナ,"[#]36 -- Alephtina\n
+Appears in Yuna 1.\n
+A girl who loves classical music and the violin above all else.\n
+Specializes in indirect attacks.",,
+string,album-0x774,,,クラシックとバイオリンを,,,UNTRANSLATED
+string,album-0x760,,,こよなく愛する少女,,,UNTRANSLATED
+string,album-0x748,,,間接攻撃を得意とする,,,UNTRANSLATED
+string,album-0x72C,,,ＮＯ．３７　ルミナーエフ,"[#]37 -- Luminaev\n
+Appears in Yuna 1.\n
+Yuna's ally, clad in a queen costume. The type of person that's unstoppable when fired up.",,
+string,album-0x714,,,女王様コスチュームに,,,UNTRANSLATED
+string,album-0x700,,,身を包むユナの仲間,,,UNTRANSLATED
+string,album-0x6E4,,,熱くなると止まらない性格,,,UNTRANSLATED
+string,album-0x6CC,,,ＮＯ．３８　銀幕のミキ,"[#]38 -- Silver Screen Miki\n
+Appears in Yuna 2.\n
+A member of Erika's bodyguards, the Erika 7.\n
+Her special skill is disguise, and while she's a somewhat moody person, she has a calculating side to her as well...",,
+string,album-0x6B0,,,エリカの親衛隊エリカ７の,,,UNTRANSLATED
+string,album-0x6A4,,,一人である,,,UNTRANSLATED
+string,album-0x690,,,特技は変装で割と,,,UNTRANSLATED
+string,album-0x678,,,気分屋だが　計算高い,,,UNTRANSLATED
+string,album-0x66C,,,一面も…,,,UNTRANSLATED
+string,album-0x660,,,ＮＯ．３９,"[#]39 -- High-Speed Celica\n
+Appears in Yuna 2.\n
+A member of Erika's bodyguards, the Erika 7.\n
+Quite strong-minded, she hates people who approach her thoughtlessly.",,
+string,album-0x644,,,　　ハイスピード・セリカ,,,UNTRANSLATED
+string,album-0x628,,,かなり気が強く　へらへら,,,UNTRANSLATED
+string,album-0x610,,,近寄ってくる奴が嫌い,,,UNTRANSLATED
+string,album-0x5F8,,,ＮＯ．４０　闘魂のマミ,"[#]40 -- Fighting Spirit Mami\n
+Appears in Yuna 2.\n
+A member of Erika's bodyguards, the Erika 7.\n
+A hot-blooded baseball girl, she never, ever misses the sports news.",,
+string,album-0x5E8,,,熱血野球少女で,,,UNTRANSLATED
+string,album-0x5D4,,,スポーツニュースは,,,UNTRANSLATED
+string,album-0x5C0,,,絶対に欠かさない,,,UNTRANSLATED
+string,album-0x5B4,,,ＮＯ．４１,"[#]41 -- Striker Rui\n
+Appears in Yuna 2.\n
+A member of Erika's bodyguards, the Erika 7.\n
+The captain of the Soccer Club, she's bright and cheerful, but hates people that don't exercise.",,
+string,album-0x598,,,　　　ストライカー・ルイ,,,UNTRANSLATED
+string,album-0x57C,,,サッカー部のキャプテンを,,,UNTRANSLATED
+string,album-0x564,,,務め　明るく陽気だが,,,UNTRANSLATED
+string,album-0x550,,,運動しない奴が嫌い,,,UNTRANSLATED
+string,album-0x538,,,ＮＯ．４２　氷のミドリ,"[#]42 -- Icy Midori\n
+Appears in Yuna 2.\n
+The leader of Erika's bodyguards, the Erika 7.\n
+Harsh on both herself and others, she has great pride.",,
+string,album-0x528,,,リーダー的存在,,,UNTRANSLATED
+string,album-0x510,,,自分にも他人にも厳しく,,,UNTRANSLATED
+string,album-0x500,,,プライドが高い,,,UNTRANSLATED
+string,album-0x4E8,,,ＮＯ．４３　閃光のアコ,"[#]43 -- Ako the Flash\n
+Appears in Yuna 2.\n
+A member of Erika's bodyguards, the Erika 7.\n
+A genius ping-pong girl and the twin of Mako, she has a very bright personality.",,
+string,album-0x4D8,,,マコと双子の,,,UNTRANSLATED
+string,album-0x4C0,,,天才卓球少女で　とても,,,UNTRANSLATED
+string,album-0x4B4,,,明るい性格,,,UNTRANSLATED
+string,album-0x49C,,,ＮＯ．４４　疾風のマコ,"[#]44 -- Mako the Gale\n
+Appears in Yuna 2.\n
+A member of Erika's bodyguards, the Erika 7.\n
+A genius ping-pong girl and the twin of Ako, who is always with her.",,
+string,album-0x48C,,,アコと双子の,,,UNTRANSLATED
+string,album-0x474,,,天才卓球少女で　いつも,,,UNTRANSLATED
+string,album-0x468,,,二人一緒,,,UNTRANSLATED
+string,album-0x450,,,ＮＯ．４５　エルナー,"[#]45 -- Elner\n
+Appears in Yuna 1.\n
+Yuna's other self in the Matrix of the Queen of Light.\n
+Extremely serious, and will quickly assume a sermonizing tone.",CHECK,
+string,album-0x438,,,光の女王のマトリクスで,,,UNTRANSLATED
+string,album-0x42C,,,ユナの分身,,,UNTRANSLATED
+string,album-0x414,,,非常にマジメですぐに,,,UNTRANSLATED
+string,album-0x400,,,お説教口調となる,,,UNTRANSLATED
+string,album-0x3EC,,,ＮＯ．４６　ジーナ,"[#]46 -- Gina\n
+Appears in Yuna 1.\n
+Yuna's other self, a reserved woman of few words.\n
+However, when crisis approaches Yuna, she protects her with the greatest defensive power.",,
+string,album-0x3D8,,,口数の少ない非常に,,,UNTRANSLATED
+string,album-0x3C4,,,控えめなユナの分身,,,UNTRANSLATED
+string,album-0x3AC,,,ただし　ユナに危機が,,,UNTRANSLATED
+string,album-0x394,,,迫ると最大の防御力で,,,UNTRANSLATED
+string,album-0x388,,,ユナを守る,,,UNTRANSLATED
+string,album-0x374,,,ＮＯ．４７　マリナ,"[#]47 -- Marina\n
+Appears in Yuna 1.\n
+One of Yuna's other selves.\n
+She's gentle and picks up on the details, but is also a bit scatterbrained.",,
+string,album-0x360,,,ユナの分身の一人,,,UNTRANSLATED
+string,album-0x344,,,気が優しく細かいところに,,,UNTRANSLATED
+string,album-0x32C,,,気がつくが　ちょっと,,,UNTRANSLATED
+string,album-0x318,,,おっちょこちょい,,,UNTRANSLATED
+string,album-0x304,,,ＮＯ．４８　エリナ,"[#]48 -- Erina\n
+Appears in Yuna 1.\n
+One of Yuna's other selves.\n
+Has a very easygoing personality and is active, but tends to never stop talking once she starts...",,
+string,album-0x2F0,,,非常に軽い性格で,,,UNTRANSLATED
+string,album-0x2D8,,,行動的だが　話し出すと,,,UNTRANSLATED
+string,album-0x2C0,,,止まらない一面も…　,,,UNTRANSLATED
+string,album-0x2A8,,,ＮＯ．４９　ミルキー,"[#]49 -- Milky\n
+Polylina's highly adorable pet. Always acts in tandem with her.\n
+Becomes Polylina's weapon when she transforms.",,
+string,album-0x294,,,とっても愛らしい,,,UNTRANSLATED
+string,album-0x280,,,ポリリーナのペット,,,UNTRANSLATED
+string,album-0x264,,,絶えずポリリーナと行動を,,,UNTRANSLATED
+string,album-0x258,,,共にする,,,UNTRANSLATED
+string,album-0x240,,,変身するとポリリーナの,,,UNTRANSLATED
+string,album-0x234,,,武器となる,,,UNTRANSLATED
+string,album-0x220,,,ＮＯ．５０　ハルナ,"[#]50 -- Haruna\n
+Appears in The Sorrowful Siren.\n
+Innocent but a bit of a crybaby, she's always with her beloved dog Taro.",,
+string,album-0x208,,,ムジャキだが　ちょっと,,,UNTRANSLATED
+string,album-0x1F0,,,泣き虫で　いつも愛犬の,,,UNTRANSLATED
+string,album-0x1DC,,,タロちゃんと一緒,,,UNTRANSLATED
+string,album-0x1C4,,,ＮＯ．５１　闇の女王,"[#]51 -- Queen of Darkness\n
+Appears in Yuna 1.\n
+An entity of darkness which appeared for the purpose of subjugating the galaxy.\n
+Held tremendous power, and tried to defeat Yuna.",,
+string,album-0x1AC,,,銀河を征服するために,,,UNTRANSLATED
+string,album-0x19C,,,現れた闇の存在,,,UNTRANSLATED
+string,album-0x188,,,強大な力を持って,,,UNTRANSLATED
+string,album-0x174,,,ユナを倒そうとした,,,UNTRANSLATED
+string,album-0x168,,,ＮＯ．５２,"[#]52 -- Fraulein D\n
+Appears in The Sorrowful Siren.\n
+The culprit who, as the Secretary of the Galactic Union Security Council, tried to eradicate Yuna.\n
+Her true identity is an entity of darkness.",,
+string,album-0x14C,,,　　　　　フロイラインＤ,,,UNTRANSLATED
+string,album-0x144,,,登場　,,,UNTRANSLATED
+string,album-0x128,,,銀河連合安全保障理事局の,,,UNTRANSLATED
+string,album-0x10C,,,長官でユナを抹殺しようと,,,UNTRANSLATED
+string,album-0x100,,,した張本人,,,UNTRANSLATED
+string,album-0xEC,,,その正体は闇の存在,,,UNTRANSLATED
+string,album-0xD8,,,ＮＯ．５３　ルシア,"[#]53 -- Lusia\n
+Appears in The Sorrowful Siren.\n
+An intelligence operative in the service of the Galactic Union, and possessor of a somewhat methodical personality.",,
+string,album-0xC0,,,銀河連合勤務の諜報員で,,,UNTRANSLATED
+string,album-0xA4,,,割と几帳面な性格の持ち主,,,UNTRANSLATED
+string,album-0x90,,,ＮＯ．５４　ライカ,"[#]54 -- Leica\n
+Appears in The Sorrowful Siren.\n
+An intelligence operative in the service of the Galactic Union, her specialties are information gathering and operation planning.",,
+string,album-0x7C,,,特技は情報収集と,,,UNTRANSLATED
+string,album-0x70,,,作戦の立案,,,UNTRANSLATED
+string,album-0x58,,,ＮＯ．５５　ポリリーナ,"[#]55 -- Polylina\n
+Appears in Yuna 2.\n
+Heroine of the TV show {The Masked Fraulein Polylina}; Yuna is a big fan of this program.",,
+string,album-0x44,,,リア主演のＴＶ番組,,,UNTRANSLATED
+string,album-0x2C,,,お嬢様仮面ポリリーナの,,,UNTRANSLATED
+string,album-0x18,,,ヒロインでユナは,,,UNTRANSLATED
+string,album-0x4,,,この番組の大ファン,,,UNTRANSLATED
+,,,,"//==================================
+// Card album: menu text
+//==================================",,,
+string,album-0x15D8,,,カードを見る,View cards,,
+string,album-0x15E8,,,カード交換,Exchange cards,,
+string,album-0x15F4,,,タイトルに戻る,Return to title,,
+string,album-0x1604,,,交換元のメモリーカードは？,Which Memory Card is the source?,,
+string,album-0x1620,,,メモリーカードの差し込み口は？,Which Memory Card Slot?,,
+string,album-0x1640,,,差し込み口１,Slot 1,,
+string,album-0x1650,,,差し込み口２,Slot 2,,
+string,album-0x1660,,,メモリーカードに,Accessing Memory Card.,,
+string,album-0x1674,,,アクセス中。お待ちください,Please wait.,,
+string,album-0x1690,,,メモリーカードが,Memory Card is,DUPE: F245,
+string,album-0x16A4,,,差し込まれていません,not inserted.,,
+string,album-0x16BC,,,フォーマットされていません,not formatted.,DUPE: F246,
+string,album-0x16D8,,,アクセスエラーが,An access error,DUPE: F244,
+string,album-0x16EC,,,発生しました。,has occurred.,DUPE: F243,
+string,album-0x16FC,,,カードデータが,Cannot find card data.,,
+string,album-0x170C,,,見つかりません。,,,UNTRANSLATED
+string,album-0x1720,,,カードデータのロード中,Loading card data.,,
+string,album-0x1738,,,しばらくお待ちください。,Please wait a moment.,,
+string,album-0x1754,,,で,:,,
+string,album-0x1758,,,ロードエラーが発生しました,Load error has occurred.,,
+string,album-0x1774,,,処理を中止します。,Processing will be halted.,,
+string,album-0x1788,,,続けて交換しますか？,Continue exchanging?,,
+string,album-0x17A0,,,ＹＥＳ,Yes,,
+string,album-0x17A8,,,ＮＯ,No,,
+string,album-0x17B0,,,交換元,SOURCE: ,NOTE: these labels are automatically prepended to certain messages to indicate the target card (if any; the code accounts for the possibility that there may be no target card and omits it if so),
+string,album-0x17B8,,,交換先,DEST: ,,
+string,album-0x17C0,,,カードの移動中です。,Transferring card.,,
+string,album-0x17F8,,,メモリーカードを差し換えると,"If the Memory Card is replaced,",,
+string,album-0x1818,,,カード交換できません。,cards cannot be exchanged.,,
+string,album-0x19D8,,,このカードを移動しますか？,Transfer this card?,,
+string,album-0x19F4,,,交換するカードを選択してください。,Please choose a card to exchange.,"NOTE: this prompt is supposed to be shown in the box at the bottom of the screen, but due to bad programming it gets erased immediately after being printed, so the box just remains empty all the time",
+,,,,"//==================================
+// Status-related messages
+//==================================",,,
+string,main-0x1204,,,"
+状態異常終了","\n
+Status ailment ended.",,
+string,main-0x11F0,,,"
+能力アップ効果終了","\n
+Power-up effect ended.",,
+string,main-0x11DC,,,"
+クランクイン終了","\n
+Action! ended.",,
+string,main-0x11B4,,,この状態異常は現在使用されていません%d,"This status ailment is currently\n
+not in use. %d",,
+string,main-0x11A4,,,攻撃できない,Unable to attack.,,
+string,main-0x1198,,,を獲得した, acquired.,,
+string,main-0x1174,,,ダイエットによりアイテム使用不可,Unable to use items due to being on a diet.,,
+string,main-0x115C,,,封印により技使用不可,Unable to use techniques due to seal.,,
+string,main-0x1150,,,"
+行動不可","\n
+Unable to move.",,
+string,main-0x1144,,,"
+混乱行動","\n
+Confusion attack.",,
+string,main-0x1138,,,乱れ撃ち,Scattershot,DUPE: F36,
+,,,,"//==================================
+// Special attack names
+//==================================",,,
+string,main-0x1124,,,ミラージュキャノン,Mirage Cannon,DUPE: F37,
+string,main-0x1110,,,ライトスラッシュ,Light Slash,DUPE: F38,
+string,main-0x10FC,,,ハンドヒ一リング,Hand Healing,DUPE: F39,
+string,main-0x10EC,,,クルクルパンチ,Spinnamajig Punch,DUPE: F40,
+string,main-0x10D4,,,ユーリィ１０１匹大行進,The Great 101-Yuri Parade,DUPE: F41,
+string,main-0x10C8,,,テレポ一ト,Teleport,DUPE: F42,
+string,main-0x10B4,,,ＥＳＰヒ一リング,ESP Healing,DUPE: F43,
+string,main-0x10A0,,,ミルキーアタック,Milky Attack,DUPE: F44,
+string,main-0x1090,,,キ一プ君召喚,Summon Temp BF,DUPE: F46,
+string,main-0x1080,,,ホールインワン,Hole in One,DUPE: F47,
+string,main-0x1070,,,スロ一ムーヴ,Slow Move,DUPE: F48,
+string,main-0x105C,,,スロ一ヒ一リング,Slow Healing,DUPE: F49,
+string,main-0x1048,,,おっとりレ一ザ一,Gentle Laser,DUPE: F50,
+string,main-0x1034,,,サイキックピ一ス,Psychic Debris,DUPE: F51,
+string,main-0x1020,,,ミラ一ジュビ一ム,Mirage Beam,DUPE: F52,
+string,main-0x100C,,,エレガントダンス,Elegant Dance,DUPE: F53,
+string,main-0xFF0,,,ファイブアニマルカンフー,Five Animal Kung Fu,DUPE: F56,
+string,main-0xFDC,,,ポイズンニードル,Poison Needle,DUPE: F57,
+string,main-0xFCC,,,フラワーミスト,Flower Mist,DUPE: F58,
+string,main-0xFB4,,,デンジャラスパウダー,Dangerous Powder,DUPE: F59,
+string,main-0xFA4,,,茶筅ミサイル,Tea Whisk Missile,DUPE: F60,
+string,main-0xF94,,,茶釜アタック,Teakettle Attack,DUPE: F61,
+string,main-0xF88,,,お茶立て,Tea Ceremony,DUPE: F62,
+string,main-0xF78,,,パンクロック,Punk Rock,DUPE: F63,
+string,main-0xF68,,,ハードロック,Hard Rock,DUPE: F64,
+string,main-0xF58,,,ヘヴィーメタル,Heavy Metal,DUPE: F65,
+string,main-0xF4C,,,レクイエム,Requiem,DUPE: F67,
+string,main-0xF40,,,狂気乱舞,Maddening Dance,DUPE: F70,
+string,main-0xF2C,,,コールミークイーン,Call Me Queen,DUPE: F71,
+string,main-0xF20,,,縦横無尽,Every Which Way,DUPE: F72,
+string,main-0xF14,,,満場一致,Unanimity,DUPE: F73,
+string,main-0xF08,,,一網打尽,In a Single Stroke,DUPE: F74,
+string,main-0xEF4,,,ビームコーティング,Beam Coating,DUPE: F75,
+string,main-0xEE0,,,ライトヒーリング,Light Healing,DUPE: F76,
+string,main-0xECC,,,ハイパー拡散ビーム,Hyper Diffusion Beam,DUPE: F77,
+string,main-0xEB8,,,大リーグシューター,Big-League Shooter,DUPE: F78,
+string,main-0xEA8,,,ダブルヘッダー,Doubleheader,DUPE: F80,
+string,main-0xE98,,,イエローカード,Yellow Card,DUPE: F81,
+string,main-0xE80,,,ダイナマイトスローイン,Dynamite Throw-In,DUPE: F82,
+string,main-0xE6C,,,ハリケーンシュート,Hurricane Shot,DUPE: F83,
+string,main-0xE58,,,パッシングビーム,Flashing Beam,DUPE: F85,
+string,main-0xE44,,,バックファイヤー,Backfire,DUPE: F86,
+string,main-0xE28,,,イルミネーションレーザー,Illumination Laser,DUPE: F87,
+string,main-0xE18,,,クランクイン,Action!,DUPE: F88,
+string,main-0xE00,,,スポットライトビーム,Spotlight Beam,DUPE: F89,
+string,main-0xDF4,,,素振り地獄,Practice Swing Hell,DUPE: F90,
+string,main-0xDE0,,,ロボットピンポン,Robot Ping-Pong,DUPE: F91,
+string,main-0xDCC,,,サイクロンカット,Cyclone Cut,DUPE: F92,
+string,main-0xDBC,,,アイスシールド,Ice Shield,DUPE: F93,
+string,main-0xDA8,,,オーロラファンネル,Aurora Funnel,DUPE: F94,
+string,main-0xD94,,,トリプルアクセル,Triple Axel,DUPE: F95,
+string,main-0xD88,,,テレポート,Teleport,DUPE: F96,
+string,main-0xD7C,,,高速連射,High-Speed Rapid Fire,DUPE: F97,
+string,main-0xD6C,,,オーバーレイ,Over Ray,DUPE: F98,
+string,main-0xD58,,,エネルギーシールド,Energy Shield,DUPE: F99,
+string,main-0xD44,,,プラズマリッガー,Plasma Rigger,DUPE: F100,
+string,main-0xD30,,,ライジングドラゴン,Rising Dragon,DUPE: F101,
+string,main-0xD20,,,スタンオール,Stun All,DUPE: F102,
+string,main-0xD10,,,クリアオール,Clear All,DUPE: F103,
+string,main-0xCF8,,,エレクトロンブレイク,Electron Break,DUPE: F104,
+string,main-0xCE8,,,中性子ビーム,Neutron Beam,DUPE: F105,
+string,main-0xCD4,,,リフレクトレーザー,Reflect Laser,DUPE: F106,
+string,main-0xCBC,,,プラズマジェットビーム,Plasma Jet Beam,DUPE: F107,
+string,main-0xCAC,,,チャージライフ,Charge Life,DUPE: F111,
+string,main-0xC9C,,,リフレッシュ,Refresh,DUPE: F112,
+string,main-0xC8C,,,リザレクション,Resurrection,DUPE: F113,
+string,main-0xC7C,,,コードスピア,Cord Spear,DUPE: F114,
+string,main-0xC64,,,ライトニングシュート,Lightning Shot,DUPE: F117,
+string,main-0xC50,,,フォースミサイル,Force Missile,DUPE: F118,
+string,main-0xC44,,,みんなの力,The Power of All,DUPE: F119,
+string,main-0xC34,,,フュージョン,Fusion,DUPE: F120,
+string,main-0xC24,,,メタルボール,Metal Ball,DUPE: F121,
+string,main-0xC10,,,イービルバタフライ,Evil Butterfly,DUPE: F124,
+string,main-0xC00,,,オイルレイン,Oil Rain,DUPE: F125,
+string,main-0xBEC,,,ブレイクショット,Break Shot,DUPE: F128,
+string,main-0xBD8,,,ウインドストーム,Windstorm,DUPE: F129,
+string,main-0xBC8,,,スーパーノヴァ,Supernova,DUPE: F130,
+string,main-0xBB4,,,ブラックストライク,Black Strike,DUPE: F131,
+string,main-0xBA8,,,リバース,Rebirth,DUPE: F132,
+string,main-0xB94,,,テレポートアタック,Teleport Attack,DUPE: F133,
+string,main-0xB84,,,メルトダウン,Meltdown,DUPE: F134,
+string,main-0xB78,,,リトルボム,Little Bomb,DUPE: F135,
+string,main-0xB68,,,ファットボム,Fat Bomb,DUPE: F136,
+string,main-0xB58,,,アトミックボム,Atomic Bomb,DUPE: F137,
+string,main-0xB44,,,ホーミングミサイル,Homing Missile,DUPE: F138,
+string,main-0xB38,,,機能回復,Function Recovery,DUPE: F140,
+string,main-0xB2C,,,完全修復,Full Repair,DUPE: F141,
+string,main-0xB20,,,催眠音波,Hypnotic Wave,DUPE: F143,
+string,main-0xB14,,,肥大音波,Fattening Wave,DUPE: F144,
+string,main-0xB08,,,神経ガス,Nerve Gas,DUPE: F147,
+string,main-0xAFC,,,高速斬り,Rapid Slice,DUPE: F148,
+string,main-0xAE8,,,レーザーライフル,Laser Rifle,DUPE: F149,
+string,main-0xAD8,,,ダークブレス,Dark Blessing,DUPE: F150,
+string,main-0xAC8,,,ホーリーブレス,Holy Blessing,DUPE: F151,
+string,main-0xAB4,,,オーラフラッシュ,Aura Flash,DUPE: F152,
+string,main-0xAA0,,,エネルギーボルト,Energy Bolt,DUPE: F155,
+string,main-0xA90,,,ホールアウト,Hole Ejection,DUPE: F156,
+string,main-0xA84,,,波動砲充填,Load Wave Motion Cannon,DUPE: F158,
+string,main-0xA74,,,フュージョン改,Enhanced Fusion,DUPE: F159,
+string,main-0xA68,,,闇の衝撃,Dark Impact,DUPE: F160,
+string,main-0xA5C,,,闇の生誕,Dark Birth,DUPE: F164,
+string,main-0xA44,,,ライトニングバスター,Lightning Buster,DUPE: F165,
+string,main-0xA38,,,ガンモード,Gun Mode,DUPE: F166,
+string,main-0xA28,,,ソードモード,Sword Mode,DUPE: F167,
+string,main-0xA18,,,バッキンボー,Penalty Staff,DUPE: F168,
+string,main-0xA08,,,バッキンビュー,Penalty Lash,DUPE: F169,
+string,main-0x9FC,,,アイアン,Iron,DUPE: F170,
+string,main-0x9EC,,,おっとりビ一ム,Gentle Beam,DUPE: F171,
+string,main-0x9D8,,,エレガントソード,Elegant Sword,DUPE: F172,
+string,main-0x9C8,,,ローズチップ,Rose Tip,DUPE: F174,
+string,main-0x9BC,,,ひしゃく,Ladle,DUPE: F175,
+string,main-0x9B0,,,チェーン,Chain,DUPE: F176,
+string,main-0x99C,,,ヴァイオリンボウ,Violin Bow,DUPE: F177,
+string,main-0x98C,,,女王様のムチ,Queen's Whip,DUPE: F178,
+string,main-0x970,,,インテリジェンスレーザー,Intelligence Laser,DUPE: F179,
+string,main-0x960,,,ハイパービーム,Hyper Beam,DUPE: F180,
+string,main-0x950,,,ビームバット,Beam Bat,DUPE: F181,
+string,main-0x938,,,サッカーボールキック,Soccer Ball Kick,DUPE: F182,
+string,main-0x920,,,ビックホイールスピン,Big Wheel Spin,DUPE: F183,
+string,main-0x914,,,発声攻撃,Vocal Attack,DUPE: F184,
+string,main-0x904,,,パワーラケット,Power Racquet,DUPE: F185,
+string,main-0x8F0,,,超絶対零度のつらら,Below-Absolute-Zero Icicle,DUPE: F186,
+string,main-0x8DC,,,リニアレールガン,Linear Railgun,DUPE: F187,
+string,main-0x8CC,,,ライトセイバー,Lightsaber,DUPE: F188,
+string,main-0x8BC,,,スタンソード,Stun Sword,DUPE: F189,
+string,main-0x8A8,,,クリスタルレーザー,Crystal Laser,DUPE: F190,
+string,main-0x89C,,,電磁ビーム,Electromagnetic Beam,DUPE: F192,
+string,main-0x890,,,電磁ロッド,Electromagnetic Rod,DUPE: F193,
+string,main-0x880,,,電磁ブレード,Electromagnetic Blade,DUPE: F194,
+string,main-0x870,,,メタルブレード,Metal Blade,DUPE: F195,
+string,main-0x860,,,キクカッター,Chrysanthemum Cutter,DUPE: F196,
+string,main-0x850,,,サクラソード,Sakura Sword,DUPE: F197,
+string,main-0x840,,,貴婦人の扇子,Noblewoman's Fan,DUPE: F198,
+string,main-0x82C,,,パワージャベリン,Power Javelin,DUPE: F199,
+string,main-0x820,,,ピーチボム,Peach Bomb,DUPE: F200,
+string,main-0x80C,,,レインボーソード,Rainbow Sword,DUPE: F201,
+string,main-0x7FC,,,ドレインソード,Drain Sword,DUPE: F202,
+string,main-0x7EC,,,コンフュアロー,Confuarrow,DUPE: F203,
+string,main-0x7DC,,,オーラナックル,Aura Knuckle,DUPE: F204,
+string,main-0x7C8,,,ソウルクラッシャー,Soul Crusher,DUPE: F205,
+string,main-0x7B8,,,カイザーソード,Kaiser Sword,DUPE: F206,
+string,main-0x7AC,,,無反動砲,Recoilless Rifle,DUPE: F208,
+string,main-0x7A0,,,グレネード,Grenade,DUPE: F209,
+string,main-0x794,,,タックル,Tackle,DUPE: F213,
+string,main-0x784,,,シールドプレス,Shield Press,DUPE: F214,
+string,main-0x778,,,フォールド,Fold,DUPE: F215,
+string,main-0x76C,,,連発前装銃,Rapid-Reload Gun,DUPE: F216,
+string,main-0x760,,,半自動拳銃,Semiautomatic Pistol,DUPE: F217,
+string,main-0x754,,,短機関銃,Submachine Gun,DUPE: F218,
+string,main-0x744,,,オウガブレード,Ogre Blade,DUPE: F222,
+string,main-0x730,,,サイキックブレード,Psychic Blade,DUPE: F223,
+string,main-0x718,,,ポイゾニックブレード,Psionic Blade,DUPE: F224,
+,,,,"//==================================
+// Item names
+//==================================",,,
+string,main-0x708,,,ハンバーガー,Hamburger,,
+string,main-0x6FC,,,おにぎり,Rice Ball,,
+string,main-0x6EC,,,ジャンボパフェ,Jumbo Parfait,,
+string,main-0x6DC,,,ジャンボケーキ,Jumbo Cake,,
+string,main-0x6CC,,,巨大おむすび,Giant Rice Ball,,
+string,main-0x6B8,,,フルーツジュース,Fruit Juice,,
+string,main-0x6A8,,,ブルースープ,Blue Soup,,
+string,main-0x698,,,アセロラエキス,Acerola Extract,,
+string,main-0x688,,,ハーブエキス,Herb Extract,,
+string,main-0x678,,,アロエエキス,Aloe Extract,,
+string,main-0x668,,,トラクッキー,Tiger Cookie,,
+string,main-0x658,,,サイクッキー,Rhino Cookie,,
+string,main-0x644,,,チータークッキー,Cheetah Cookie,,
+string,main-0x634,,,ウマクッキー,Horse Cookie,,
+string,main-0x624,,,ゾウクッキー,Elephant Cookie,,
+string,main-0x614,,,イルカクッキー,Dolphin Cookie,,
+string,main-0x604,,,カメのコーラー,Turtle Cola,,
+string,main-0x5F8,,,鬼あられ,Oni Arare,,
+string,main-0x5E4,,,ピコピコハンマー,Squeaky Hammer,,
+string,main-0x5D8,,,はりせん,Folding Fan,,
+string,main-0x5CC,,,気付け薬,Smelling Salts,,
+string,main-0x5C0,,,おはらい棒,Exorcism Rod,,
+string,main-0x5B0,,,やせて見える鏡,Funhouse Mirror,"NOTE: literally ""mirror that makes you seem to lose weight""",
+,,,,"//==================================
+// Unit names
+//==================================",,,
+string,main-0x5A4,,,神楽坂ユナ,Yuna Kagurazaka,,
+string,main-0x590,,,ユーリィ・キューブ,Yuri Cube,,
+string,main-0x584,,,ポリリーナ,Polylina,,
+string,main-0x578,,,六本木の舞,Mai of Roppongi,,
+string,main-0x568,,,おっとりの詩織,Gentle Shiori,,
+string,main-0x55C,,,香坂エリカ,Erika Kousaka,,
+string,main-0x54C,,,チャイナの麗美,Remi of China,,
+string,main-0x540,,,お花のマリ,Mari of Flowers,,
+string,main-0x534,,,お茶の佳華,Yoshika of Tea,,
+string,main-0x528,,,ロックの姫,Rock Princess,,
+string,main-0x50C,,,ヴァイオリンのアレフチーナ,Alephtina of the Violin,,
+string,main-0x4F0,,,家柄と血筋のルミナーエフ,Luminaev of Prestigious Blood,,
+string,main-0x4E0,,,教養のエミリー,Emily of Culture,,
+string,main-0x4D0,,,高貴な沙雪華,Sayuka the Noble,,
+string,main-0x4C4,,,闘魂のマミ,Fighting Spirit Mami,,
+string,main-0x4B0,,,ストライカー・ルイ,Striker Rui,,
+string,main-0x498,,,ハイスピード・セリカ,High-Speed Celica,,
+string,main-0x48C,,,銀幕のミキ,Silver Screen Miki,,
+string,main-0x480,,,閃光のアコ,Ako the Flash,,
+string,main-0x474,,,疾風のマコ,Mako the Gale,,
+string,main-0x468,,,氷のミドリ,Icy Midori,,
+string,main-0x458,,,一条院ミサキ,Misaki Ichijouin,,
+string,main-0x44C,,,水野葉子,Yoko Mizuno,,
+string,main-0x440,,,弓岡かえで,Kaede Yumioka,,
+string,main-0x428,,,三賢機・右丞相・鏡明,Three Wise Machinae: Right Minister Jing Ming,,
+string,main-0x410,,,三賢機・左丞相・剣鳳,Three Wise Machinae: Left Minister Chun Fong,,
+string,main-0x3FC,,,妖機三姉妹・亜耶乎,Three Fey Machinae Sisters: Ayako,"NOTE: just because i'd like to mention this somewhere: when presented in official materials, the youki sisters' names are sometimes written with chinese readings (possibly a retcon after they decided to have explicitly chinese names for all the other kikaikajin characters?). ayako is ""Ya Ye Hu"", kyouka is ""Kwang Hua"", and genmu is ""Huan Mong"". there's no real reason to have any of this in-game, though.",
+string,main-0x3F0,,,エルライン,El-Line,,
+string,main-0x3DC,,,妖機三姉妹・狂花,Three Fey Machinae Sisters: Kyouka,,
+string,main-0x3C8,,,妖機三姉妹・幻夢,Three Fey Machinae Sisters: Genmu,,
+string,main-0x3B8,,,六花戦・菊花,Six Flower Warriors: Jui Hua,,
+string,main-0x3A8,,,六花戦・桜花,Six Flower Warriors: Ing Hua,,
+string,main-0x398,,,六花戦・蘭花,Six Flower Warriors: Lan Hua,,
+string,main-0x388,,,六花戦・椿花,Six Flower Warriors: Chun Hua,,
+string,main-0x378,,,六花戦・桃花,Six Flower Warriors: Tau Hua,,
+string,main-0x368,,,六花戦・紫陽花,Six Flower Warriors: Tsu Yang Hua,,
+string,main-0x350,,,四天機・天麗院・劉麗,"Four Heavenly Machinae: Heaven's Splendor, Liou Li",,
+string,main-0x338,,,四天機・天翔院・項翔,"Four Heavenly Machinae: Heaven's Flight, Siang Siang",,
+string,main-0x320,,,四天機・天鬼院・美鬼,"Four Heavenly Machinae: Heaven's Ogre, Mei Kue",,
+string,main-0x308,,,四天機・天魔院・鈴魔,"Four Heavenly Machinae: Heaven's Demon, Ling Muo",,
+string,main-0x2FC,,,機械化皇帝,Machinate Emperor,,
+string,main-0x2EC,,,黒皇帝・玉鷲,Black Emperor Yui Jiou,,
+string,main-0x2E0,,,戦機・三戦,Warmech: Warrior III,"NOTE: the enemy robot names and ranks are all a bit strange; i've dealt with them as best i can, but it's the kind of thing where if you handed them to someone else they'd probably come up with a completely different translation.",
+string,main-0x2D4,,,戦機・二戦,Warmech: Warrior II,,
+string,main-0x2C8,,,戦機・一戦,Warmech: Warrior I,,
+string,main-0x2B8,,,特科機・突砲,Auxilimech: Burst Gunner,,
+string,main-0x2A8,,,特科機・高砲,Auxilimech: High Gunner,,
+string,main-0x298,,,特科機・迫砲,Auxilimech: Force Gunner,,
+string,main-0x288,,,狙撃機・三猟,Snipemech: Hunter III,,
+string,main-0x278,,,狙撃機・二猟,Snipemech: Hunter II,,
+string,main-0x268,,,狙撃機・一猟,Snipemech: Hunter I,,
+string,main-0x258,,,狙撃機・特猟,Snipemech: Special Hunter,,
+string,main-0x248,,,衛生機・淮士,Medimech: Huai Samurai,"FIXME: there is probably some complicated story behind this robot's rank being indicated with a kanji referring specifically to the Huai River in China. unfortunately, i have no idea what it is.
+NOTE: i'm kind of of two minds about how to translate 士 here; it can mean ""samurai"", but is also more generally used to indicate (members of) professions. the design of this robot's head appears to me to be evoking the eboshi samurai hat, so i've gone with ""samurai"" largely for that reason, but it's (as always) quite possible i'm entirely wrong.",
+string,main-0x238,,,衛生機・正士,Medimech: True Samurai,,
+string,main-0x228,,,衛生機・全士,Medimech: Full Samurai,,
+string,main-0x218,,,衛生機・特士,Medimech: Special Samurai,,
+string,main-0x208,,,闘術機・狼牙,Technimech: Wolf Fang,,
+string,main-0x1F8,,,闘術機・虎牙,Technimech: Tiger Fang,,
+string,main-0x1E8,,,闘術機・蛇牙,Technimech: Snake Fang,,
+string,main-0x1D8,,,闘術機・甲牙,Technimech: Shell Fang,,
+string,main-0x1C8,,,闘術機・双牙,Technimech: Twin Fang,,
+string,main-0x1B8,,,闘術機・王牙,Technimech: King Fang,,
+string,main-0x1AC,,,皇機・激徳,Imperimech: Virtuous,,
+string,main-0x194,,,皇機・猛起,Imperimech: Genesis,,
+string,main-0x188,,,皇機・死龍,Imperimech: Deathdragon,,
+string,main-0x178,,,コピー・ユナ,Copy Yuna,,
+string,main-0x164,,,コピー・ユーリィ,Copy Yuri,,
+string,main-0x150,,,コピー・ポリリーナ,Copy Polylina,,
+string,main-0x144,,,攻撃衛星,Attack Satellite,,
+string,main-0x138,,,リコリス２,Licorice 2,,
+string,main-0x128,,,？？？？？？,??????,"NOTE: name of the npc pai siang that's used in her first appearance, and also the projector in the food planet mission",
+string,main-0x110,,,エレメントフェアリィ,Element Fairy,,
+string,main-0x100,,,ジェネレータ,Generator,,
+string,main-0xF4,,,エアロック,Airlock,,
+string,main-0xE4,,,攻撃衛星・青,Attack Satellite Blue,,
+string,main-0xD4,,,攻撃衛星・緑,Attack Satellite Green,,
+string,main-0xC8,,,闇の触手,Dark Tentacle,,
+,,,,"//==================================
+// Mirage Cannon unlock dialogue
+//==================================",,,
+string,main-0x1A50,Mirage: {,},"応答してください……
+ユナさん……","Please respond...\n
+Yuna...",,
+string,main-0x1A94,Yuna: {,},プリンセス・ミラージュ!?,Princess Mirage!?,,
+string,main-0x1AC4,Mirage: {,},"ああ　ユナさん　やっと
+追いつくことができました","Ah, Yuna! I've caught up with you at last.",,
+string,main-0x1B14,{,},"必要なときは私を呼んでください…
+きっと　お役に立てると思います…","Call upon me when you have need of me...\n
+I'm certain I can be of use to you...",,
+string,main-0x1B6C,Yuna: {,},それって　どうすればいいの？,How can I do that?,,
+string,main-0x1BA0,Mirage: {,},"ユナさんの技
+『ミラージュ・キャノン』を
+選択するだけで結構です…",You need only select your ^Mirage Cannon~ technique...,,
+string,main-0x1C04,{,},"回線がつながったら　プリンセス号が
+後方から支援します！","Once the communication goes through, the Princess will support you from behind!","NOTE: the phrasing of this kind of makes me think they were originally considering having a delay between using the attack and it actually occurring. maybe not, though.",
+string,main-0x1C54,Yuna: {,},"わかったわ！　ありがと！
+ミラージュ!!","Got it! Thank you, Mirage!",,
+,,,,"//==================================
+// ? dialogue
+//==================================",,,
+string,main-0x2170,Ayako: {,},"あたしがやるまでも
+なかったようね！","Well, looks like I didn't even need to bother!",NOTE: special message used in battle against ayako if the character she was targeting has already died at the point when she would have fired the particle cannon at them,
+,,,,"//==================================
+// Practice battle text
+//==================================",,,
+string,main-0x241C,,,ユナ　鍛えていきますか？,"Will you train, Yuna?",,
+string,main-0x2438,,,まだ　鍛えていきますか？,Will you keep training?,,
+string,main-0x2454,,,鍛えていこうかしら？,Perhaps we should train?,,
+string,main-0x246C,,,まだ　鍛えていこうかな？,Maybe we should keep training?,,
+string,main-0x2488,,,もっと鍛えていこうかしら？,Why don't we keep training?,,
+string,main-0x24A4,,,敵のレベルを選択してね❤,Choose the enemy's level.[nbsp]❤,,
+string,main-0x24C0,,,スッゴイ　強い!!,SUPER STRONG!!,,
+string,main-0x24D4,,,まあまあ　強い！,Kinda tough!,,
+string,main-0x24E8,,,楽勝　楽勝❤,Easy-peasy[nbsp]❤,,
+,,,,"//==================================
+// Save prompt
+//==================================",,,
+string,main-0x2850,,,セーブしますか？,Save?,,
+,,,,"//==================================
+// Location names
+//==================================",,,
+string,main-0x3E28,,,ネオ東京繁華街,Downtown Neo Tokyo,,
+string,main-0x3E18,,,ユナの家のそば,Near Yuna's House,,
+string,main-0x3E08,,,白丘台女子校,Shiraokadai High School for Girls,NOTE: this just barely fits on the save screen,
+string,main-0x3DF8,,,天火墜落地点,Heavenfire Impact Site,,
+string,main-0x3DE8,,,敵の秘密基地,Secret Enemy Base,,
+string,main-0x3DD8,,,地球・宇宙空間,Earth: Outer Space,,
+string,main-0x3DCC,,,ウララーカ,Bloobluskye,,
+string,main-0x3DC0,,,オイシーヤ,Diwishus,,
+string,main-0x3DB0,,,銀河・内宇宙１,Galaxy: Inner Space 1,,
+string,main-0x3DA4,,,ツベテイ,Friezurebunzof,,
+string,main-0x3D98,,,アッチーヤ,Frikenhowt,,
+string,main-0x3D88,,,チッチェーナ,Wittlebittee,,
+string,main-0x3D78,,,銀河・内宇宙２,Galaxy: Inner Space 2,,
+string,main-0x3D6C,,,タンレン,Treyneeng,,
+string,main-0x3D5C,,,天星・宇宙空間,Heavenstar: Outer Space,,
+string,main-0x3D50,,,天星格納庫,Heavenstar Hangar,,
+string,main-0x3D40,,,天星内部通路,Heavenstar Interior Passage,,
+string,main-0x3D30,,,天星兵器倉庫,Heavenstar Troop Warehouse,,
+string,main-0x3D24,,,天星転送所,Heavenstar Warp Area,,
+string,main-0x3D10,,,天星ミサイルルーム,Heavenstar Missile Room,,
+string,main-0x3D04,,,天星跡地,Heavenstar Ruins,,
+string,main-0x3CF4,,,銀河・外宇宙,Galaxy: Outer Space,,
+string,main-0x3CE8,,,ミエネーヤ,Kantsea,,
+string,main-0x3CD4,,,永遠のプリンセス号,The Eternal Princess,,
+string,main-0x3CC0,,,豪黒壁・宇宙空間,Great Black Wall: Outer Space,,
+string,main-0x3CB4,,,アレハテ,Ruen,,
+string,main-0x3CA8,,,ヒッソリ,Kwyet,,
+string,main-0x3C9C,,,ジックリ,Norush,,
+string,main-0x3C8C,,,帝国城収容所１,Imperial Castle Prison Area 1,,
+string,main-0x3C7C,,,帝国城収容所２,Imperial Castle Prison Area 2,,
+string,main-0x3C6C,,,帝国城収容所３,Imperial Castle Prison Area 3,,
+string,main-0x3C5C,,,帝国城内部通路,Imperial Castle Interior Passage,,
+string,main-0x3C4C,,,帝国城大広間,Imperial Castle Great Hall,,
+string,main-0x3C40,,,帝国城城外,Imperial Castle Exterior,,
+string,main-0x3C2C,,,機械化帝国・首都,Machinate Empire: Capital City,,
+string,main-0x3C1C,,,銀河・外宇宙２,Galaxy: Outer Space 2,,
+string,main-0x3C0C,,,銀河・内宇宙３,Galaxy: Inner Space 3,,
+string,main-0x3C00,,,天星そば,Near Heavenfire,,
+string,main-0x3BF4,,,機械化惑星,Machinate Planet,,
+,,,,"//==================================
+// Save strings
+//==================================",,,
+string,main-0x3E38,,,無効なメッセージ,Invalid message,,
+string,main-0x3E4C,,,壊れたファイル,Corrupted file,,
+string,main-0x3E5C,,,銀河お嬢様伝説ユナ　　ＤＡＴＡ０　ＬＶ００　,"#SETNOTCOMPRESSIBLE(1)
+Galaxy Fraulein Yuna     DATA 0 LV 00","FIXME: hardcoded logic for number replacement
+actually, i don't think this is used",
+string,main-0x3E8C,,,メモリーカードを交換しますか？,Switch Memory Card?,,
+string,main-0x3EAC,,,メモリーカードにアクセス中。,Accessing Memory Card.,,
+string,main-0x3ECC,,,しばらくお待ちください。,Please wait a moment.,DUPE: F555,
+string,main-0x3EE8,,,セーブ中です。メモリー,Now saving. Do not remove the,,
+string,main-0x3F00,,,カードを抜かないで下さい。,Memory Card.,DUPE: F241,
+string,main-0x3F1C,,,セーブしました。,Saved.,,
+string,main-0x3F30,,,メモリーカードが,The Memory Card is,DUPE: F245,
+string,main-0x3F44,,,差し込まれていません,not inserted.,DUPE: F548,
+string,main-0x3F5C,,,セーブに失敗しました。,Failed to save.,,
+string,main-0x3F74,,,壊れているファイルが,There is a corrupted file.,DUPE: F237,
+string,main-0x3F8C,,,あります。,,DUPE: F238,
+string,main-0x3F98,,,セーブするファイルを選択してください,Please choose a file to save to.,,
+string,main-0x3FC0,,,メモリーカードの,The Memory Card does not have,DUPE: F227,
+string,main-0x3FD4,,,空きブロックが足りません,enough empty Blocks.,DUPE: F228,
+string,main-0x3FF0,,,データを入れかえますか？,Replace data?,,
+string,main-0x400C,,,セーブエラーが,A save error,,
+string,main-0x401C,,,発生しました。,has occurred.,DUPE: F243,
+string,main-0x402C,,,セーブが終了しました。,Save complete.,,
+string,main-0x4044,,,アクセスエラーが,An access error,DUPE: F244,
+string,main-0x4058,,,正常にアクセスできない,There is data that cannot,,
+string,main-0x4070,,,データがあります。,be accessed normally.,,
+string,main-0x4084,,,セーブを取りやめます。,Cancelling save.,,
+string,main-0x409C,,,セーブデータが見つかりません,Cannot find save data.,DUPE: F248,
+string,main-0x40BC,,,フォーマットされていません,not formatted.,DUPE: F246,
+string,main-0x40D8,,,フォーマットしますか？,Format?,,
+string,main-0x40F0,,,フォーマット中です。,Formatting.,,
+string,main-0x4108,,,フォーマットエラーが,A formatting error,,
+string,main-0x4120,,,フォーマットが,Formatting complete.,,
+string,main-0x4130,,,終了しました。,,,UNTRANSLATED
+string,main-0x4140,,,フォーマットを取りやめます。,Cancelling formatting.,,
+string,main-0x4160,,,このメモリーカードは,This Memory Card is already,,
+string,main-0x4178,,,フォーマット済みです。,formatted.,,
+string,main-0x41E0,,,どこにセーブしますか？,Where will you save?,,
+string,main-0x41D4,,,ファイル１,File 1,,
+string,main-0x41C8,,,ファイル２,File 2,,
+string,main-0x41BC,,,ファイル３,File 3,,
+string,main-0x41B0,,,ファイル４,File 4,,
+,,,,"//==================================
+// Prompt messages
+//==================================",,,
+string,main-0x4708,,,使用位置を指定してネ, Choose where to use it.,"NOTE: these messages are all placed flush with the left border of the box, which looks pretty awkward, so i've added a space at the start of each to put the margin more in line with other dialogue boxes",
+string,main-0x4720,,,自分を指定してネ, Choose yourself.,,
+string,main-0x4734,,,仲間を指定してネ, Choose an ally.,,
+string,main-0x4748,,,ボタンを押してネ, Press a button.,,
+string,main-0x475C,,,ターゲットを指定してネ, Choose a target.,,
+string,main-0x4774,,,方向を指定してネ, Choose a direction.,,
+string,main-0x4788,,,移動位置を指定してネ, Choose where to move.,,
+string,main-0x47A0,,,　　　　　　　　　　　　　　,,,UNTRANSLATED
+string,main-0x4C9C,,,配置キャラクターを選択してネ　,Choose a character to place.,NOTE: these are for the character select screen (which has a different left margin),
+string,main-0x4CBC,,,ＬＥＡＤＥＲを選択してネ　　　,Choose the Leader.,,
+string,main-0x4CDC,,,配置場所を指定してネ　　　　　,Choose a placement.,,
+string,main-0x4CFC,,,削除キャラクターを指定してネ　,Choose a character to remove.,,
+string,main-0x4D1C,,,復活キャラクターを選択してネ　,Choose a character to revive.,,
+string,main-0x4D3C,,,ユナのパーティを選択してネ　　,Choose Yuna's party.,,
+,,,,"//==================================
+// Misc
+//==================================",,,
+string,main-0x5188,,,よろしいですか？,Is this okay?,,
+string,main-0x54D0,,,ＧＡＭＥ　ＯＶＥＲ,GAME OVER,,
+string,main-0x54E4,,,タイトルに戻る,Return to title,DUPE: F540,
+string,main-0x54F4,,,再バトル,Retry battle,,
+string,main-0x5630,,,戦闘不能のキャラクターはいない,No character is incapacitated.,NOTE: trying to use a resurrection technique with no dead characters,
+string,main-0x56B0,,,を獲得した, acquired.,DUPE: F575,
+,,,,"//==================================
+// More special attack dialogue
+//==================================",,,
+string,main-0x5C90,Yuna: {,},"ミラージュ　お願い！
+助けて！","Mirage, please!\n
+Help me!",,
+string,main-0x5CB4,Mirage: {,},"ユナさんをいじめる者は
+私が許しません!!
+ファイヤー！","I won't forgive those who bully\n
+Yuna!\n
+FIRE!",,
+string,main-0x5CF8,Polylina: {,},いけっ　ミルキーッ！,"Go, Milky!",,
+string,main-0x5D1C,Milky: {,},ミューーーン！,Meeeeeew!,,
+string,main-0x5D38,Ako: {,},いくわよーーっ　マコちゃん!!,"Let's go, Mako!",,
+string,main-0x5D5C,Mako: {,},アコちゃん！　合体攻撃よ!!,Ako! Combo attack!,,
+,,,,"//==================================
+// Attack descriptions
+//==================================",,,
+string,main-0x6AA0,,,ガンを連続発射し,,"NOTE: the system for displaying these has been reworked in the translation to be less haphazard; the attack descriptions have been moved to the ""new"" script file, and this text is now unused",UNTRANSLATED
+string,main-0x6A90,,,複数の敵を攻撃,,,UNTRANSLATED
+string,main-0x6A7C,,,全ての敵を焼き払う,,,UNTRANSLATED
+string,main-0x6A64,,,ミラージュの援護射撃,,,UNTRANSLATED
+string,main-0x6A50,,,光の力を極限まで,,,UNTRANSLATED
+string,main-0x6A38,,,開放する究極の攻撃技,,,UNTRANSLATED
+string,main-0x6A28,,,思いやりの力で,,,UNTRANSLATED
+string,main-0x6A10,,,周囲の味方をＨＰ回復,,,UNTRANSLATED
+string,main-0x69F8,,,腕を超高速回転させて,,,UNTRANSLATED
+string,main-0x69E0,,,必殺パンチを繰り出す,,,UNTRANSLATED
+string,main-0x69CC,,,ユーリィが分身して,,,UNTRANSLATED
+string,main-0x69B8,,,全ての敵に体当たり,,,UNTRANSLATED
+string,main-0x69A4,,,超能力で瞬間移動,,,UNTRANSLATED
+string,main-0x6994,,,遠距離からも,,,UNTRANSLATED
+string,main-0x6980,,,仲間のＨＰを回復,,,UNTRANSLATED
+string,main-0x696C,,,ペットのミルキーが,,,UNTRANSLATED
+string,main-0x6954,,,ライン上の敵に体当り,,,UNTRANSLATED
+string,main-0x6940,,,両肩の爆光球で攻撃,,,UNTRANSLATED
+string,main-0x6930,,,マヒの追加効果,,,UNTRANSLATED
+string,main-0x6918,,,呼び出したキープ君が,,,UNTRANSLATED
+string,main-0x6900,,,ランダムな効果で援護,,,UNTRANSLATED
+string,main-0x68EC,,,命中率は低いけど,,,UNTRANSLATED
+string,main-0x68D4,,,当たれば必殺ダメージ,,,UNTRANSLATED
+string,main-0x68C0,,,周囲にいる敵全ての,,,UNTRANSLATED
+string,main-0x68AC,,,移動力を減少させる,,,UNTRANSLATED
+string,main-0x6898,,,ＨＰを１ターン毎に,,,UNTRANSLATED
+string,main-0x6888,,,ゆっくりと回復,,,UNTRANSLATED
+string,main-0x6874,,,レーザーを発射し,,,UNTRANSLATED
+string,main-0x6864,,,ライン攻撃する,,,UNTRANSLATED
+string,main-0x6850,,,超能力で鉄塊を操り,,,UNTRANSLATED
+string,main-0x6840,,,強力な酸で攻撃,,,UNTRANSLATED
+string,main-0x682C,,,防御力を徐々に削る,,,UNTRANSLATED
+string,main-0x6818,,,ダンスを舞うような,,,UNTRANSLATED
+string,main-0x6808,,,華麗な連続攻撃,,,UNTRANSLATED
+string,main-0x67F4,,,中国４千年の力で,,,UNTRANSLATED
+string,main-0x67E4,,,異常状態を回復,,,UNTRANSLATED
+string,main-0x67D0,,,気を己の体に集めて,,,UNTRANSLATED
+string,main-0x67B8,,,攻撃力を飛躍的に増加,,,UNTRANSLATED
+string,main-0x67A4,,,拳を高速で繰り出し,,,UNTRANSLATED
+string,main-0x6794,,,周囲の敵を攻撃,,,UNTRANSLATED
+string,main-0x6780,,,バラのトゲで攻撃し,,,UNTRANSLATED
+string,main-0x6768,,,追加効果で毒も与える,,,UNTRANSLATED
+string,main-0x6750,,,催眠効果のある花粉を,,,UNTRANSLATED
+string,main-0x673C,,,撒き散らし眠らせる,,,UNTRANSLATED
+string,main-0x6724,,,幻覚作用のある花粉を,,,UNTRANSLATED
+string,main-0x670C,,,撒き散らし混乱させる,,,UNTRANSLATED
+string,main-0x66FC,,,バインダーから,,,UNTRANSLATED
+string,main-0x66E4,,,茶筅型ミサイルを発射,,,UNTRANSLATED
+string,main-0x66D0,,,大きな茶釜で殴り,,,UNTRANSLATED
+string,main-0x66BC,,,追加効果で眠らせる,,,UNTRANSLATED
+string,main-0x66AC,,,おいしいお茶で,,,UNTRANSLATED
+string,main-0x66A0,,,ＥＰ回復,,,UNTRANSLATED
+string,main-0x6688,,,パンクロックにのって,,,UNTRANSLATED
+string,main-0x6678,,,攻撃力アップ,,,UNTRANSLATED
+string,main-0x6668,,,ハードロックで,,,UNTRANSLATED
+string,main-0x6650,,,攻撃力の飛躍的アップ,,,UNTRANSLATED
+string,main-0x663C,,,メタルでのりのり,,,UNTRANSLATED
+string,main-0x6624,,,攻撃力を毎ターン上昇,,,UNTRANSLATED
+string,main-0x6614,,,安眠をもたらす,,,UNTRANSLATED
+string,main-0x6608,,,母なる曲,,,UNTRANSLATED
+string,main-0x65F4,,,生ある者を死へ誘う,,,UNTRANSLATED
+string,main-0x65E8,,,悪魔の曲,,,UNTRANSLATED
+string,main-0x65D0,,,戦闘不能の味方を全て,,,UNTRANSLATED
+string,main-0x65BC,,,復活させる奇跡の曲,,,UNTRANSLATED
+string,main-0x65A4,,,女王様の小道具の１つ,,,UNTRANSLATED
+string,main-0x658C,,,鉄の扇子で遠距離攻撃,,,UNTRANSLATED
+string,main-0x657C,,,女王様のムチで,,,UNTRANSLATED
+string,main-0x6570,,,連続攻撃,,,UNTRANSLATED
+string,main-0x655C,,,自己暗示で攻撃力を,,,UNTRANSLATED
+string,main-0x6544,,,毎ターンアップさせる,,,UNTRANSLATED
+string,main-0x652C,,,縦横十字ラインにいる,,,UNTRANSLATED
+string,main-0x651C,,,全ての敵を攻撃,,,UNTRANSLATED
+string,main-0x6508,,,味方全てのＨＰを,,,UNTRANSLATED
+string,main-0x64F0,,,エミリーと同じにする,,,UNTRANSLATED
+string,main-0x64D8,,,全ての敵を一網打尽に,,,UNTRANSLATED
+string,main-0x64CC,,,一斉攻撃,,,UNTRANSLATED
+string,main-0x64B4,,,高貴な気品で体を包み,,,UNTRANSLATED
+string,main-0x649C,,,防御力を飛躍的に増加,,,UNTRANSLATED
+string,main-0x6484,,,オーラを周囲に開放し,,,UNTRANSLATED
+string,main-0x6470,,,ＨＰを回復させる,,,UNTRANSLATED
+string,main-0x6458,,,拡散ビームで広範囲を,,,UNTRANSLATED
+string,main-0x6440,,,無数のボールを発射し,,,UNTRANSLATED
+string,main-0x642C,,,当たれば一撃必殺の,,,UNTRANSLATED
+string,main-0x641C,,,禁じられた球,,,UNTRANSLATED
+string,main-0x6408,,,必殺ビームバットで,,,UNTRANSLATED
+string,main-0x63F4,,,切れ味抜群のカード,,,UNTRANSLATED
+string,main-0x63E0,,,スローインで攻撃し,,,UNTRANSLATED
+string,main-0x63C8,,,周囲にも爆風を起こす,,,UNTRANSLATED
+string,main-0x63B0,,,超高速の炎のボールで,,,UNTRANSLATED
+string,main-0x639C,,,ライン上の敵を攻撃,,,UNTRANSLATED
+string,main-0x6384,,,周囲の味方をあおって,,,UNTRANSLATED
+string,main-0x636C,,,移動力をアップさせる,,,UNTRANSLATED
+string,main-0x6354,,,ビームで目をくらませ,,,UNTRANSLATED
+string,main-0x6340,,,攻撃力を減少させる,,,UNTRANSLATED
+string,main-0x6330,,,燃え盛る炎で,,,UNTRANSLATED
+string,main-0x6318,,,パラスポキャノンから,,,UNTRANSLATED
+string,main-0x6308,,,７色の光を発射,,,UNTRANSLATED
+string,main-0x62F0,,,選んだ味方に変身して,,,UNTRANSLATED
+string,main-0x62DC,,,味方の能力を使える,,,UNTRANSLATED
+string,main-0x62C4,,,スポットライトガンが,,,UNTRANSLATED
+string,main-0x62B0,,,放つ光でライン攻撃,,,UNTRANSLATED
+string,main-0x62A0,,,素振りで攻撃,,,UNTRANSLATED
+string,main-0x6288,,,マコと隣接で範囲拡大,,,UNTRANSLATED
+string,main-0x6270,,,ロボットピンポン攻撃,,,UNTRANSLATED
+string,main-0x625C,,,竜巻でライン攻撃,,,UNTRANSLATED
+string,main-0x6244,,,アコと隣接で範囲拡大,,,UNTRANSLATED
+string,main-0x622C,,,氷のバリヤーを張って,,,UNTRANSLATED
+string,main-0x6214,,,防御力をアップさせる,,,UNTRANSLATED
+string,main-0x6200,,,両肩のファンネルで,,,UNTRANSLATED
+string,main-0x61E8,,,範囲内全ての敵を攻撃,,,UNTRANSLATED
+string,main-0x61D4,,,華麗なるアクセル,,,UNTRANSLATED
+string,main-0x61C0,,,ターンで周囲を攻撃,,,UNTRANSLATED
+string,main-0x61AC,,,ガンを高速連射して,,,UNTRANSLATED
+string,main-0x6198,,,出力を限界値まで,,,UNTRANSLATED
+string,main-0x6184,,,高めてライン攻撃,,,UNTRANSLATED
+string,main-0x616C,,,エネルギーシールドで,,,UNTRANSLATED
+string,main-0x6154,,,防御力を毎ターン上昇,,,UNTRANSLATED
+string,main-0x613C,,,腕の装置からプラズマ,,,UNTRANSLATED
+string,main-0x6128,,,を発生し周囲を攻撃,,,UNTRANSLATED
+string,main-0x6110,,,溜めた力を一気に解放,,,UNTRANSLATED
+string,main-0x60F8,,,爆発的な攻撃力を誇る,,,UNTRANSLATED
+string,main-0x60E4,,,全ての敵に電撃を,,,UNTRANSLATED
+string,main-0x60D0,,,浴びせマヒさせる,,,UNTRANSLATED
+string,main-0x60C0,,,全ての味方の,,,UNTRANSLATED
+string,main-0x60A8,,,状態異常を回復させる,,,UNTRANSLATED
+string,main-0x6090,,,スタンソードの電撃で,,,UNTRANSLATED
+string,main-0x6078,,,範囲内の敵全てを攻撃,,,UNTRANSLATED
+string,main-0x6068,,,中性子ビームで,,,UNTRANSLATED
+string,main-0x6058,,,反射レーザーで,,,UNTRANSLATED
+string,main-0x6048,,,十字ライン攻撃,,,UNTRANSLATED
+string,main-0x6034,,,プラズマビームで,,,UNTRANSLATED
+string,main-0x6024,,,広範囲を攻撃,,,UNTRANSLATED
+string,main-0x600C,,,神の力を超えると言う,,,UNTRANSLATED
+string,main-0x5FF8,,,恐るべき連続攻撃,,,UNTRANSLATED
+string,main-0x5FE8,,,神速が生み出す,,,UNTRANSLATED
+string,main-0x5FD0,,,カマイタチによる攻撃,,,UNTRANSLATED
+string,main-0x5FBC,,,神鳴剣が嵐を呼び,,,UNTRANSLATED
+string,main-0x5FA4,,,雷を落とし周囲を攻撃,,,UNTRANSLATED
+string,main-0x5F98,,,聖なる光が,,,UNTRANSLATED
+string,main-0x5F80,,,ＨＰを完全回復させる,,,UNTRANSLATED
+string,main-0x5F74,,,浄化の光が,,,UNTRANSLATED
+string,main-0x5F64,,,聖なる祈りで,,,UNTRANSLATED
+string,main-0x5F4C,,,戦闘不能の味方を復活,,,UNTRANSLATED
+string,main-0x5F34,,,亜耶乎の操るコードが,,,UNTRANSLATED
+string,main-0x5F24,,,中枢神経を操り,,,UNTRANSLATED
+string,main-0x5F0C,,,周囲の敵の技を封じる,,,UNTRANSLATED
+string,main-0x5EF4,,,周囲の敵に電撃を与え,,,UNTRANSLATED
+string,main-0x5EDC,,,さらに追加効果でマヒ,,,UNTRANSLATED
+string,main-0x5EC8,,,聖なる力で焼き払う,,,UNTRANSLATED
+string,main-0x5EB4,,,誘導ミサイルで攻撃,,,UNTRANSLATED
+string,main-0x5EA8,,,仲間の力で,,,UNTRANSLATED
+string,main-0x5E90,,,エルラインを補助する,,,UNTRANSLATED
+string,main-0x5E7C,,,敵一体を遠距離攻撃,Attack one enemy at a distance.,"NOTE: these are still used, though",
+string,main-0x5E64,,,隣接した敵一体を攻撃,Attack one enemy at close range.,,
+string,main-0x5E4C,,,ライン上敵二体を攻撃,Attack two enemies along a line.,,
+string,main-0x5E40,,,近距離攻撃,Melee Attack,,
+string,main-0x5E34,,,遠距離攻撃,Ranged Attack,,
+string,main-0x5E28,,,ライン攻撃,Line Attack,,
+,,,,"//==================================
+// Labels
+//==================================",,,
+string,main-0x6AB4,,,ＧＯＬＤ,Gold,,
+string,main-0x6AC0,,,スピード,Speed,,
+string,main-0x6ACC,,,通常攻撃,Normal Attacks,,
+string,main-0x6AF0,,,ステータス,Status,,
+string,main-0x6AFC,,,アイテム,Items,,
+string,main-0x6C64,,,勝利条件,Victory Conditions,,
+string,main-0x6C70,,,ステータス,Status,DUPE: F1132,
+,,,,"//==================================
+// Item descriptions
+//==================================",,,
+string,main-0x6EE8,,,ＨＰ５０回復,Restores 50 HP.,,
+string,main-0x6ED8,,,ＨＰ１００回復,Restores 100 HP.,,
+string,main-0x6EC8,,,ＨＰ２００回復,Restores 200 HP.,,
+string,main-0x6EB8,,,ＨＰ３００回復,Restores 300 HP.,,
+string,main-0x6EA8,,,ＨＰ完全回復,Fully restores HP.,,
+string,main-0x6E98,,,ＥＰ１００回復,Restores 100 EP.,,
+string,main-0x6E88,,,ＥＰ２００回復,Restores 200 EP.,,
+string,main-0x6E78,,,ＥＰ３００回復,Restores 300 EP.,,
+string,main-0x6E60,,,ＨＰ＆ＥＰ１００回復,Restores 100 HP and EP.,,
+string,main-0x6E48,,,ＨＰ＆ＥＰ２００回復,Restores 200 HP and EP.,,
+string,main-0x6E30,,,ＨＰ＆ＥＰ３００回復,Restores 300 HP and EP.,,
+string,main-0x6E0C,,,ＨＰ１００回復＋攻撃力ＭＡＸ増加,Restores 100 HP; increases max Attack.,,
+string,main-0x6DE8,,,ＨＰ１００回復＋防御力ＭＡＸ増加,Restores 100 HP; increases max Defense.,,
+string,main-0x6DC4,,,ＨＰ１００回復＋スピードＭＡＸ増加,Restores 100 HP; increases max Speed.,,
+string,main-0x6DA0,,,ＨＰ１００回復＋移動力ＭＡＸ増加,Restores 100 HP; increases max Movement.,,
+string,main-0x6D80,,,ＨＰ１００回復＋ＨＰＭＡＸ増加,Restores 100 HP; increases max HP.,,
+string,main-0x6D60,,,ＨＰ１００回復＋ＥＰＭＡＸ増加,Restores 100 HP; increases max EP.,,
+string,main-0x6D48,,,防御力を毎ターン上昇,Raises Defense each turn.,DUPE: F1086,
+string,main-0x6D30,,,攻撃力を毎ターン上昇,Raises Attack each turn.,DUPE: F1027,
+string,main-0x6D18,,,全ての状態異常の回復,Cures all status conditions.,,
+string,main-0x6D00,,,ねむり・大ねむりの回復,Cures Sleep and Deep Sleep.,,
+string,main-0x6CE8,,,体力ダウン状態の回復,Cures HP Falling.,"NOTE: this game's poison condition is literally called ""stamina down"" in japanese. i find this confusing in english, so i've gone with ""hp falling"".",
+string,main-0x6CC8,,,こんらん・大こんらん状態の回復,Cures Confusion and Heavy Confusion.,,
+string,main-0x6CB4,,,行動不能状態の回復,Cures Paralysis.,,
+string,main-0x6C94,,,技不可・能力ダウン状態の回復,Cures Tech Seal and stat reductions.,"CHECK, i assume 能力ダウン is referring to stat debuffs",
+string,main-0x6C7C,,,アイテム不可状態の回復,Cures Item Seal.,,
+,,,,"//==================================
+// Action-related error messages
+//==================================",,,
+string,main-0x6F64,,,エルラインの必殺技邪悪なる者を浄化する,"El-Line's finishing move.\n
+Purifies those who are evil.","CHECK, this appears to consist of two individual sentences rammed together (like some of the normal technique descriptions)",
+string,main-0x6F4C,,,アイテムを持っていない,No items on hand.,,
+string,main-0x6F34,,,まだ　技を覚えていない,No techniques learned yet.,,
+string,main-0x6F10,,,ダイエットによりアイテム使用不可,Unable to use items due to being on a diet.,DUPE: F576,
+string,main-0x6EF8,,,封印により技使用不可,Unable to use techniques due to seal.,DUPE: F577,
+,,,,"//==================================
+// Card messages
+//==================================",,,
+string,main-0x6FF0,,,ポリリーナスナックを見つけた！,Found a Polylina Snack!,,
+string,main-0x6FD0,,,００番のカードが入っていた！,"//#SETNOTCOMPRESSIBLE(1)
+//It contained Card [#]00!","NOTE: disused in translation; replaced with new, separate versions for 1- and 2-digit cases",
+,,,,"//==================================
+// Misc messages
+//==================================",,,
+string,main-0x701C,,,システムエラーＢ０１,System Error B01,,
+string,main-0x7034,,,銀河お嬢様伝説ユナ　　カードデータ,Galaxy Fraulein Yuna        Card Data,,
+string,main-0x7058,,,空きブロック不足で　カード,Card data cannot be saved,,
+string,main-0x7074,,,データがセーブできません,due to lack of empty Blocks.,,
+string,main-0x7090,,,カードデータのセーブに,Failed to save card data.,,
+string,main-0x70A8,,,失敗しました,,,UNTRANSLATED
+,,,,"//==================================
+// ? labels
+//==================================",,,
+string,main-0xA3588,,,技攻撃力,Tech Attack,"NOTE: for unfathomable reasons, the programmer chose to optimize the status screen by using this same string to generate the regular attack label as well -- clip off the first character and you have it. this saves a whole seven bytes. and also really pisses me off because i now have to make new, separate strings for this and redirect the pointers to them. good job, programmer, i hope you feel accomplished.",
+string,main-0xA3594,,,技防御力,Tech Defense,NOTE: same as above,
+,,,,"//==================================
+// Enemy attack names?
+//==================================",,,
+string,main-0xBC634,,,ダミー,Dummy,DUPE: F35,
+string,main-0xBC62C,,,爆光球,Lightblast Orb,DUPE: F45,
+string,main-0xBC624,,,浄気拳,Purify-Qi Fist,DUPE: F54,
+string,main-0xBC61C,,,集気拳,Gather-Qi Fist,DUPE: F55,
+string,main-0xBC614,,,子守歌,Lullaby,DUPE: F66,
+string,main-0xBC60C,,,復活祭,Easter,DUPE: F68,
+string,main-0xBC604,,,鉄扇,Iron Fan,DUPE: F69,
+string,main-0xBC5FC,,,魔球,Miracle Ball,DUPE: F79,
+string,main-0xBC5F4,,,あおる,Rev Up,DUPE: F84,
+string,main-0xBC5EC,,,神威,Shin'i,DUPE: F108,
+string,main-0xBC5E4,,,一閃,Issen,DUPE: F109,
+string,main-0xBC5DC,,,風雷,Fuurai,DUPE: F110,
+string,main-0xBC5D4,,,呪縛,Binding Curse,DUPE: F115,
+string,main-0xBC5CC,,,放電,Discharge,DUPE: F116,
+string,main-0xBC5C4,,,黄泉,Hell,DUPE: F122,
+string,main-0xBC5BC,,,春眠,Sound Sleep,DUPE: F123,
+string,main-0xBC5B4,,,桃源郷,Heaven on Earth,DUPE: F126,
+string,main-0xBC5AC,,,酸性雨,Acid Rain,DUPE: F127,
+string,main-0xBC5A4,,,修復,Repair,DUPE: F139,
+string,main-0xBC59C,,,充電,Charge Up,DUPE: F142,
+string,main-0xBC594,,,毒ガス,Poison Gas,DUPE: F145,
+string,main-0xBC58C,,,怪音波,Mystery Wave,DUPE: F146,
+string,main-0xBC584,,,波動砲,Wave Motion Cannon,DUPE: F153,
+string,main-0xBC57C,,,眠り粉,Sleeping Powder,DUPE: F154,
+string,main-0xBC574,,,粒子砲,Particle Cannon,DUPE: F157,
+string,main-0xBC56C,,,黒波動,Black Surge,DUPE: F161,
+string,main-0xBC564,,,赤波動,Red Surge,DUPE: F162,
+string,main-0xBC55C,,,闇動拳,Dark Strike,DUPE: F163,
+string,main-0xBC554,,,閃空槍,Skyflash Spear,DUPE: F173,
+string,main-0xBC54C,,,神鳴剣,Kaminari Sword,DUPE: F191,
+string,main-0xBC544,,,小火器,Small Arms,DUPE: F207,
+string,main-0xBC53C,,,自走砲,Self-Propelled Artillery,DUPE: F210,
+string,main-0xBC534,,,高射砲,Antiaircraft Gun,DUPE: F211,
+string,main-0xBC52C,,,迫撃砲,Mortar,DUPE: F212,
+string,main-0xBC524,,,鉄拳,Iron Fist,DUPE: F219,
+string,main-0xBC51C,,,殴打,Strike,DUPE: F220,
+string,main-0xBC514,,,衝破,Ripthrust,DUPE: F221,
+string,main-0xBC50C,,,闇の手,Hand of Darkness,DUPE: F225,
+string,main-0xBC500,,,ダミー,Dummy,DUPE: F35,
+string,main-0xBC4F8,,,健康茶,Health Tea,,
+string,main-0xBC4F0,,,光の滴,Light Drop,,
+string,main-0xBC4E8,,,解毒剤,Antidote,,
+string,main-0xBC4DC,,,ダミー,Dummy,DUPE: F35,
+string,main-0xBC304,,,白香,Pai Siang,,
+string,main-0xBC24C,,,霧幻,Fog Phantom,CHECK,
+string,main-0xBC23C,,,爆弾,Bomb,,
+string,main-0xBC234,,,砲撃機,Mechanicannon,"NOTE: coined term, literally ""gun attack machine""",
+string,main-0xBC21C,,,眠り草,Sleeping Grass,"NOTE: this is actually a japanese name for the mimosa plant, but for a trap which puts characters to sleep, the literal translation of ""sleeping grass"" is probably more helpful. also, it looks nothing like mimosa.",
+string,main-0xBC20C,,,玉華,Yui Hua,,
+string,main-0xBC204,,,氷柱,Icicle,,
+string,main-0xBC1FC,,,黒闇玉,Dark Orb Black,,
+string,main-0xBC1F4,,,赤闇玉,Dark Orb Red,,
+,,,,"//==================================
+// ?
+//==================================",,,
+string,main-0xBC7A0,,,ＹＥＳ,Yes,DUPE: F560,
+string,main-0xBC7A8,,,ＮＯ　,No,,
+string,main-0xBC8C0,,,ＹＥＳ,Yes,DUPE: F560,
+string,main-0xBC8C8,,,ＮＯ,No,DUPE: F561,
+string,main-0xBCAEC,,,地球,Earth,,
+string,main-0xBCAF4,,,宇宙,Space,,
+string,main-0xBCAFC,,,ＴＶ局,TV Station,,
+string,main-0xBCB1C,,,ＹＥＳ,Yes,DUPE: F560,
+string,main-0xBCB24,,,ＮＯ,No,DUPE: F561,
+string,main-0xBCC24,,,障害物,Obstacle,,
+string,main-0xBCC3C,,,地面,Ground,,
+string,main-0xBCD08,,,いいえ,No,,
+string,main-0xBCD10,,,はい,Yes,,
+,,,,"//==================================
+// Status menu
+//==================================",,,
+string,main-0xBD018,,,名前,Name,,
+string,main-0xBD020,,,ＬＶ,LV,,
+string,main-0xBD028,,,ＭＨＰ,MHP,,
+string,main-0xBD030,,,ＭＥＰ,MEP,,
+string,main-0xBD038,,,ＨＰ,HP,,
+string,main-0xBD040,,,ＥＰ,EP,,
+string,main-0xBD048,,,攻撃,ATK,,
+string,main-0xBD050,,,技攻撃,TATK,,
+string,main-0xBD058,,,防御,DEF,,
+string,main-0xBD060,,,技防御,TDEF,,
+string,main-0xBD068,,,移動,MOV,,
+string,main-0xBD070,,,ＳＰＤ,SPD,,
+string,main-0xBD078,,,経験値,Experience,,
+string,main-0xBD080,,,移動力,Movement,,
+string,main-0xBD088,,,技,Techniques,,
+string,main-0xBD08C,,,射程,Range:,,
+string,main-0xBD094,,,全て,    All,,
+string,main-0xBD09C,,,範囲, Area:,,
+string,main-0xBD0A4,,,Ｃ,C,"NOTE: used as part of a hack that replaces the ""copy"" part of the copy robots' names with a ""C"" so they can fit in the unit info box. not used in the translation.",
+string,main-0xBD0A8,,,Ｅ,E,"FIXME: unknown use, i've played this game i don't even know how many times now and never found a situation where it comes up",

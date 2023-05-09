@@ -1,0 +1,5 @@
+4 80
+"ms26.BGD""ms26.BGD"
+"ms26.CEL""ms26.CEL"
+"ms26.TIM""ms26.TIM"
+"ms26.TXT""ms26.TXT"

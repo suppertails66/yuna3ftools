@@ -1,0 +1,8 @@
+7 128
+"ms83.BGD""ms83.BGD"
+"ms83.CEL""ms83.CEL"
+"ms83.TIM""ms83.TIM"
+"ms83.TXT""ms83.TXT"
+"ms83.GS8""ms83.GS8"
+"ms83.TAN""ms83.TAN"
+"ms83.TTO""ms83.TTO"

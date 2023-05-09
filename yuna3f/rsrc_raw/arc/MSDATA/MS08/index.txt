@@ -1,0 +1,9 @@
+8 144
+"ms08.BGD""ms08.BGD"
+"ms08.CEL""ms08.CEL"
+"ms08.TIM""ms08.TIM"
+"ms08.TXT""ms08.TXT"
+"ms08.GS8""ms08.GS8"
+"ms08.TAN""ms08.TAN"
+"ms08_1.T""ms08_1.T"
+"ms08_2.T""ms08_2.T"

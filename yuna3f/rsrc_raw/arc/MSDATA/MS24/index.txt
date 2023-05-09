@@ -1,0 +1,8 @@
+7 128
+"ms24.BGD""ms24.BGD"
+"ms24.CEL""ms24.CEL"
+"ms24.TIM""ms24.TIM"
+"ms24.TXT""ms24.TXT"
+"ms24.GS8""ms24.GS8"
+"ms24.TAN""ms24.TAN"
+"ms24.TTO""ms24.TTO"

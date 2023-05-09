@@ -1,0 +1,1269 @@
+
+** to enable debug, change 0x80118094 in SLPS_014.51:
+  6C 12 80 AF -> 6C 12 82 AF
+  (write v0, which is 1 here, to the debug flag instead of clearing it
+  after displaying the hudson logo)
+oh, apparently i'm the first to find this...?
+athena didn't put it in the tcrf article, anyway.
+this seems to mostly be a "course select" in the exact same vein
+as yuna 1 and 2, albeit much more poorly labeled.
+you have to go through a bunch of enigmatic "so-and-so's debug menu"
+options in order to actually get anywhere.
+oh, and some stuff seems to be broken due to not being updated properly
+when ported from the saturn, e.g. the movie player is looking for
+.cpk files that no longer exist. (presumably this menu can be accessed
+in the saturn version by similar means) (oh and actually it's broken
+in the saturn version too)
+but it mostly functions as intended?
+- the first option determines your party:
+  製品版コース = uh?
+              if you start from the first mission, you get the normal starter
+              party at level 3.
+              but if you start from anywhere else, you get them at level 1?
+  デバックコース =  all party members, at level 50
+  調整コース = all party members, at level 4 (before learning their first tech, i guess?)
+  ＳＰコース = normal starter party (yuna/yuri/shiori)
+  
+the game seems to split up memory in what is probably a legacy of the
+saturn version with its two separate RAM sections.
+main EXE is loaded to 110000 and uses that area.
+other stuff goes in 10000+ (looks like a heap at the start?)
+- 0x80010000-0x80108000 = heap?
+                          4th word = pointer to next link, zero if none
+                          3rd word = size?
+- 0x80108000-0x80110000 = code overlay area (see BIN folder)
+- 0x80110000-0x801CD800 = main exe area
+- 0x801CD800-? = memory for e.g. display lists?
+and of course the stack at the end
+
+0x80070390 = current script module data?
+  - pointed to by 0x6A8(gp) = 0x801CC880
+
+801AF468 = table of 349 12-byte file info structs
+           - 4b filename string pointer
+           - 4b sector count
+           - 4b sector number
+           this is the game's own file table, which it seems to use
+           in place of standard ISO lookup functions.
+           it indexes every file on the disc except for SYSTEM.CNF and GAISYU.DMY.
+           files are listed by the name part only,
+           i.e. directories are ignored (and files must have unique names
+           per the entire disc, not just the directory they're in).
+           as an example, YUNA3.DAT's entry is number 0x120, located at 0x801B01E8
+           see ~80132074, which looks up a given file
+           - YUNA3.DAT = sector 0x3AFF6 = 241654 = 0x1D7FB000
+             to 0x44453 = 279635
+
+846a6
+
+801B2F1C = array of pointers to ? name of file to load?
+           see 8017B8B0
+
+801B2A78 = decoding tables for font
+801CC1D8 = 0x0(gp) = ?
+801CC1DC = 0x4(gp) = halfword: 1 if current fmv is skippable with start
+801CC1E0 = 0x8(gp) = ?
+801CC1E4 = 0xC(gp) = global frame counter?
+               used e.g. to determine which frames scrolling occurs
+801CC1EC = 0x14(gp) = ? module num? in title demo sequence?
+801CC640 = ? = pointer to 96-byte structs?
+               unit data? including ability info? (+0x56)
+               +0x56 = 2-halfword array of attack IDs
+               +0x5A = ?-byte array of tech IDs
+               see e.g. 8016BCA8
+801CC644 = 0x46C($gp) = multiplayer flag?
+               see e.g. 80139CB4 -- game checks controller 2 if nonzero
+801CC645 = 0x46D($gp) = multiplayer?
+801CC646 = 0x46E($gp) = multiplayer current player id
+               1 = player 1, 2 = player 2
+801CC88A = 0x6B2(gp) = active script module ID?
+                       (actually 801CC888?)
+801CCA80 = 0x08A8($gp) = nonzero if loading from disc...?
+801CCA88 = 0x08B0($gp) = tracks number of frames disc has been loading?
+                         e.g. 80132914 seems to give up if this goes over 2 minutes
+801CCAA6 = 0x08CE($gp) = scrolling: counter for distance scrolled?
+                         counts from zero up to 801CD398, then scrolling stops?
+801CCABA = 0x08E2($gp) = text speed (frames per character? normally 7)
+801CCAD4 = ? = buttons pressed?
+               - game uses this to distinguish buttons triggered vs. pressed,
+                 but does a poor job of it -- this isn't updated every frame,
+                 only when someone remembered it needed to happen.
+                 this results in bugs like holding B to fast-forward walking when
+                 moving a character causing the game to immediately cancel
+                 the move once the destination is reached, because it thinks
+                 you've only just triggered it on that frame.
+               - oh, i see what the problem is -- this is updated only when
+                 getTriggeredButtons is called.
+                 the game doesn't call getTriggeredButtons during the walk
+                 animation, only getPressedButtons, so when the character
+                 reaches the endpoint and it finally checks the triggered
+                 buttons again, it mistakenly thinks that X is newly pressed.
+                 hard to believe no one caught this issue, because it's
+                 pretty blatant...
+801CCB58 = 0x980($gp) = currentTextProtoRenderPos
+           halfword: current position within text area of proto render cmd buffer
+           (~801D25B2)?
+           reset to 0x320 for new material?
+801CCB5A = 0x982($gp) = oldTextProtoRenderPos?
+           related to currentTextProtoRenderPos -- sometimes set to its value
+801CCB78 = 0x9A0($gp) = maxTextProtoRenderPos??
+           e.g. 0x406 when printing dialogue?
+801CCB7C = 0x9A4($gp) = highestActiveRenderSlot?
+           renderEgProtoCmds starts rendering from this slot,
+           going through slots in reverse order
+801CCB9C = 0x9C4($gp) = byte -- rendering state(?)
+                        normally 0
+                        becomes 1 during a fade and 3 afterward
+                        if 3, waitFrame does not render the screen
+801CCBD4 = ? = pointer to some sort of "slots" related to ???
+               animations? e.g. "help" girl on first level
+               see ~80172AB8
+801CCBD8 = ? = ??? count of something? probably graphics/animation-related
+               capped at 180?
+               see 8014467C
+801CCD3C = ? = pointer to map unit data structs?
+801CD110 = 0x0F38(gp) = ?
+801CD178 = 0xFA0(gp) = id of base highlight "object" for options menu
+                       (set to same value as 0x0FC8($gp))
+                       add 0xFA2(gp) to get obj for target highlight
+801CD17A = 0xFA2(gp) = currently selected option on options menu (0-3)
+801CD198 = 0xFC0(gp) = cursor movement option:
+                       00 = horrendous default non-isometric movement
+                       01 = the way any sane person would play
+                       (internal id = option 0)
+801CD19A = 0xFC2(gp) = 00 for stereo, 01 for mono
+                       (internal id = option 2)
+801CD19C = 0xFC4(gp) = voice option:
+                       00 for voices on, 01 for off
+                       (internal id = option 1)
+801CD1A0 = 0xFC8(gp) = base obj id for options menu
+801CD1A2 = 0xFCA(gp) = count of objs for options menu? (0xB?)
+801CD1BC = 0xFE4(gp) = ?
+                       sometimes copied to/from currentTextProtoRenderPos
+801CD1BC = 0xFE6(gp) = ?
+                       sometimes copied from currentTextProtoRenderPos
+801CD248 = 0x1070(gp) = current menu type, for e.g. drawSelectionMenu [0x80187C50]?
+801CD2DC = 0x1104(gp) = pointer to STWIN.GS8 = battle window interface resources
+                        individual components are copied to gpu as needed
+801CD2EC = 0x1114(gp) = ?
+                        sometimes copied to/from currentTextProtoRenderPos
+801CD2EE = 0x1116(gp) = ?
+                        sometimes copied from currentTextProtoRenderPos
+801CD2F0 = 0x1118(gp) = scrolling: frame delay between each scroll iteration
+801CD380 = 0x11A8(gp) = buttonRepeatCounter
+801CD398 = 0x11C0(gp) = scrolling: total distance in pixels to scroll
+801CD3A8 = 0x11D0(gp) = buttonRepeatStartCounter
+801CD3B4 = 0x11DC(gp) = pointer to font data (YUNA3.FON) on heap
+801CD3BC = 0x11E4(gp) = scrolling: number of pixels to move each scroll iteration
+801CD3C0 = 0x11E8(gp) = pointer to 28-byte ability (anim?) info structs??
+                        e.g. 801ACB5C
+                        +0x5 = ??? related to animation?
+801CD40C = 0x1234(gp) = pointer to sjis->font mapping table (YUNA3.TBL) on heap
+801CD410 = 0x1238(gp) = nonzero if character-by-character printing active
+                        clear to immediately print remaining text
+801CD424 = 0x124C(gp) = scrolling: direction
+                        ; 0 = also down??
+                        ; 1 = up
+                        ; 2 = right
+                        ; 3 = left
+                        ; 4 = down
+                        ; 5 = right??
+                        ; 6 = left??
+                        ; 7 = up??
+801CD424 = 0x1248(gp) = ? debug??
+                        nothing seems to ever check this,
+                        though it's written several times
+801CD42C = 0x1254(gp) = half: nonzero if scrolling on?
+801CD440 = 0x1268(gp) = ??? some debug flag??
+                        if set at any time during adv gameplay,
+                        game immediately jumps to ending movie
+                        (this is apparently being checked constantly)
+801CD444 = 0x126C(gp) = *** debug flag ***
+801CD688 = ? = ??? buttons not pressed this frame? (set by bios)
+801CD6CC = ? = ??? buttons not pressed last frame? (set by bios)
+801D25A0(?) = array of proto-render-commands for e.g. text.
+           0x24 bytes per entry?
+           text-reserved portion seems to start around 801D9632?
+           +0 = ? e.g. 0x1E0 (not vram y)
+           +2 = ? R/G/B modifier fields?
+           +6 = w/2? (halfwords?)
+           +8 = h/2?
+           +10 = ?
+           +12 = ?
+801DE608? = array of 6b proto-render ???
+            - 2b slot num? (redundant??)
+                 read in setUpDispSlotParams (normally after setting it?)
+            - 2b priority?
+                 used as param to convertProtoRenderCmd
+            - 2b positioning type?
+                 00 = disabled, don't draw?
+                 01 = target position is centerpoint?
+                 02 = target position is upper-left corner?
+801E0110 = buffer for array of possible terrain names on current map.
+           13 bytes each (6 2-byte chars plus terminator) and assumed
+           to be such by drawing code.
+           - this is set up via plaintext and helpfully commented
+             script run at map start.
+             scripts are found in BATMAP/MSDATA.GOU, along with lots of
+             other data.
+801E0AF0 = buffer for current unit/decor name?
+801F62D8 = ? array of 8b ??? vram positioning data?
+           usually indexed by a halfword, like the proto render buffer.
+           possibly paired with it?
+           - 2b vram dst halfword x?
+           - 2b vram dst halfword y?
+           - 2b w?
+           - 2b h?
+801F8918 = palettes?
+           apparently these are read from, and probably written back to, vram
+801FDAAA = halfword array: start of rendering commands (placeholders?)
+           for each unit on e.g. char status select screen,
+           in 801D25B2 proto render cmd array
+
+
+gp = 0x801CC1D8?
+
+8012E1E8 = allocHeap?
+           iiiiiiiiiiiiiiiii
+           17
+           iiiiiiiiiiiiii
+8012E218 = freeHeap?
+           iiiiiiiiiiiiiiiii
+           17
+           iiiiiiiiiiiii
+8012B214 = startStreamedSound?
+           (will not play if a voice clip and voices are off)
+8012B454 = waitForStreamedSoundToFinish?
+           e.g. to wait for attack voice clips to finish during battle?
+8012F048 = loadScriptModule?
+8012F430 = fetchScriptStorageWord
+           - for "s#" format condition string checks.
+             comes from array at 0x801E0158
+80132128 = indexedFileLookup?
+           - looks up location of a file from the index
+80132854 = allocForAndQueueFileLoad?
+           - calls indexedFileLookup, then allocates space on the heap
+             for that (entire) file, returning a pointer to it,
+             and queueing it for load from disc?
+             then call e.g. loadingWait??? to wait for it to load
+80132914 = loadingWait???
+           wait for a file queued with e.g. allocForAndQueueFileLoad?
+           to finish loading
+801329FC = loadIndexedFileSubfile?
+80135578 = getConfigSetting?
+80135CD8 = getPressedButtons?
+           *** a0 = controller number (1 for controller 1)? ***
+           0x0001 = l2
+           0x0002 = r2
+           0x0004 = l1
+           0x0008 = r1
+           0x0010 = triangle
+           0x0020 = circle
+           0x0040 = x
+           0x0080 = square
+           0x0100 = select
+           0x0800 = start
+           0x1000 = up
+           0x2000 = right
+           0x4000 = down
+           0x8000 = left
+80135D10 = getTriggeredButtons?
+801399C4 = convertSjisCodepoint?
+80139DA0 = printDialogue?
+8016E8F8 = carryOutUnitAction?
+           - sp+0x10 = "ability index" -- determines actual effect of attack
+             (as opposed to the animation that plays, which is separate?)
+             check this when something needs to be blacklisted
+             from being skipped
+
+
+80072030 = "s15 = 0" debug flag check in script module 0
+
+80083C20 -> 801cdab0 (misaki stats?)
+
+80132978
+8012d424
+8012d5a8
+
+132978
+80164a60 = reference point for alloc fail
+
+801329FC = loadIndexedFileSubfile
+
+YUNA3.DAT 28924c: スイッチ (block pos 0x16)
+  possibly referenced in op B4 at 0x288596?
+  this would track with position of other strings
+
+here's everything i could reasonably think of to improve the awful
+loading times for the portraits and streamed voice files during
+the adventure scenes...
+  - move portraits and voices closer on disc .
+    this is by far the biggest contributor to the problem --
+    portaits are pratically at the opposite end of the disc
+    from the voice files, and the game constantly has to seek back
+    and forth between them.
+  - optimize RGB image decompressor.
+    a very minor factor in comparison to the disc seek times, but the original
+    decompressor is just stupid -- the entire image is decompressed
+    with the wrong endianness, and the game has to go back and do a second
+    pass just to flip it around, and somehow manages to screw THAT up
+    by doing a bunch of bizarre and pointless XOR operations in the process
+    that further slow the whole thing down.
+    what the hell went wrong here??
+    anyway, fixing this should provide the benefit of small
+    speed improvements through the game.
+    ("small" turns out to be maybe a 2-frame improvement for loading
+    a graphic the size of the normal adventure mode window,
+    but i'm not complaining)
+  - keep TALK.PIC index permanently cached in memory instead of reading
+    it from the disc every time it needs to be accessed.
+    again, only a minor factor compared to the seek time between the
+    image pack and the voice files, but it's something.
+  - this would be really stupid, but what if we put redundant copies
+    of TALK.PIC between every voice pack file, kept track of the most recent
+    one accessed, and hacked the loading function to target the closest copy?
+    - i guess the main issue is that it would slow access times
+      a bit for voice clips during battle... but if it gave enough of a
+      speedup for adventure segments, it might be worth it.
+    - well, there are 83 voice files, and TALK.PIC is 934 kilobytes...
+      i remain somewhat baffled by the uncertain nature of CD size limits,
+      but the original game is 582.2 megs (26 of which are intentional padding)
+      and i'm not sure we have 75 more to drop on this.
+      so it could be every second pack or something
+
+so, here are the statistics:
+a typical case of switching portraits + starting a voiced line from the intro
+(first transition from yuri portrait to yuna, counted from first frame confirm
+button is pressed to when first character of next line appears):
+  - original game: 159 frames
+  - after optimizing file order: 73 frames (45% of original)
+  - after caching TALK.PIC index: 67 frames (42% of original)
+  - after adding 83 redundant copies of TALK.PIC to the disc
+    and using dark sorcery to force the game to use them:
+    33 frames (20%!!! though this may be a best case)
+  - and optimizing image decompression does nothing to help here
+    (well, they are just tiny portraits, guess it's to be expected)
+
+basically, an almost 60% speedup, the bulk of which
+comes from simply rearranging a few files on the disc.
+this port must have been seriously rushed...
+should have dropped the pointless trading card quest
+and spent an extra week optimizing the actual game!
+
+
+yuna burger pic load time, from point button is pressed to when image appears
+  - original: 82 frames
+  - file order optimized: 63 frames (76%)
+  - decompressor optimized: 61 frames (74%)
+
+
+66
+160
+
+60
+164
+
+0x167A3 = 92067
+1227 42
+20 27 42
+
+
+25 04 68
+20 29 42
+
+179AA
+1800A
+
+all right, let's do some back-of-the-envelope calculations.
+  - DATA/YUNA3.FON is the original font.
+    1341 characters: 16x16, 4bpp = 0x80 bytes each = 0x29E80 bytes total.
+    the translation will require only a fraction of this --
+    probably 0x60 characters.
+    let's assume we keep the 16x16 size (though 12x12 would probably be fine).
+    our new font will be 0x3000 bytes.
+    we'll also need an outlined font for subtitles, another 0x3000 bytes.
+    and let's just assume we'll want a narrow-width font for something.
+    so three fonts = 0x9000 bytes,
+    leaving us with ~0x20000 free bytes.
+  - DATA/YUNA3.TBL is the SJIS->internal font mapping.
+    completely unnecessary for translation.
+    that's 0x2EE0 bytes.
+    
+  - so, that's ~0x22000 bytes freed up.
+    we also have some not-really-knowable amount of free space already available
+    since the game doesn't fill up the entire heap.
+    is it enough?
+    we need:
+      - all our new code, obviously
+      - extra space for redirected hardcoded lines in the EXE
+        that won't fit in areas freed up by the text
+    we would like:
+      - preloaded subtitles for all lines requiring it
+        - this is the big question mark.
+          how much space will these need?
+          there are 
+          there are most likely a few hundred of these,
+          and most of them should be relatively short.
+          there are 2651 voice clips total, including all story
+          dialogue, sound effects, etc., which don't need subtitles.
+          let's say we have 500 voice clips which need subtitling,
+          and those average 64 characters (= bytes) each.
+          (hopefully that's highballing it.)
+          that would be ~0x7D00 bytes uncompressed.
+          with the lookup table and terminators and things,
+          let's call it 0x8000 bytes even.
+          compression will probably reduce that to more like 0x6000 bytes?
+          (i should really know the usual ratio by now, shouldn't i?)
+          anyway, seems doable.
+          - oh, yeah, this was way highballing it.
+            after extracting the files, there are 263 "battle" clips
+            (ACM5000+) totalling 11 minutes 2 seconds, and most of which
+            will only come out to a few words.
+            other material needing subtitles is fairly tame:
+            - opening story digest (just under 5 minutes)
+            - a handful of voice clips for loading the game (i think?)
+            - yuna's ending messages for after the credits (under 2 minutes total)
+              - so i remember, these have hidden requirements:
+          ◇ゲームクリアメッセージ
+          　戦闘評価Ａ（２５以上）、ユナのレベル３０未満、
+          　カードの拾得数２９以下という条件のどれかを満たしてクリアすると、
+          　エンディングでメッセージが流れる。
+          　また、全ての条件を満たせば、別のメッセージが聞ける。
+          　     to get the normal message, you must meet one of three conditions:
+          　       - A rank on 25 or more missions
+          　       - finished game with Yuna < level 30
+          　       - have 29 or fewer cards...
+          　         or so this source says, but i believe that's a mix-up
+          　         and you actually need 29 or more.
+          　         and after checking the code, yes, this is just flat-out wrong.
+          　         the correct requirement was given in contemporary magazines,
+          　         so who knows how this misinformation got around.
+          　     to get the special message, you have to meet all three conditions.
+
+- need a couple of different redirect ops
+  - a 3b version (op + 2b dst) for local jumps, such as in the YUNA3.DAT modules.
+    make these relative to the op itself?
+    - actually, the YUNA3.DAT strings use the same old script/unindexed/indexed
+      block layout they've been using since the very first game, and i'm pretty
+      sure the line-based optimizations from yuna 2 are long gone here,
+      so we should be able to just update the strings without bothering with
+      any kind of redirects.
+      - this still leaves various other pieces of text, though, such as the
+        occasional scripts found in the code overlays. though those can probably
+        be handled with absolute jumps anyway.
+  - a 4b version (op + 3b dst) for absolute jumps, such as in the main EXE
+- battle maps are partially set up using plaintext scripts --
+  see the text file found in each archive of MSDATA.GOU.
+  as a bit of an oddity, the name labels for terrain and destructible objects
+  are actually registered via commands in these scripts, e.g.:
+;破壊障害物名、５個まで設定可能
+OBS(99,"花壇")   ; 破壊障害物名１(ＭＡＸ６文字)
+OBS(98,"ゴミ箱") ; 破壊障害物名２(ＭＡＸ６文字)
+;
+;地形名
+GND(01,"道路")   ; 地形名１(ＭＡＸ６文字)
+  the listed names are copied to internal buffers, automatically padded to 6
+  characters with SJIS spaces, and printed when needed.
+  this poses a slight issue for translation.
+  buffers will probably need to be moved to increase available space
+  (some of these require lengthy translations like "cracked sidewalk").
+  for one thing, we'll need to be careful about any conflict between our new
+  codepoints and the ASCII quote marks the game expects to use for these strings.
+  then there's the matter of importing the new strings into the map scripts...
+  - what is the overall length limit on these files, if any?
+    some of the larger maps seem to omit comments, presumably to save space,
+    which implies there is some sort of static limit.
+    see e.g. MS200.
+- it should be possible to reduce the number of render/proto-render slots needed
+  by manually compositing 3-4 characters at a time and sending them as one unit.
+  the sendGrpToFreeVramArea function seems to be intelligent enough to handle this
+  correctly without further modification.
+  it looks like there's enough free vram for this to work out okay...i hope.
+  will require special handling for character-at-a-time message printing, though.
+  - maybe make the grouping dynamic, and if a group of 4 would go over a certain
+    limit, use 3 instead, etc.
+
+TAN animations
+  +0x48 = offset of component definition block
+  - animation data block
+    - usually, commands seem to be 4b:
+      - 1b target component? or 0xFF if N/A?
+      - 1b delay in frames?
+      - 1b x-change
+      - 1b y-change
+  - component definition block
+    - 0x20 bytes each?
+      (often spaced 0x40 apart with "dummy" entries?
+      or more likely the "dummy" entries indicate the end of
+      each subcomponent)
+      +0x0 = ?
+             if 0x80, remainder of data is ignored?
+             structure definition terminator?
+      +0x4 = ?
+      +0x8 = 1b src y in 8px units
+      +0x9 = 1b src x in 8px units
+      +0xA = 1b src w in 8px units
+      +0xB = 1b src h in pixels
+      +0xC = 2b (be) global x-offset of component?
+      +0xE = 2b (be) global y-offset of component?
+      ...
+
+MST022 = 2 lines for both victory/defeat conditions
+no mission has 2 lines for victory and 1 line for defeat
+
+copy alpha, set to brightest color in each font, offset +1+1, brightness -127 *2,
+copy alpha, offset +1+1, brightness -127
+merge with black background, then remove black with threshold of 15
+
+merge with intended background
+emboss -> a:150, e:25, d:1
+colorize -> h:300, s:100, l:81
+
+emboss -> a:170/165, e:20, d:1
+colorize -> h:300, s:100, l:83
+emboss -> a:170/165, e:15, d:1
+colorize -> h:300, s:100, l:85
+emboss -> a:145, e:20, d:1
+colorize -> h:300, s:100, l:83
+emboss -> a:40, e:20, d:1
+colorize -> h:300, s:100, l:83
+emboss -> a:140, e:20, d:1
+colorize -> h:300, s:100, l:83
+
+merge with intended background
+emboss -> a:170/165, e:25, d:1
+colorize -> h:300, s:100, l:81
+
+generate double size
+emboss a:140, e:20, d:2
+colorize h:300, s:100, l:83
+
+logo:
+  outline:
+    grow 1/2px
+    colorize 55 100 18
+      - emboss outline -> invert
+        -> colorize 55 100 -40
+  main:
+    colorize 342 95 35
+      colorize 345 90 50
+      colorize 350 100 45
+
+chapter titles:
+  create path, select, grow 1px, stroke selection black 1px
+  grow an additional 1px, stroke selection white 1px
+    - clone this twice (3 layers total) for more opacity
+
+vs bg:
+  colorize 202 50 56
+  210 50 50
+
+team split bg:
+  emboss 310 20 1
+    -- 50 20 2
+    -- 140 20 2
+  colorize 210 90 -70
+    -- 220 90 -70
+    -- 210 90 -70
+    -- 210 70 -55
+  
+
+BATMAP:
+  - BTLETC.GOU
+    - BATTLE.CSA: "BATTLE START" text
+    - BTCOM.GS8: battle command icons
+    - FUIN.GS8: 封 icon used for cutscene
+    - GOVER.CSA: "GAME OVER" text
+    - MISSION0.CSA: "MISSION START" text
+    - MISSION1.CSA: "MISSION START" and "MISSION CLEAR" text
+    - MISSION2.CSA: mission start/clear with player 1/2 variants
+    - MISSION3.CSA: same as MISSION2?
+    - MPSEL.CSA: multiplayer map select menu
+    - MST000-094.CSA: mission objectives
+  - EF12.A00: "miss" effect
+  - EF13.A00: "level up" effect
+  - EF14.A00: technique level up effect
+  - EF16.A00: "miss" effect dupe??
+  - EF17.A00: "defense" effect
+
+DATA:
+  - BTCOM.GS8: battle command icons
+    - NOTE: duplicated in BATTLE/BTLETC.GOU -- which is used?
+  - FUTA.SS1: yuna logo used for unknown/default char portraits?
+  - OPT.CSA: options menu
+  - PICTURE.PIC: GOU of images for adv mode.
+    of relevance:
+    - CHAP1-CHAP5: chapter title images
+    - DEBUG: recycled image from yuna remix displayed on debug menu
+    - EYE1-EYE5: eyecatches
+    - LOAD: load menu
+    - LOADING: "now loading" screen
+    - OMAKE: background for bonus menu
+    - TITLE: title screen
+  - TITSP.CSA: title menu resources
+  not important:
+    - ADVBG.CS/ADVBG2.CS: tiled "Yuna" background for adv scenes
+    - HIKARI.CSA: some odd shapes, not sure of use
+    - ICON.GOU: tiny character portraits for something -- save data icons, maybe?
+    - KEYW.CSA: milky icon used as "press button" prompt in dialogue
+    - KIHON.YN1/KIHON_Y.YN2: "basic" character sprites for use outside of battle?
+      raw pixel data, width = 0x30
+    - RAYOUT.CSA: apparently borders for generating menu windows
+    - SAV.CSA: save menu resources
+    - SAV.GS8: appears to simply be a wider version of what's in SAV.CSA?
+    - TALK.PIC: dialogue portraits
+      - note that we could probably save a lot of space on our duplication scheme
+        by cutting the padding from ZTALKDMY.SS1; it's hard to imagine that
+        it's actually needed for anything.
+    - YEL_1.GS8: el-line sprites
+MAP:
+  - IDO.GS8: menu
+  - KAI.GS8: shop interface
+  not important:
+    - CP1/2/4BG.SS1: backgrounds for world maps
+    - CP1/2/4SP.SS1: sprites for world maps
+    - IL001-IL012.SS1: fanart gallery
+
+
+
+
+TODO
+  - fixed pos string printing
+  - number printing
+  - dynamic-width menus:
+    - attack select (but not tech select)
+    - attack usage display?
+  - string concatenations:
+    - attack descriptions
+      - will have to do something stupid; game stores the two lines shown
+        when viewing the status menu separately, and rams them together
+        into a single line for use in the technique select menu
+    - item acquisition message
+
+80043db0
+0x801CCDC0 = pointer to preloaded generic "defense" animation?
+
+"mechanima"?
+machinae
+
+機械化帝国 is officially localized in at least some japanese materials
+(specifically, the real-life collectible cards) as "technocracy".
+i like this, but it's difficult to use as a basis for other derived terms.
+if the empire is the "technocracy", what do we call the planet itself?
+i tried "technosian planet", but didn't really like the results.
+so in the end, i've decided to just ignore this and do it my own way.
+
+機械化 -> machinate
+機械化兵士 -> machinate soldiers/troops
+機械化帝国 -> machinate empire
+機械化皇帝 -> machinate emperor
+            (there is a perfectly reasonable argument for "empress" here,
+            but i prefer "emperor")
+機械化惑星 -> machinate planet (or "planet machinate"?)
+機械化人 -> machinatian
+           ...hmm, or "machination", or even just e.g. "the machinates"?
+機械人 -> mechanima/mechanimae
+六花戦 -> six flower warriors
+四天機 -> four heavenly machinae
+妖機三姉妹 -> three fey machinae sisters
+三賢機 -> three sagacious machinae
+白皇帝 -> white emperor
+黒皇帝 -> black emperor
+
+NOTE: for clarity and my own reference, here is the scene that leads up to this line, which also contains 100% of the information about the kikaika planet that is in the ova:
+
+ユナ・ユーリィ・リア：妖機三姉妹！？
+Yuna/Yuri/Lia: The Three Youki Sisters!?
+ミサキ：ええ
+　そのデータが評議会本部のメモリーバンクにあったわ
+Misaki: Yes.
+  That data was in the Galactic Union HQ's memory bank.
+(showing what we would now call a tablet containing images of the sisters to Yuna)
+ユナ：亜耶乎ちゃん！
+Yuna: Ayako-chan!
+リア：どうやら間違いなさそうね
+　だけど何者なの？妖機三姉妹って
+Lia: It doesn't look like there's room for doubt.
+  But who are they, these Three Youki Sisters?
+ミサキ：はるか宇宙のかなたにある機械化惑星で作られた凶暴なアンドロイドよ
+　記録によれば、彼女達が母性を破壊しようとして、超新星に追放されたことになってるわ
+Misaki: They're brutal androids created on the Kikaika [NOTE: mechanization, turning things into machines] planet in the far reaches of space.
+  According to the records, they tried to destroy their homeworld, and were banished to a supernova.
+ユナ：凶暴なアンドロイド！？
+　亜耶乎ちゃんが！？
+Yuna: A brutal android!?
+  AYAKO!?
+エルナー：でも、宇宙のかなたで廃棄されたはずのアンドロイドがどうしてここに！？
+Elner: But what are androids that were supposed to have been disposed of in the depths of space doing here!?
+ミサキ：何かの手違いで廃棄されなかったか、誰かが修復したのか、残念ながらそこまではあたしにも…
+　だけど…
+Misaki: Whether they weren't disposed of due to some kind of slip-up, or someone repaired them -- unfortunately, I [don't know] that either...
+(Misaki draws her gun)
+ユナ：ミ、ミサキちゃん！何する気！？
+Yuna: M-Misaki-chan! What're you planning to do!?
+ミサキ：分かったでしょ、ユナ！？
+Misaki: Don't you get it, Yuna!?
+
+「イイ子にしないとバッキンよ！」のかけ声で悪人を次々と倒していくぞ！！
+
+
+
+滅多に
+笑顔を見せない
+君だけで、
+
+笑顔の[君?]は
+[何?]よりも
+[好?]いているよ。
+
+
+
+
+
+
+我、復活[せる??]
+我[に代わり?身代わり?]、銀河に破壊と混沌を！
+全ての生きとし生ける物よ、我に絶対の復讐[を?]！
+我は機械化皇帝！全知全能なる銀河の支配者！
+これが地球…
+
+
+
+
+
+微笑みは暗闇の中で
+勇気を照らす光になる
+微笑みは哀しみを消して
+七色の虹を心に架ける
+
+たとえば夜空を駆け抜けて行く
+小さな星屑　夢のかけらなら
+
+今ぐす受け止めに行くわ
+涙に変わらないように
+このまま見失ってしまう前に
+
+私ならいつもここにいる
+一番近くで見つめてる
+私にはみんな分かってる
+
+あなたの笑顔を待ってる
+
+微笑みは暗闇の中で
+勇気を照らす光になる
+微笑みは哀しみを消して
+七色の虹を心に架ける
+
+
+
+
+ポリリーナ：さぁ、発進よ
+　ミルキー！
+ユナ：こうして、地球を守るため、あたし達は旅立った
+　地球のみんな、待っててね！
+　…ちょっと不安だけど
+
+
+ミキ：エリカ様！
+ユナ：アコちゃん、マコちゃんも！
+　わ〜い！来てくれたんだ！
+ポリリーナ：[お?]待って！
+　様子が変よ！
+エリカ：ユナ…殺す…
+　仲間…殺す…
+　殺す…
+ユナ：えっ！？
+　ど、どうしちゃったの、エリカちゃん！？
+　エリカちゃん！
+白香：皆さん、逃げて下さい！
+皆：は！？
+白香：この人たちが、操られています！
+
+
+
+
+あたし、神楽坂ユナ！
+どこにでも会える普通の女子高生！
+…のはずだったんだけど…
+
+何気なく出場した銀河お嬢様コンテストで優勝しゃったからもう〜大変！
+あたしの人生、大きく変わちゃったんだ！
+
+アイドルよ！ア・イ・ド・ル！
+目が覚めたらあたし、アイドルになってたの！
+ＣＤ出したり、写真集出したり、コンサートしたり！
+毎日忙しくて、もう目が回っちゃいそう！
+
+でも！えへへ
+最近は楽しくて仕方ないんだ！
+だって、みんながあたしの事応援してくれるんだもん！
+
+でもでも！
+変わちゃったのはそれだけじゃなかったんだ
+実は、銀河お嬢様コンテストの優勝には、とんでもないおまけが付いてきたの
+ある日、あたしの前に現れた妖精みたいなロボット、エルナーから、突然！
+「あたなは光の救世主に選ばれたの」なんて言われて、もうびっくり驚き心臓ドキドキ！
+おまけに、闇の力から宇宙を守ってなんて言われて…
+もうあたし、何がなんだか分かんないよ〜！
+
+へ？
+闇の力って何かって？
+ううん、それが…
+えへへへへ！
+あたしにもよく分からないんだけど、銀河の星々を破壊して、宇宙を征服しちゃおうとする、ものすご〜く強くて、ものすご〜く怖い存在なの！
+
+で、闇の力に対抗できる存在っていうのは、光の救世主なんだけど…
+いきなりこんな格好させられて、戦ってなんて言われても…
+あたしケンカは苦手だし、あんな強そうな相手に勝てるのかなぁってちょっと不安…
+
+でもでも
+あたし寂しくなんかないよ
+だって、一人じゃないんだもん！
+リアちゃん達、１３人衆のみんな、それにあたしの大親友ユーリィも行ってくれる！
+そして、お目付け役ジーナ、マリナ、エリナ、エルナー達、光のマトリックスのみんなは合体してエルラインになって、一緒に戦ってくれる！
+
+それから、香坂エリカちゃんと、エリカ７！
+そして宇宙船「永遠のプリンセス号」に乗って、銀河を旅してきたプリンセス・ミラージュ！
+ケンカしてた事もあったけど、今じゃみんな、大の仲良しだよ！
+
+ミサキちゃんはね、最初あたしを悪い人だと勘違いしてたんだ
+でも、誤解が解けた今は、あたしの大事なお友達！
+
+あたし思うんだ、この世界に、ほんとに悪い人なんかいないって
+話せばきっと分かってくれる
+心を開けば、誰だってきっと友達になれるって！
+
+そんな時、あたし達の前に、新しい敵が現れたの
+妖機三姉妹って言って、銀河の果ての「機械化惑星」で作られたアンドロイド、あたしを狙って、地球にやってきたんだ
+
+みんなは戦わなきゃって言うんだけど、あたしは戦いたくなかった
+[国境?]は追放されて、真っ暗な宇宙を彷徨ってきた亜耶乎ちゃん、狂花さん、幻夢さん
+みんなの心、[泣いていた?]んだ
+悲しい[よ?よう?]、寂しい[よ?よう?]って
+
+だからあたし、決めたの！
+戦いなんかやめて、三人とお友達になろうって！
+それなのに…
+
+やっと仲間になれた…
+やっと心を開いてくれた…
+それなのに…亜耶乎ちゃんは…もう…
+でもね、亜耶乎ちゃん
+あたしの中で亜耶乎ちゃんは生き続けてる
+忘れないで
+あたし達、いつまでも友達だよ！
+ずっと…ずっと！
+
+そして、何もなかったみたいに、いつもの生活が戻ってきたんだけど…
+本当は、まだ終わってなかったんだ
+亜耶乎ちゃん達との[お開かれは?]、全ての始まりだったの
+あたし達が知らない所で、何かが…始まっていたの…
+
+ユナ：わ〜い！元気だった！
+　ゲーム頑張ってね！
+
+リア：こんな時間なのに、プレイしてくれて、ありがとう
+
+詩織：がんばて〜〜〜〜下さいね〜〜〜〜〜
+
+ユーリィ：ご飯たっくさん食べてゲームするですぅ！
+
+ユナ：あったれー！
+ユナ：行くわよ！
+ユナ：きゃあああ！
+ユナ：いっけぇぇ！
+
+ユナ：ライト…スラーーーッシュ！
+ユナ：[当てない?]ようだ！
+
+ユーリィ：行くですぅ！
+ユーリィ：くらうです！
+ユーリィ：痛いですぅ…
+ユーリィ：頑張れです！
+ユーリィ：当たるとイタイですよ！
+ユーリィ：くるくるパーンチ！
+ユーリィ：どこ狙ってるんですかぁ？
+ユーリィ：もう動けませんですぅ…
+
+ポリリーナ：そこよ！
+ポリリーナ：バッキンビュー！
+
+ポリリーナ：行くわよ
+ポリリーナ：みんな…頑張るのよ！
+
+ポリリーナ：甘い！
+
+舞：くらえぇ！
+舞：[あいった?]ぁぁ…
+舞：いけえぇぇぇ！
+舞：ちょっと！手伝って！
+舞：行くわよ！ホール・イン・ワン！
+舞：甘い〜！
+
+詩織：おっとり〜〜〜ビー〜〜〜〜ム〜〜〜〜〜〜
+詩織：スロー〜〜〜〜ムー〜〜〜〜ブ〜〜〜〜〜〜
+詩織：スロー〜〜〜〜ヒー〜〜〜〜リング〜〜〜〜
+詩織：レーザー〜〜〜〜発射〜〜〜〜
+詩織：当たらない〜〜〜〜みたい〜〜ですね〜〜〜
+
+エリカ：エレガントソード！
+エリカ：これならどう！？
+エリカ：ミラージュビーム！
+エリカ：この攻撃が見えるかしら！？
+エリカ：無駄よ！
+
+麗美：アチャアアア！
+麗美：イタイアル！
+麗美：あいやあああ！
+麗美：はああああぁぁぁぁ…！
+麗美：ファイブ・アニマル・カンフー！
+麗美：効かないアル！
+
+マリ：ローズチップ！
+マリ：美しい花にはトゲがあるのよ
+マリ：永遠に眠りなさい
+マリ：狂おしい花の香り
+マリ：当たるものか！
+
+佳華：行きますわよ
+佳華：これでもくらえなさい！
+佳華：茶釜アタック！
+佳華：少し休憩しましょう
+佳華：無駄ですわ
+
+姫：決めてやるぜ！
+姫：よ〜し！乗ってきたぜ！
+姫：[お次?]はこのナンバーだ！
+姫：よっしゃ、いくぜ！
+姫：[アタイような、無理だよ??]！
+
+アレフチーナ：行きますわよ
+アレフチーナ：お眠りなさい
+アレフチーナ：このメロディーに酔いしれなさい
+アレフチーナ：再び、この地へ戻るのです
+アレフチーナ：効きませんわ
+
+ルミナーエフ：くらえ！女王様のムチ！
+ルミナーエフ：これが耐えられるかしら？
+ルミナーエフ：狂喜乱舞！
+ルミナーエフ：特別なお仕置きをしてあげる！
+ルミナーエフ：私に楯突くなんて…！
+
+エミリー：インテリジェンスレーザー！
+エミリー：覚悟しなさい
+　縦横無尽！
+エミリー：行きますよ
+　満場一致！
+エミリー：くらえなさい
+　一網打尽！
+エミリー：それが攻撃なのですか
+
+沙雪華：ハイパービーム！
+沙雪華：ライトヒーリング！
+沙雪華：貫いてあげるわ！
+沙雪華：無駄よ、無駄
+
+葉子：いっけぇ！
+葉子：何！？
+葉子：プラズマリッガー！
+葉子：この攻撃に耐えられるかしら？
+葉子：当たりはしない！
+
+かえで：スタンソード！
+かえで：きゃあ！
+かえで：動けなくしてやるわ
+かえで：みんな、頑張って！
+かえで：エレクトロンブレイク！
+かえで：ふん！その程度なの？
+
+マミ：大リーグシューター！
+マミ：この球を受けてみよう！
+マミ：よーし！行くぜーー！
+マミ：甘いぜ！
+
+ルイ：とりゃあ！
+ルイ：何…
+ルイ：受けてみろ！イエローカード！
+ルイ：このボールを差捌いてみやがれぇ！
+ルイ：このシュートが止められるか！？
+ルイ：そんなものが当たるか！
+
+セリカ：オラオラオラーーー！
+セリカ：いってぇえ！
+セリカ：ウズウズしてんじゃねぇ！
+セリカ：[目障り?]だぜ！
+セリカ：すぐしてやるぜ！ファイヤーーー！
+セリカ：てめぇ！ふざけんじゃねぇ！
+
+ミキ：なまむぎなまごめなまたまご！
+ミキ：行きますわよ！
+ミキ：これがあたしの演技力よ
+ミキ：スポットライトビーーーム！
+ミキ：そんな攻撃は無意味！
+
+アコ：パワーラケット！
+アコ：いったい〜！
+アコ：素振り地獄！
+アコ：いけ！ロボットピンポン！
+アコ：行くわよ！サイクロンカット！
+アコ：たーこ、たーこ！
+
+マコ：行くわよ！
+マコ：いったいよ〜！
+マコ：素振り地獄！
+マコ：いけ！ロボットピンポン！
+マコ：行くわよ！サイクロンカット！
+マコ：かーば、かーば！
+
+ミドリ：くらえ！
+ミドリ：アイスシールド！
+ミドリ：かわいい私のファンネル達よ、行きなさい！
+ミドリ：私の華麗なる前に、見とれるがいい！
+
+マコ：アコちゃん！合体攻撃よ！
+
+ミサキ：これでもくらえ！
+ミサキ：テレポート！
+ミサキ：逃さないわよ！
+ミサキ：もう手加減しない！
+ミサキ：そんなもの！
+
+鏡明：行きますよ
+鏡明：リフレクトレーザーーー！
+鏡明：この攻撃から、[乗られる??]すべはありません！
+鏡明：どこを狙っているのです？
+
+剣鳳：くらえー！
+剣鳳：なんと…！？
+剣鳳：邪魔[だ?]！どけー！
+剣鳳：切り刻んでくれるわ！
+剣鳳：[かわせまい?]
+剣鳳：ふん！効かぬわ！
+
+白香：電磁ビーム！
+白香：今回復します！
+白香：リフレッシュ！
+白香：善の魂よ！蘇れ！
+白香：危なかった…
+
+亜耶乎：いっけぇ！
+亜耶乎：やったな！
+亜耶乎：行く[ぞ?]！
+亜耶乎：へへへ…しびれるわ[よ?]
+亜耶乎：これからは逃げられないようだ！
+亜耶乎：あんた、遊ぶの下手だね？
+
+ユナ：行くわよ！
+ユナ：ライトニングシュート！
+ユナ：フォースミサイル！
+ユナ：いっけぇ！
+　ライトニング…バスター！
+ユナ：危なかった！
+
+狂花：行きますわよ
+狂花：なんですってぇ！？
+狂花：これをくらえなさい！
+狂花：甘いですわ！
+
+幻夢：朽ち果てるがいい
+幻夢：そのような攻撃！
+
+菊花：キクカッター！
+菊花：何っ！？
+
+桜花：これでもくらえ！
+桜花：ふん！そんなものは
+桜花：サクラソード！
+桜花：あはは！永遠に眠るのよ
+桜花：あたいには効かないよ！
+桜花：まだよ
+
+蘭花：くらえ！イービルバタフライ！
+蘭花：あたりませんわ
+蘭花：貫いてあげる！
+蘭花：何ぃ！？
+蘭花：行くわよ！オイルレイン！
+蘭花：そんなもの！
+
+???：[???]
+???：幻覚の世界へ、招待いたしますわ
+???：効きませんわ
+
+紫陽花：くらえ！
+紫陽花：おのれ！
+紫陽花：はははは！
+　行くぞ！酸性雨！
+紫陽花：くだらん攻撃だな
+紫陽花：何！？
+
+???：ブレイクショット！
+???：無駄なあがきね
+???：くらえなさい！
+???：跡形もなく消えるがよい！
+
+???：[見切ったわ?]！
+???：くらえ！
+???：スーパーノヴァ！
+???：効かぬわ！
+???：行くぞ！
+???：まだまだ！
+???：受けてみよう！ブラックストライク！
+???：甘いわ！
+???：邪魔だぁ！
+
+機械化皇帝：今までの攻撃は無駄
+機械化皇帝：ふん！避けられるかな？
+機械化皇帝：全てを灰にしてくれるわ！
+機械化皇帝：痛くも痒くもないわ！
+
+アコ：行くわよ！マコちゃん！
+
+ユナです！
+ネオ東京はすっかり元通りになりました
+この戦いで失ったものもあったけど、たくさん[???]分かり合うことが出来て嬉しかった！
+そうそう！最近はお菓子作りに凝ってます
+でもいつもユーリィが全部食べちゃうの！
+んん、困っちゃう！
+そうだ！今度ユーリィやポリリーナも呼んで、シュークリームパーティーしよう！
+招待状[???]しなきゃ！
+
+ユナです
+お元気ですか？
+ユナはいつも通りとても元気です
+もちろん、ユーリィもポリリーナ様も、みんなみんな元気です！
+この戦いで失ったものもあったけど…
+でも、亜耶乎ちゃんともまた会えたし、新しいお友達もできて、嬉しい気気持ちでいっぱいです！
+ユナはどんなことがあっても、みんなと一緒に、いつも笑顔でいたいなぁって思ってます
+最近は、またお仕事の方は忙しくなって、コンサートの話もあります！
+絶対に見に来てほしいな！
+別の星にも行きたいな！
+そしたら、また色んな人とお友達になれるもんね！
+楽しみだな！
+いつかまた、[かなた?]に会いたいな
+それまでちょっとだけ…
+バイバイ
+
+
+
+亜耶乎：ユナ
+ユナ：あっ！亜耶乎ちゃん…
+亜耶乎：ずっと…ずっと…
+　会いたかった…
+ポリリーナ：ユナ！
+ユナ：亜耶乎ちゃん！よかった！
+　生きてたんだね！
+
+皆：やったー！
+
+皆：おおっ！
+
+ユナ：動いちゃダメ！
+　みんな！早く２人を船へ！
+幻夢：な…なぜだ？
+　我々は敵なのだと…
+ユナ：だって怪我してるんだもん
+　ほっとけないよ！
+幻夢：フフ…光の…救世主か…
+ユナ：さ、早く
+幻夢：[ここまでか?]
+亜耶乎：お姉様！
+幻夢：来るな！
+　神楽坂ユナ…
+　ありがとう
+亜耶乎：お姉様ーー！
+ユーリィ：亜耶乎ちゃん…
+
+美鬼：ホホホホ、オホホホホ、オホホホホホ…
+ポリリーナ：ユナ！
+　離しなさい！
+　でないと、あなたまで…！
+ユナ：やだよ！
+　[いなくなちゃ?みんななくんちゃ?]…やだよ！
+ポリリーナ：ユナ…
+美鬼：ホホホホ、オホホホホホ…
+ポリリーナ：舞！
+舞：んん？
+　…はいはい
+　わあったわよ
+ユナ：あっ！？ダメ！
+　手を離さないで…！
+ポリリーナ：ユナ、後は任せたわ！
+舞：[いい?]
+ [簡単にいく場合?]じゃないわよ！
+ユナ：ああ！？
+舞：負けたら承知しないからねえぇぇぇ…！
+ユナ：舞ちゃああん！ポリリーナ様…！
+美鬼：ホホホホ、オホホホホ、オホホホホホ…
+
+ユナ：みんな…いなくなちゃった…
+ユナ：何！？
+　…こ、これは…
+　プリンセス号！？プリンセス・ミラージュ！？
+ユーリィ：ユナさ〜ん！
+ユナ：あっ！
+皆：ユナ！
+ユナ：みんな！
+
+ACM3300
+エルナー：完全に…力が消滅しました
+ACM3298
+ポリリーナ：終わってしまった…
+ACM3164
+鏡明：本当にこれでよかったのか…
+ACM3299
+ユナ：（こんなのって…
+  こんなのってないよ…！）
+
+ユナ：ライトアップ！エルライン！
+
+
+
+玉華：姉上！
+ユナ：玉鷲さん！
+ミサキ：闇の力が開放されていく
+　これが…
+ポリリーナ：光の力
+玉鷲：玉華…
+玉華：姉上！
+玉鷲：まだ私を姉と呼んでくれるか…
+玉華：姉上…
+玉鷲：私はお前に憧れていた…
+　誰からも愛され慕われてきたお前に…
+　だがいつしか、その気持ちが嫉妬に変わり、このような事に…
+　全て[を?][己??]の弱い心に負けた、私の責任なのだ…
+　すまぬ…
+　神楽坂ユナ…
+　ありがとう
+　これが私に出来るせめてもの罪滅ぼしだ
+　この星を頼む…
+玉華：あ…みんな…！
+白香：人の心は弱い
+　でも、何者にも負けない強い力を持っているのですね
+ポリリーナ：誰の心にも、闇は潜んでいく
+　そして、光もまた
+ユナ：あったかい…！
+玉華：ありがとう、ユナさん
+　姉上に、玉鷲を信じてくれて
+　お別れ[ですね?]
+　[また来て?]いただけますか？
+(background dialogue by yuna and yuri plays here, but some of it is drowned out by the narration:)
+（ユナ：[???]）
+（ユーリィ：うぅ、そうです）
+（ユナ：ユーリィ！）
+（ユーリィ：[???]ですぅ）
+ユナ：うん！絶対に来るよ！
+　玉華さんもみんなと遊びに来て、あたしが色んなとこ案内したげるから！
+ユーリィ：はいです！
+　ハンバーガー屋さんにアイスクリーム屋さんに、お蕎麦屋さんと御田屋さんも！
+ユナ：食べ物屋さんばっかりじゃないの！
+玉華：えへ
+　楽しみにしていますよ、ユナさん
+白香：またね、ユナ
+ユナ：ポリリーナ様〜！
+ポリリーナ：さぁ、帰りましょう？
+　地球へ
+ユナ：はい！
+ユーリィ：はいですぅ！
+
+
+

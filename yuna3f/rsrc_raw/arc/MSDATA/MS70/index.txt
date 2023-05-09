@@ -1,0 +1,8 @@
+7 128
+"ms70.BGD""ms70.BGD"
+"ms70.CEL""ms70.CEL"
+"ms70.TIM""ms70.TIM"
+"ms70.TXT""ms70.TXT"
+"ms70.GS8"""
+"ms70.TAN"""
+"ms70.TTO""ms70.TTO"

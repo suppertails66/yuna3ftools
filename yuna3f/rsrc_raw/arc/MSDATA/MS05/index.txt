@@ -1,0 +1,8 @@
+7 128
+"ms05.BGD""ms05.BGD"
+"ms05.CEL""ms05.CEL"
+"ms05.TIM""ms05.TIM"
+"ms05.TXT""ms05.TXT"
+"ms05.GS8""ms05.GS8"
+"ms05.TAN""ms05.TAN"
+"ms05.TTO""ms05.TTO"

@@ -1,0 +1,8 @@
+7 128
+"ms67.BGD""ms67.BGD"
+"ms67.CEL""ms67.CEL"
+"ms67.TIM""ms67.TIM"
+"ms67.TXT""ms67.TXT"
+"ms67.GS8""ms67.GS8"
+"ms67.TAN""ms67.TAN"
+"ms67.TTO""ms67.TTO"

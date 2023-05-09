@@ -1,0 +1,8 @@
+7 128
+"ms12.BGD""ms12.BGD"
+"ms12.CEL""ms12.CEL"
+"ms12.TIM""ms12.TIM"
+"ms12.TXT""ms12.TXT"
+"NULLDATA"""
+"NULLDATA"""
+"ms12.TTO""ms12.TTO"

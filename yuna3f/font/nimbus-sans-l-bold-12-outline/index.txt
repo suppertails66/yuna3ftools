@@ -1,0 +1,210 @@
+[Properties]
+numChars=112
+charsPerRow=16
+gridW=16
+gridH=16
+#noKerning=1
+#autoKerningOffset=-2
+autoKerningMode=square
+
+#==========
+# space
+#==========
+
+[char0010]
+noKerningIfFirst=1
+noKerningIfSecond=1
+# this is special-cased in-game to ignore normal kerning rules,
+# so this needs to be the actual absolute spacing between words
+advanceWidth=3
+
+# digit space
+[char000C]
+noKerningIfFirst=1
+noKerningIfSecond=1
+advanceWidth=8
+
+# non-breaking space
+[char000D]
+noKerningIfFirst=1
+noKerningIfSecond=1
+advanceWidth=4
+
+# 1px space
+[char0007]
+noKerningIfFirst=1
+noKerningIfSecond=1
+advanceWidth=2
+
+#==========
+# emotes
+#==========
+
+# heart
+[char000A]
+noKerningIfFirst=1
+noKerningIfSecond=1
+
+# sweat
+[char000E]
+noKerningIfFirst=1
+noKerningIfSecond=1
+
+# tears
+[char000F]
+noKerningIfFirst=1
+noKerningIfSecond=1
+
+#==========
+# other
+#==========
+
+# em dash
+[char0004]
+noKerningIfFirst=1
+noKerningIfSecond=1
+extraKerningIfRight=-3
+extraKerningIfLeft=-3
+
+# en dash
+[char0005]
+noKerningIfFirst=1
+noKerningIfSecond=1
+extraKerningIfRight=-3
+extraKerningIfLeft=-3
+
+# ellipsis
+[char0006]
+noKerningIfFirst=1
+noKerningIfSecond=1
+extraKerningIfRight=-3
+extraKerningIfLeft=-3
+
+# exclamation mark
+[char0011]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#vShift=-1
+extraKerningIfRight=-3
+extraKerningIfLeft=-3
+
+# percent sign
+[char0015]
+noKerningIfFirst=1
+noKerningIfSecond=1
+extraKerningIfRight=-3
+extraKerningIfLeft=-3
+
+# ampersand
+[char0016]
+noKerningIfFirst=1
+noKerningIfSecond=1
+extraKerningIfRight=-3
+extraKerningIfLeft=-3
+
+# apostrophe
+[char0017]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#vShift=-1
+extraKerningIfRight=-3
+extraKerningIfLeft=-3
+
+# left parenthesis
+[char0018]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#vShift=-1
+extraKerningIfRight=-3
+extraKerningIfLeft=-3
+
+# right parenthesis
+[char0019]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#vShift=-1
+extraKerningIfRight=-3
+extraKerningIfLeft=-3
+
+# plus sign
+[char001B]
+noKerningIfFirst=1
+noKerningIfSecond=1
+extraKerningIfRight=-3
+extraKerningIfLeft=-3
+
+# comma
+[char001C]
+noKerningIfFirst=1
+noKerningIfSecond=1
+extraKerningIfRight=-3
+#extraKerningIfLeft=-3
+
+# hyphen
+[char001D]
+noKerningIfFirst=1
+noKerningIfSecond=1
+extraKerningIfRight=-3
+extraKerningIfLeft=-3
+
+# period
+[char001E]
+noKerningIfFirst=1
+noKerningIfSecond=1
+extraKerningIfRight=-3
+extraKerningIfLeft=-3
+
+# colon
+[char002A]
+noKerningIfFirst=1
+noKerningIfSecond=1
+extraKerningIfRight=-3
+extraKerningIfLeft=-3
+
+# semicolon
+[char002B]
+noKerningIfFirst=1
+noKerningIfSecond=1
+extraKerningIfRight=-3
+extraKerningIfLeft=-3
+
+# question mark
+[char002F]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#vShift=-1
+extraKerningIfRight=-3
+extraKerningIfLeft=-3
+
+# left single quote
+[char004E]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#vShift=-1
+extraKerningIfRight=-3
+extraKerningIfLeft=-3
+
+# left quote
+[char006B]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#vShift=-1
+extraKerningIfRight=-3
+extraKerningIfLeft=-3
+
+# right quote
+[char006D]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#vShift=-1
+extraKerningIfRight=-3
+extraKerningIfLeft=-3
+
+# right single quote
+[char006E]
+noKerningIfFirst=1
+noKerningIfSecond=1
+#vShift=-1
+extraKerningIfRight=-3
+extraKerningIfLeft=-3
+

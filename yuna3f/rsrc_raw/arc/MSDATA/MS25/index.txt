@@ -1,0 +1,8 @@
+7 128
+"ms25.BGD""ms25.BGD"
+"ms25.CEL""ms25.CEL"
+"ms25.TIM""ms25.TIM"
+"ms25.TXT""ms25.TXT"
+"ms25.GS8""ms25.GS8"
+"ms25.TAN""ms25.TAN"
+"ms25.TTO""ms25.TTO"

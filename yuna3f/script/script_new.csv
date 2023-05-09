@@ -1,0 +1,297 @@
+,,,,"//==================================
+// Additional status screen labels
+//==================================",,,
+string,status-label-0,,,攻撃力,Attack,"NOTE: in the original game, the labels for these stats on the status screen are created by clipping the last three characters of the 技攻撃力 and 技防御力 strings, which is both bad practice and not workable for the translation. thus, these new strings are used in their place.",
+string,status-label-1,,,防御力,Defense,,
+,,,,"//==================================
+// Standardized technique descriptions
+//==================================",,,
+string,techdesc-0-0,,,"ガンを連続発射し
+複数の敵を攻撃",Repeatedly fire gun and attack multiple enemies.,,
+string,techdesc-0-1,,,"全ての敵を焼き払う
+ミラージュの援護射撃",Covering fire from Mirage that burns all enemies to ash.,,
+string,techdesc-0-2,,,"光の力を極限まで
+開放する究極の攻撃技","The ultimate attack technique, unleashing the power of light to the utmost limit.",,
+string,techdesc-1-0,,,"思いやりの力で
+周囲の味方をＨＰ回復",Recover surrounding allies' HP with the power of kindness.,,
+string,techdesc-1-1,,,"腕を超高速回転させて
+必殺パンチを繰り出す","Revolve arms at super-high speeds, delivering rapid-fire killer punches.",,
+string,techdesc-1-2,,,"ユーリィが分身して
+全ての敵に体当たり",Yuri forms clones and rams all enemies.,"NOTE: ...what is 分身 even supposed to mean as a verb? this, i hope.",
+string,techdesc-2-0,,,"超能力で瞬間移動
+",Instantaneously move using ESP.,,
+string,techdesc-2-1,,,"遠距離からも
+仲間のＨＰを回復",Restore an ally's HP from great distances.,,
+string,techdesc-2-2,,,"ペットのミルキーが
+ライン上の敵に体当り","Her pet, Milky, rams enemies along a line.",,
+string,techdesc-3-0,,,"両肩の爆光球で攻撃
+マヒの追加効果",Attack with the Lightblast Orbs on either shoulder. Also causes paralysis.,,
+string,techdesc-3-1,,,"呼び出したキープ君が
+ランダムな効果で援護",A called-up temporary boyfriend provides a random effect as support.,,
+string,techdesc-3-2,,,"命中率は低いけど
+当たれば必殺ダメージ","Has a low hit rate, but deals massive damage if it connects.",,
+string,techdesc-4-0,,,"周囲にいる敵全ての
+移動力を減少させる",Reduce the Movement of all surrounding enemies.,,
+string,techdesc-4-1,,,"ＨＰを１ターン毎に
+ゆっくりと回復",Slowly recover HP each turn.,,
+string,techdesc-4-2,,,"レーザーを発射し
+ライン攻撃する",Fire a laser and attack along a line.,,
+string,techdesc-5-0,,,"超能力で鉄塊を操り
+複数の敵を攻撃",Manipulate a lump of iron with psychic power and attack multiple enemies.,,
+string,techdesc-5-1,,,"強力な酸で攻撃
+防御力を徐々に削る","Attack with powerful acid.\n
+Gradually reduces Defense.",,
+string,techdesc-5-2,,,"ダンスを舞うような
+華麗な連続攻撃",Magnificent repeated attacks as if performing a dance.,,
+string,techdesc-6-0,,,"中国４千年の力で
+異常状態を回復","Cure status conditions with the power of China's 4,000-year history.","NOTE: in yuna 1, it's china's 5000-year history. in yuna 2, it's a 3000-year history. and now, it's 4000 years. does nobody know how many years of history china actually has? how does it count as ""history"" then?",
+string,techdesc-6-1,,,"気を己の体に集めて
+攻撃力を飛躍的に増加","Gather Qi in one's body, dramatically increasing Attack.",,
+string,techdesc-6-2,,,"拳を高速で繰り出し
+周囲の敵を攻撃","Throw repeated punches at high speed, attacking surrounding enemies.",,
+string,techdesc-7-0,,,"バラのトゲで攻撃し
+追加効果で毒も与える","Attack with a rose's thorns, causing poison as a side effect.",,
+string,techdesc-7-1,,,"催眠効果のある花粉を
+撒き散らし眠らせる","Scatter pollen with a hypnotic effect, inducing sleep.",,
+string,techdesc-7-2,,,"幻覚作用のある花粉を
+撒き散らし混乱させる","Scatter hallucinogenic pollen, causing confusion.",,
+string,techdesc-8-0,,,"バインダーから
+茶筅型ミサイルを発射",Fire a missile in the shape of a tea whisk from the Binder.,"CHECK, ""binder"" is the name of the thing yoshika fires missiles from, but i honestly have no idea what it's actually supposed to mean",
+string,techdesc-8-1,,,"大きな茶釜で殴り
+追加効果で眠らせる","Strike with a giant teakettle, causing sleep as a side effect.",,
+string,techdesc-8-2,,,"おいしいお茶で
+ＥＰ回復",Restore EP with delicious tea.,,
+string,techdesc-9-0,,,"パンクロックにのって
+攻撃力アップ","Get hooked on punk rock, increasing Attack.",,
+string,techdesc-9-1,,,"ハードロックで
+攻撃力の飛躍的アップ",Radically increase Attack with hard rock.,,
+string,techdesc-9-2,,,"メタルでのりのり
+攻撃力を毎ターン上昇","Get pumped with metal, increasing Attack each turn.",,
+string,techdesc-10-0,,,"安眠をもたらす
+母なる曲",A motherly song to produce sound sleep.,"CHECK, 母なる seems to have somewhat broader implications",
+string,techdesc-10-1,,,"生ある者を死へ誘う
+悪魔の曲",A demonic song inviting the living to death.,,
+string,techdesc-10-2,,,"戦闘不能の味方を全て
+復活させる奇跡の曲",A miraculous song that resurrects all fallen allies.,,
+string,techdesc-11-0,,,"女王様の小道具の１つ
+鉄の扇子で遠距離攻撃","A long-distance attacking using an iron fan, one of the tools of a queen.",,
+string,techdesc-11-1,,,"女王様のムチで
+連続攻撃",Repeated attacks with a queen's whip.,,
+string,techdesc-11-2,,,"自己暗示で攻撃力を
+毎ターンアップさせる",Increase Attack each turn using self-suggestion.,CHECK,
+string,techdesc-12-0,,,"縦横十字ラインにいる
+全ての敵を攻撃",Attack all enemies on a horizontal and vertical cross.,"NOTE: this is making a sort of pun on 縦横 that's never going to work in translation, so i'm not going to sweat it",
+string,techdesc-12-1,,,"味方全てのＨＰを
+エミリーと同じにする",Make all allies' HP the same as Emily's.,,
+string,techdesc-12-2,,,"全ての敵を一網打尽に
+一斉攻撃",A simultaneous attack on all enemies in a single stroke.,,
+string,techdesc-13-0,,,"高貴な気品で体を包み
+防御力を飛躍的に増加","Cover the body in noble elegance, sharply increasing Defense.",,
+string,techdesc-13-1,,,"オーラを周囲に開放し
+ＨＰを回復させる","Release an aura upon the surroundings, restoring HP.",,
+string,techdesc-13-2,,,"拡散ビームで広範囲を
+一斉攻撃",Simultaneously attack a wide area with a diffusion beam.,,
+string,techdesc-14-0,,,"無数のボールを発射し
+複数の敵を攻撃","Fire countless balls, attacking multiple enemies.",,
+string,techdesc-14-1,,,"当たれば一撃必殺の
+禁じられた球",A banned pitch sure to bring death in a single blow if it connects.,"NOTE: this is apparently a lie, it's just a regular attack",
+string,techdesc-14-2,,,"必殺ビームバットで
+連続攻撃",Repeated strikes with the deadly Beam Bat.,,
+string,techdesc-15-0,,,"当たれば一撃必殺の
+切れ味抜群のカード",An impossibly sharp card sure to bring death in a single blow if it connects.,CHECK,
+string,techdesc-15-1,,,"スローインで攻撃し
+周囲にも爆風を起こす","Attack with a throw-in, causing a shockwave to the surroundings.",,
+string,techdesc-15-2,,,"超高速の炎のボールで
+ライン上の敵を攻撃",Attack enemies along a line with a super-high-speed flaming ball.,,
+string,techdesc-16-0,,,"周囲の味方をあおって
+移動力をアップさせる","Rev up surrounding allies, increasing Movement.",,
+string,techdesc-16-1,,,"ビームで目をくらませ
+攻撃力を減少させる","Dazzle the eyes with a beam, decreasing Attack.",,
+string,techdesc-16-2,,,"燃え盛る炎で
+ライン攻撃",A line attack using blazing flames.,,
+string,techdesc-17-0,,,"パラスポキャノンから
+７色の光を発射",Fire seven-colored light from the Paraspo Cannon.,"FIXME: surely パラスポ has some meaning here, but trying to look it up only yields results for パラスポーツ, which is clearly not what we're talking about. スポ could be abbreviating ""spotlight"", since her other attack is ""Spotlight Beam"", but the ""para"" part isn't obvious to me. my best guess is ""parabolic spotlight"", which seems to be something that exists, but i guess in the end i'll just go with the transliteration.",
+string,techdesc-17-1,,,"選んだ味方に変身して
+味方の能力を使える","Transform into a chosen ally, becoming able to use their abilities.",,
+string,techdesc-17-2,,,"スポットライトガンが
+放つ光でライン攻撃",A line attack using light fired by the Spotlight Gun.,,
+string,techdesc-18-0,,,"素振りで攻撃
+マコと隣接で範囲拡大","Attack with practice swings.\n
+Area increases if adjacent to Mako.",,
+string,techdesc-18-1,,,"ロボットピンポン攻撃
+マコと隣接で範囲拡大","A robot ping-pong ball attacks.\n
+Area increases if adjacent to Mako.",,
+string,techdesc-18-2,,,"竜巻でライン攻撃
+マコと隣接で範囲拡大","Line attack with a tornado.\n
+Area increases if adjacent to Mako.",,
+string,techdesc-19-0,,,"素振りで攻撃
+アコと隣接で範囲拡大","Attack with practice swings.\n
+Area increases if adjacent to Ako.",,
+string,techdesc-19-1,,,"ロボットピンポン攻撃
+アコと隣接で範囲拡大","A robot ping-pong ball attacks.\n
+Area increases if adjacent to Ako.",,
+string,techdesc-19-2,,,"竜巻でライン攻撃
+アコと隣接で範囲拡大","Line attack with a tornado.\n
+Area increases if adjacent to Ako.",,
+string,techdesc-20-0,,,"氷のバリヤーを張って
+防御力をアップさせる","Form a barrier of ice, increasing Defense.",,
+string,techdesc-20-1,,,"両肩のファンネルで
+範囲内全ての敵を攻撃",Attack all enemies in range with the funnels on either shoulder.,,
+string,techdesc-20-2,,,"華麗なるアクセル
+ターンで周囲を攻撃",Attack surroundings using a magnificent axel turn.,,
+string,techdesc-21-0,,,"超能力で瞬間移動
+",Instantaneously move using ESP.,DUPE: F11,
+string,techdesc-21-1,,,"ガンを高速連射して
+複数の敵を攻撃","Fire gun at high speed, attacking multiple enemies.",,
+string,techdesc-21-2,,,"出力を限界値まで
+高めてライン攻撃",Boost output to the maximum limit for a line attack.,,
+string,techdesc-22-0,,,"エネルギーシールドで
+防御力を毎ターン上昇",Raise Defense each turn using an energy shield.,,
+string,techdesc-22-1,,,"腕の装置からプラズマ
+を発生し周囲を攻撃","Generate plasma from arm equipment, attacking surroundings.",,
+string,techdesc-22-2,,,"溜めた力を一気に解放
+爆発的な攻撃力を誇る","Unleash accumulated power all at once.\n
+Boasts explosive attack power.",,
+string,techdesc-23-0,,,"全ての敵に電撃を
+浴びせマヒさせる","Bathe all enemies in an electric shock, causing paralysis.",,
+string,techdesc-23-1,,,"全ての味方の
+状態異常を回復させる",Cures all allies' status conditions.,,
+string,techdesc-23-2,,,"スタンソードの電撃で
+範囲内の敵全てを攻撃",Attack all enemies within range with the Stun Sword's electricity.,,
+string,techdesc-24-0,,,"中性子ビームで
+ライン攻撃",Line attack with a neutron beam.,,
+string,techdesc-24-1,,,"反射レーザーで
+十字ライン攻撃",Cross-shaped line attack with a reflected laser.,,
+string,techdesc-24-2,,,"プラズマビームで
+広範囲を攻撃",Attack a wide area with a plasma beam.,,
+string,techdesc-25-0,,,"神の力を超えると言う
+恐るべき連続攻撃",Fearsome repeated attacks with power said to surpass that of a god.,,
+string,techdesc-25-1,,,"神速が生み出す
+カマイタチによる攻撃",An attack by a kamaitachi brought forth by extreme speed.,,
+string,techdesc-25-2,,,"神鳴剣が嵐を呼び
+雷を落とし周囲を攻撃","Attack by calling a storm with the Kaminari Sword, raining lightning upon the surroundings.",,
+string,techdesc-26-0,,,"聖なる光が
+ＨＰを完全回復させる",A holy light fully restores HP.,,
+string,techdesc-26-1,,,"浄化の光が
+状態異常を回復させる",A purifying light cures status conditions.,,
+string,techdesc-26-2,,,"聖なる祈りで
+戦闘不能の味方を復活",Resurrect a fallen ally with a holy prayer.,,
+string,techdesc-27-0,,,"亜耶乎の操るコードが
+範囲内の敵全てを攻撃",Cords manipulated by Ayako attack all enemies within their range.,"NOTE: or possibly more like ""the cords that ayako controls"". i honestly cannot find a concrete description of ayako's abilities anywhere, so i'm not sure exactly how they work -- can she just magically manifest cords from any surface she wants, or do they have to come from some existing infrastructure? ah, whatever.",
+string,techdesc-27-1,,,"中枢神経を操り
+周囲の敵の技を封じる","Manipulate the central nerves, sealing surrounding enemies' techniques.",,
+string,techdesc-27-2,,,"周囲の敵に電撃を与え
+さらに追加効果でマヒ",Deliver an electric shock to surrounding enemies. Additionally causes paralysis.,,
+string,techdesc-28-0,,,"聖なる力で焼き払う
+ライン攻撃",A line attack that burns to ash with holy power.,,
+string,techdesc-28-1,,,"誘導ミサイルで攻撃
+",Attack with a guided missile.,,
+string,techdesc-28-2,,,"仲間の力で
+エルラインを補助する",Assist El-Line with allies' power.,,
+,,,,"//==================================
+// Abbreviated unit names
+//==================================",,,
+string,unitabbrev-0x5A4,,,神楽坂ユナ,,"NOTE: the original game has a bunch of ridiculous hacks in the code to programmatically abbreviate unit names where needed by clipping from the start/end or, in the case of the copy robots, substituting hardcoded parts of the string with other strings. this is incredibly unwieldy, so the translation simply has dedicated ""abbreviated"" forms. empty entries are not abbreviated.",UNTRANSLATED
+string,unitabbrev-0x590,,,ユーリィ・キューブ,,,UNTRANSLATED
+string,unitabbrev-0x584,,,ポリリーナ,,,UNTRANSLATED
+string,unitabbrev-0x578,,,六本木の舞,,,UNTRANSLATED
+string,unitabbrev-0x568,,,おっとりの詩織,,,UNTRANSLATED
+string,unitabbrev-0x55C,,,香坂エリカ,,,UNTRANSLATED
+string,unitabbrev-0x54C,,,チャイナの麗美,,,UNTRANSLATED
+string,unitabbrev-0x540,,,お花のマリ,,,UNTRANSLATED
+string,unitabbrev-0x534,,,お茶の佳華,,,UNTRANSLATED
+string,unitabbrev-0x528,,,ロックの姫,,,UNTRANSLATED
+string,unitabbrev-0x50C,,,ヴァイオリンのアレフチーナ,Alephtina,,
+string,unitabbrev-0x4F0,,,家柄と血筋のルミナーエフ,Luminaev,,
+string,unitabbrev-0x4E0,,,教養のエミリー,,,UNTRANSLATED
+string,unitabbrev-0x4D0,,,高貴な沙雪華,,,UNTRANSLATED
+string,unitabbrev-0x4C4,,,闘魂のマミ,,,UNTRANSLATED
+string,unitabbrev-0x4B0,,,ストライカー・ルイ,,,UNTRANSLATED
+string,unitabbrev-0x498,,,ハイスピード・セリカ,,,UNTRANSLATED
+string,unitabbrev-0x48C,,,銀幕のミキ,,,UNTRANSLATED
+string,unitabbrev-0x480,,,閃光のアコ,,,UNTRANSLATED
+string,unitabbrev-0x474,,,疾風のマコ,,,UNTRANSLATED
+string,unitabbrev-0x468,,,氷のミドリ,,,UNTRANSLATED
+string,unitabbrev-0x458,,,一条院ミサキ,,,UNTRANSLATED
+string,unitabbrev-0x44C,,,水野葉子,,,UNTRANSLATED
+string,unitabbrev-0x440,,,弓岡かえで,,,UNTRANSLATED
+string,unitabbrev-0x428,,,三賢機・右丞相・鏡明,Jing Ming,,
+string,unitabbrev-0x410,,,三賢機・左丞相・剣鳳,Chun Fong,,
+string,unitabbrev-0xBC304,,,白香,,,UNTRANSLATED
+string,unitabbrev-0x3FC,,,妖機三姉妹・亜耶乎,Ayako,,
+string,unitabbrev-0x3F0,,,エルライン,,,UNTRANSLATED
+string,unitabbrev-0x3DC,,,妖機三姉妹・狂花,Kyouka,,
+string,unitabbrev-0x3C8,,,妖機三姉妹・幻夢,Genmu,,
+string,unitabbrev-0x3B8,,,六花戦・菊花,Jui Hua,,
+string,unitabbrev-0x3A8,,,六花戦・桜花,Ing Hua,,
+string,unitabbrev-0x398,,,六花戦・蘭花,Lan Hua,,
+string,unitabbrev-0x388,,,六花戦・椿花,Chun Hua,,
+string,unitabbrev-0x378,,,六花戦・桃花,Tau Hua,,
+string,unitabbrev-0x368,,,六花戦・紫陽花,Tsu Yang Hua,,
+string,unitabbrev-0x350,,,四天機・天麗院・劉麗,Liou Li,,
+string,unitabbrev-0x338,,,四天機・天翔院・項翔,Siang Siang,,
+string,unitabbrev-0x320,,,四天機・天鬼院・美鬼,Mei Kue,,
+string,unitabbrev-0x308,,,四天機・天魔院・鈴魔,Ling Muo,,
+string,unitabbrev-0x2FC,,,機械化皇帝,,,UNTRANSLATED
+string,unitabbrev-0x2EC,,,黒皇帝・玉鷲,Yui Jiou,,
+string,unitabbrev-0x2E0,,,戦機・三戦,Warmech:[space1px]Warrior[space1px]III,,
+string,unitabbrev-0x2D4,,,戦機・二戦,Warmech: Warrior II,,
+string,unitabbrev-0x2C8,,,戦機・一戦,Warmech: Warrior I,,
+string,unitabbrev-0x2B8,,,特科機・突砲,Auxilimech: Burst,,
+string,unitabbrev-0x2A8,,,特科機・高砲,Auxilimech: High,,
+string,unitabbrev-0x298,,,特科機・迫砲,Auxilimech: Force,,
+string,unitabbrev-0x288,,,狙撃機・三猟,Snipemech:[space1px]Hunter[space1px]III,,
+string,unitabbrev-0x278,,,狙撃機・二猟,Snipemech: Hunter II,,
+string,unitabbrev-0x268,,,狙撃機・一猟,Snipemech: Hunter I,,
+string,unitabbrev-0x258,,,狙撃機・特猟,Snipemech: Special,,
+string,unitabbrev-0x248,,,衛生機・淮士,Medimech: Huai,,
+string,unitabbrev-0x238,,,衛生機・正士,Medimech: True,,
+string,unitabbrev-0x228,,,衛生機・全士,Medimech: Full,,
+string,unitabbrev-0x218,,,衛生機・特士,Medimech: Special,,
+string,unitabbrev-0x208,,,闘術機・狼牙,Technimech: Wolf,,
+string,unitabbrev-0x1F8,,,闘術機・虎牙,Technimech: Tiger,,
+string,unitabbrev-0x1E8,,,闘術機・蛇牙,Technimech: Snake,,
+string,unitabbrev-0x1D8,,,闘術機・甲牙,Technimech: Shell,,
+string,unitabbrev-0x1C8,,,闘術機・双牙,Technimech: Twin,,
+string,unitabbrev-0x1B8,,,闘術機・王牙,Technimech: King,,
+string,unitabbrev-0x1AC,,,皇機・激徳,Imperimech: Virtu...,"NOTE: i contemplated actually implementing automatic shortening of names that are too long to fit like this, then decided it wasn't worth it",
+string,unitabbrev-0x194,,,皇機・猛起,Imperimech: Gene...,,
+string,unitabbrev-0x188,,,皇機・死龍,Imperimech: Deat...,,
+string,unitabbrev-0x178,,,コピー・ユナ,,,UNTRANSLATED
+string,unitabbrev-0x164,,,コピー・ユーリィ,,,UNTRANSLATED
+string,unitabbrev-0x150,,,コピー・ポリリーナ,,,UNTRANSLATED
+string,unitabbrev-0xBC24C,,,霧幻,,,UNTRANSLATED
+string,unitabbrev-0x144,,,攻撃衛星,,,UNTRANSLATED
+string,unitabbrev-0xBC23C,,,爆弾,,,UNTRANSLATED
+string,unitabbrev-0xBC234,,,砲撃機,,,UNTRANSLATED
+string,unitabbrev-0x138,,,リコリス２,,,UNTRANSLATED
+string,unitabbrev-0xBC21C,,,眠り草,,,UNTRANSLATED
+string,unitabbrev-0x128,,,？？？？？？,,,UNTRANSLATED
+string,unitabbrev-0x110,,,エレメントフェアリィ,,,UNTRANSLATED
+string,unitabbrev-0x100,,,ジェネレータ,,,UNTRANSLATED
+string,unitabbrev-0xF4,,,エアロック,,,UNTRANSLATED
+string,unitabbrev-0xBC20C,,,玉華,,,UNTRANSLATED
+string,unitabbrev-0xE4,,,攻撃衛星・青,Attack Sat. Blue,,
+string,unitabbrev-0xD4,,,攻撃衛星・緑,Attack Sat. Green,,
+string,unitabbrev-0xBC204,,,氷柱,,,UNTRANSLATED
+string,unitabbrev-0xC8,,,闇の触手,,,UNTRANSLATED
+string,unitabbrev-0xBC1FC,,,黒闇玉,,,UNTRANSLATED
+string,unitabbrev-0xBC1F4,,,赤闇玉,,,UNTRANSLATED
+,,,,"//==================================
+// Alternate Polylina Snack messages
+//==================================",,,
+string,polysnack-0,,,０番のカードが入っていた！,"#SETNOTCOMPRESSIBLE(1)
+It contained Card [#]0!",,
+string,polysnack-1,,,００番のカードが入っていた！,"#SETNOTCOMPRESSIBLE(1)
+It contained Card [#]00!",,
+,,,,"//==================================
+// Alternate multiplayer messages
+//==================================",,,
+string,multiplayer-0,,,１Ｐキャラクターを選択してネ　,"#SETNOTCOMPRESSIBLE(1)
+1P: Choose a character.",,
+string,multiplayer-1,,,１Ｐ（差し込み口１）のファイルを選択,"#SETNOTCOMPRESSIBLE(1)
+1P (Slot 1): Choose a file.",,
+string,multiplayer-2,,,１Ｐ（差し込み口１）の,"#SETNOTCOMPRESSIBLE(1)
+1P (Slot 1):",,
+string,multiplayer-3,,,１Ｐ（差し込み口１）に,"#SETNOTCOMPRESSIBLE(1)
+1P (Slot 1):",,
